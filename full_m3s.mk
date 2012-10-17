@@ -33,7 +33,6 @@ PRODUCT_RELEASE_NAME		    := LG Optimus Elite
 PRODUCT_VERSION_DEVICE_SPECIFIC	    :=
 
 TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us
-TARGET_BOOTANIMATION_NAME	    := vertical-320x480
 
 
 # try to reproduce the stock prop file.  we can't override the `date` command, so leave the dates alone.
@@ -102,6 +101,7 @@ PRODUCT_PACKAGES +=			\
     copybit.msm7k			\
     gralloc.default			\
     gralloc.msm7k			\
+    lights.msm7				\
     liboverlay				\
     libstagefright			\
     libstagefright_amrnb_common		\
@@ -137,6 +137,10 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
     frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
     frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml
+
+# boot animation
+PRODUCT_COPY_FILES += \
+    vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
 # use high-density artwork where available
 PRODUCT_LOCALES += mdpi
@@ -291,10 +295,6 @@ PRODUCT_COPY_FILES +=											    \
 
 # the build system apparently knows how to make this one
 # $(LOCAL_PATH)/prebuilt/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so
-
-# needed for esgl stuff.  for whatever reason, as soon as this one is added,
-#the esgl stuff stops compilaining, but it fails to draw on the screen
-#lib/libgsl.so
 
 # binaries the build system doesn't know how to make
 PRODUCT_COPY_FILES +=									    \
