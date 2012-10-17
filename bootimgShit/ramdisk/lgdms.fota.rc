@@ -1,0 +1,13 @@
+
+on fota-init
+    wait /dev/block/mmcblk0
+    chown root lg_fota /dev/block/mmcblk0
+# for App Factory RESET
+# 20111124 jungseob.kim@lge.com FRAMEWORK CTS permission error fix [START]
+    chmod 0770 /dev/block/mmcblk0
+# 20111124 jungseob.kim@lge.com FRAMEWORK CTS permission error fix  [END]
+
+on fota-boot
+    mkdir /data/fota 0770 lg_fota system
+    chown lg_fota system /data/fota
+    chmod 0770 /data/fota

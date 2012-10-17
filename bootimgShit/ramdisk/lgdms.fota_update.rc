@@ -1,0 +1,42 @@
+on fota-update
+    export PATH /sbin
+    export ANDROID_ROOT /system
+    export ANDROID_DATA /data
+    export EXTERNAL_STORAGE /sdcard
+    export PATH /sbin:/data/data/com.redbend.vdmc/files/
+
+    symlink /system/etc /etc
+
+    mkdir /sdcard
+    mkdir /system
+    mkdir /data
+    mkdir /cache
+    mount /tmp /tmp tmpfs
+
+    #mount rootfs rootfs / rw remount
+
+
+# mount mmc partitions
+
+	wait /dev/block/mmcblk0p12
+    mount ext4 /dev/block/mmcblk0p12 /system rw data=ordered barrier=1
+    
+    wait /dev/block/mmcblk0p13
+    exec /system/bin/demigod_make_ext4fs -e /dev/block/mmcblk0p13 /data
+    exec /system/bin/e2fsck -y /dev/block/mmcblk0p13
+    mount ext4 /dev/block/mmcblk0p13 /data nosuid nodev noatime barrier=1 data=ordered noauto_da_alloc errors=panic
+
+    wait /dev/block/mmcblk0p6
+    exec /system/bin/resize2fs /dev/block/mmcblk0p6
+    exec /system/bin/e2fsck -y /dev/block/mmcblk0p6
+    mount ext4 /dev/block/mmcblk0p6 /cache nosuid nodev barrier=1 data=ordered
+				
+   
+	wait /dev/graphics/fb0
+	wait /dev/tty0
+	
+    chown system system /data
+    chmod 0771 /data
+
+	mkdir /cache/fota
+	

@@ -1,0 +1,267 @@
+
+## Specify phone tech before including full_phone
+#$(call inherit-product, vendor/cyanogen/config/cdma.mk)
+
+#theres no CMDA stuff, so go with the gsm for now until we know we dont need it
+#$(call inherit-product-if-exists, vendor/cyanogen/products/gsm.mk)
+
+# Inherit some common CM stuff.
+# dont bother building themes until we can actually get it to boot
+$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
+
+# languages
+$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+
+# The gps config appropriate for this device
+$(call inherit-product, device/common/gps/gps_us_supl.mk)
+
+
+#
+# Setup device specific product configuration.
+#
+
+# Overrides
+PRODUCT_NAME	    := m3s_virgin_us
+PRODUCT_DEVICE	    := m3s
+PRODUCT_BRAND	    := lge
+PRODUCT_MODEL	    := LG-VM696
+
+# Release name and versioning
+PRODUCT_RELEASE_NAME		    := LG Optimus Elite
+PRODUCT_VERSION_DEVICE_SPECIFIC	    :=
+
+
+# try to reproduce the stock prop file.  we can't override the `date` command, so leave the dates alone.
+# we also cant reproduce the user and hostname
+PRODUCT_BUILD_PROP_OVERRIDES +=									\
+	TARGET_PRODUCT=m3s_virgin_us								\
+	PRODUCT_DEVICE=m3s									\
+	TARGET_BUILD_VARIANT=user								\
+	BUILD_ID=ZV5.GWK74									\
+	BUILD_DISPLAY_ID=ZV5.GWK74								\
+	BUILD_NUMBER=47E5087D									\
+	TARGET_BUILD_TYPE=user									\
+	BUILD_VERSION_TAGS=release-keys								\
+	PRODUCT_MODEL=LG-VM696									\
+	PRODUCT_BRAND=lge									\
+	PRODUCT_NAME=m3s_virgin_us								\
+	TARGET_DEVICE=m3s									\
+	TARGET_BOOTLOADER_BOARD_NAME=lge_m3s							\
+	PRODUCT_MANUFACTURER=LGE								\
+	PRODUCT_DEFAULT_LANGUAGE=en								\
+	PRODUCT_DEFAULT_REGION=US								\
+	TARGET_BOARD_PLATFORM=msm7k								\
+	BUILD_FINGERPRINT="lge/m3s_virgin_us/m3s:2.3.7/ZV5.GWK74/47E5087D:user/release-keys"	\
+	PRIVATE_BUILD_DESC="m3s_virgin_us-user 2.3.7 ZV5.GWK74 47E5087D release-keys"
+
+# Enable Torch
+PRODUCT_PACKAGES += Torch
+
+
+
+DEVICE_PACKAGE_OVERLAYS += device/lge/VM696/overlay
+
+
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+	LOCAL_KERNEL := device/lge/VM696/kernel
+else
+	LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_KERNEL):kernel
+
+$(call inherit-product, build/target/product/full.mk)
+
+PRODUCT_AAPT_CONFIG		    := normal mdpi
+PRODUCT_AAPT_PREF_CONFIG	    := mdpi
+
+# Display
+PRODUCT_PACKAGES +=	\
+    copybit.msm7k	\
+    gralloc.msm7k	\
+    hwcomposer.msm7x30	\
+    libgenlock		\
+    libmemalloc		\
+    overlay.default	\
+    liboverlay		\
+    libQcomUI		\
+    libtilerenderer
+
+# Sensors, GPS, Misc
+PRODUCT_PACKAGES +=			\
+    com.android.future.usb.accessory	\
+    lights.msm7k			\
+    gps.default				\
+    sensors.default
+
+# OMX
+PRODUCT_PACKAGES +=			\
+    libstagefrighthw			\
+    libdivxdrmdecrypt			\
+    libOmxVdec				\
+    libOmxVenc				\
+    libOmxAacEnc			\
+    libOmxAmrEnc			\
+    libmm-omxcore			\
+    libOmxCore
+
+# these are added in ics?
+# Audio
+#PRODUCT_PACKAGES +=			\
+#    audio.a2dp.default			\
+#    audio_policy.msm7x30		\
+#    audio.primary.msm7x30
+
+PRODUCT_PACKAGES +=			\
+    hcitool				\
+    hciconfig				\
+    hwprops
+
+# Camera
+#PRODUCT_PACKAGES +=			\
+#    audio.primary.msm7k			\
+#    audio_policy.msm7k			\
+#    camera_policy.msm7k			\
+#    camera.msm7k		\
+#    Camera
+
+
+## cm dsp manager
+#PRODUCT_PACKAGES += \
+#    DSPManager \
+#    libcyanogen-dsp
+
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    frameworks/base/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
+    frameworks/base/data/etc/android.hardware.camera.flash-autofocus.xml:system/etc/permissions/android.hardware.camera.flash-autofocus.xml \
+    frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+    frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+    frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+    frameworks/base/data/etc/android.hardware.sensor.proximity.xml:system/etc/permissions/android.hardware.sensor.proximity.xml \
+    frameworks/base/data/etc/android.hardware.sensor.light.xml:system/etc/permissions/android.hardware.sensor.light.xml \
+    frameworks/base/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+    frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml \
+    frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+    frameworks/base/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml \
+    frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml
+
+# use high-density artwork where available
+PRODUCT_LOCALES += mdpi
+
+# Kernel Modules
+$(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
+
+# SDCard
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+
+# Keychar & Keylayout
+PRODUCT_COPY_FILES +=											\
+    $(LOCAL_PATH)/keychars/atcmd_virtual_kbd.kcm.bin:system/usr/keychars/atcmd_virtual_kbd.kcm.bin	\
+    $(LOCAL_PATH)/keychars/ats_input.kcm.bin:system/usr/keychars/ats_input.kcm.bin			\
+    $(LOCAL_PATH)/keychars/lge_m3s_keypad.kcm.bin:system/usr/keychars/lge_m3s_keypad.kcm.bin		\
+    $(LOCAL_PATH)/keychars/qwerty.kcm.bin:system/usr/keychars/qwerty.kcm.bin				\
+    $(LOCAL_PATH)/keychars/qwerty2.kcm.bin:system/usr/keychars/qwerty2.kcm.bin				\
+    $(LOCAL_PATH)/keylayout/7k_handset.kl:system/usr/keylayout/7k_handset.kl				\
+    $(LOCAL_PATH)/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl					\
+    $(LOCAL_PATH)/keylayout/atcmd_virtual_kbd.kl:system/usr/keylayout/atcmd_virtual_kbd.kl		\
+    $(LOCAL_PATH)/keylayout/ats_input.kl:system/usr/keylayout/ats_input.kl				\
+    $(LOCAL_PATH)/keylayout/gpio-side-keypad.kl:system/usr/keylayout/gpio-side-keypad.kl		\
+    $(LOCAL_PATH)/keylayout/lge_m3s_keypad.kl:system/usr/keylayout/lge_m3s_keypad.kl			\
+    $(LOCAL_PATH)/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl					\
+    $(LOCAL_PATH)/keylayout/touch_mcs8000.kl:system/usr/keylayout/touch_mcs8000.kl
+
+# Common Qualcomm scripts
+PRODUCT_COPY_FILES +=										    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/format_fat32.sh:system/etc/format_fat32.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/format_first.sh:system/etc/format_first.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.bt.sh:system/etc/init.qcom.bt.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.coex.sh:system/etc/init.qcom.coex.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.fm.sh:system/etc/init.qcom.fm.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.ftm_module.sh:system/etc/init.qcom.ftm_module.sh	    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.ftm_module_out.sh:system/etc/init.qcom.ftm_module_out.sh   \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh		    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/init.qcom.wifi.sh:system/etc/init.qcom.wifi.sh			    \
+    $(LOCAL_PATH)/prebuilt/etc/last_kmsg_backup.sh:system/etc/last_kmsg_backup.sh
+
+
+# /data stuff for wifi
+#PRODUCT_COPY_FILES +=												    \
+#    vendor/lge/vm696/proprietary/data/misc/wifi/WCN1314_qcom_cfg.ini:data/misc/wifi/WCN1314_qcom_cfg.ini	    \
+#    vendor/lge/vm696/proprietary/data/misc/wifi/WCN1314_qcom_wlan_nv.bin:data/misc/wifi/WCN1314_qcom_wlan_nv.bin
+
+
+#PRODUCT_PROPERTY_OVERRIDES :=
+
+ADDITIONAL_BUILD_PROPERTIES :=					\
+    ro.com.google.clientidbase=android-lge			\
+    ro.com.google.clientidbase.yt=android-virgin-us		\
+    ro.com.google.clientidbase.am=android-virgin-us		\
+    ro.com.google.clientidbase.gmm=android-lge			\
+    ro.com.google.clientidbase.ms=android-virgin-us
+
+# adb on by default so we can wipe /data and still get logcat and dmesg crap
+ADDITIONAL_BUILD_PROPERTIES :=					\
+    persist.service.adb.enable=1
+
+# Stock setup has dalvik-cache only on /data.  This keeps it that way, but do we really want to do that?
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dexopt-data-only=1
+
+
+
+
+# stuff for boot.img ramdisk
+
+# this list generated by running the following rommand in the prebuilt/root directory
+# for i in $(find -type f | sed s:./::);do echo -e \\t\$\(LOCAL_PATH\)/prebuilt/root/$i:root/$i  \\;done
+PRODUCT_COPY_FILES +=\
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_08.rle:root/chargerimages/battery_charging_08.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_02.rle:root/chargerimages/battery_charging_02.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_05.rle:root/chargerimages/battery_ani_05.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_10.rle:root/chargerimages/battery_charging_10.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_wait_ani_02.rle:root/chargerimages/battery_wait_ani_02.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_notenough.rle:root/chargerimages/battery_notenough.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/black_bg.rle:root/chargerimages/black_bg.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_09.rle:root/chargerimages/battery_charging_09.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_12.rle:root/chargerimages/battery_charging_12.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_06.rle:root/chargerimages/battery_charging_06.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery2.rle:root/chargerimages/battery2.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_07.rle:root/chargerimages/battery_charging_07.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_11.rle:root/chargerimages/battery_charging_11.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_01.rle:root/chargerimages/battery_charging_01.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_bg.rle:root/chargerimages/battery_bg.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_03.rle:root/chargerimages/battery_ani_03.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_04.rle:root/chargerimages/battery_charging_04.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_03.rle:root/chargerimages/battery_charging_03.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_05.rle:root/chargerimages/battery_charging_05.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_04.rle:root/chargerimages/battery_ani_04.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_charging_00.rle:root/chargerimages/battery_charging_00.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
+    $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
+    $(LOCAL_PATH)/prebuilt/root/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/prebuilt/root/sbin/bootlogo:root/sbin/bootlogo \
+    $(LOCAL_PATH)/prebuilt/root/sbin/e2fsck_static:root/sbin/e2fsck_static \
+    $(LOCAL_PATH)/prebuilt/root/sbin/tune2fs_static:root/sbin/tune2fs_static \
+    $(LOCAL_PATH)/prebuilt/root/sbin/lge_fota:root/sbin/lge_fota \
+    $(LOCAL_PATH)/prebuilt/root/sbin/mke2fs_static:root/sbin/mke2fs_static \
+    $(LOCAL_PATH)/prebuilt/root/sbin/resize2fs_static:root/sbin/resize2fs_static \
+    $(LOCAL_PATH)/prebuilt/root/sbin/chargerlogo:root/sbin/chargerlogo \
+    $(LOCAL_PATH)/prebuilt/root/bootimages/LG_opening_logo.rle:root/bootimages/LG_opening_logo.rle \
+    $(LOCAL_PATH)/prebuilt/root/init.lge.rc:root/init.lge.rc \
+    $(LOCAL_PATH)/prebuilt/root/init.qcom.sh:root/init.qcom.sh \
+    $(LOCAL_PATH)/prebuilt/root/ueventd.rc:root/ueventd.rc \
+    $(LOCAL_PATH)/prebuilt/root/init.rc:root/init.rc
+
+
+PRODUCT_PACKAGES +=	\
+    charger		\
+    charger_res_images
+

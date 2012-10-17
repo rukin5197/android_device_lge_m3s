@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Access Location API through RPC -->
+<!-- Note on some platforms, system group is also needed to access RPC -->
+<permission name="com.qualcomm.permission.ACCESS_QCOM_ONCRPC" >
+    <group gid="qcom_oncrpc" />
