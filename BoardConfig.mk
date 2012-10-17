@@ -51,7 +51,7 @@ BOARD_CACHE_FILESYSTEM			:= ext4
 BOARD_CACHE_FILESYSTEM_OPTIONS		:= nosuid,nodev,relatime,barrier=1,data=ordered
 
 BOARD_VOLD_MAX_PARTITIONS		:= 22
-BOARD_VOLD_EMMC_SHARES_DEV_MAJOR	:= true
+#BOARD_VOLD_EMMC_SHARES_DEV_MAJOR	:= true
 
 TARGET_NO_BOOT				:= false
 TARGET_NO_RECOVERY			:= false
@@ -75,8 +75,8 @@ BOARD_HAVE_BLUETOOTH			:= true
 #BOARD_USE_CAF_LIBCAMERA			:= true
 
 # RIL
-BOARD_PROVIDES_LIBRIL			:= true
-#TARGET_PROVIDES_LIBRIL			:= out/target/product/m3s/system/lib/libril.so
+#BOARD_PROVIDES_LIBRIL			:= true
+#TARGET_PROVIDES_LIBRIL			:= device/lge/m3s/prebuilt/lib/libril.so
 
 # QCOM Stuff
 BOARD_USES_QCOM_HARDWARE		:= true

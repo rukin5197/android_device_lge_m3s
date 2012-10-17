@@ -37,23 +37,23 @@ TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us
 
 # try to reproduce the stock prop file.  we can't override the `date` command, so leave the dates alone.
 # we also cant reproduce the user and hostname
-#PRODUCT_BUILD_PROP_OVERRIDES +=									\
-#	TARGET_PRODUCT=m3s_virgin_us								\
-#	PRODUCT_DEVICE=m3s									\
-#	TARGET_BUILD_VARIANT=user								\
-#	BUILD_ID=ZV5.GWK74									\
-#	BUILD_DISPLAY_ID=ZV5.GWK74								\
-#	BUILD_NUMBER=47E5087D									\
-#	TARGET_BUILD_TYPE=user									\
-#	BUILD_VERSION_TAGS=release-keys								\
-#	PRODUCT_NAME=m3s_virgin_us								\
-#	TARGET_BOOTLOADER_BOARD_NAME=lge_m3s							\
-#	PRODUCT_MANUFACTURER=LGE								\
-#	PRODUCT_DEFAULT_LANGUAGE=en								\
-#	PRODUCT_DEFAULT_REGION=US								\
-#	TARGET_BOARD_PLATFORM=msm7k								\
-#	BUILD_FINGERPRINT="lge/m3s_virgin_us/m3s:2.3.7/ZV5.GWK74/47E5087D:user/release-keys"	\
-#	PRIVATE_BUILD_DESC="m3s_virgin_us-user 2.3.7 ZV5.GWK74 47E5087D release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES +=									\
+	TARGET_PRODUCT=m3s_virgin_us								\
+	PRODUCT_DEVICE=m3s									\
+	TARGET_BUILD_VARIANT=user								\
+	BUILD_ID=ZV5.GWK74									\
+	BUILD_DISPLAY_ID=ZV5.GWK74								\
+	BUILD_NUMBER=47E5087D									\
+	TARGET_BUILD_TYPE=user									\
+	BUILD_VERSION_TAGS=release-keys								\
+	PRODUCT_NAME=m3s_virgin_us								\
+	TARGET_BOOTLOADER_BOARD_NAME=lge_m3s							\
+	PRODUCT_MANUFACTURER=LGE								\
+	PRODUCT_DEFAULT_LANGUAGE=en								\
+	PRODUCT_DEFAULT_REGION=US								\
+	TARGET_BOARD_PLATFORM=msm7k								\
+	BUILD_FINGERPRINT="lge/m3s_virgin_us/m3s:2.3.7/ZV5.GWK74/47E5087D:user/release-keys"	\
+	PRIVATE_BUILD_DESC="m3s_virgin_us-user 2.3.7 ZV5.GWK74 47E5087D release-keys"
 
 #PRODUCT_PROPERTY_OVERRIDES +=
 
@@ -73,7 +73,10 @@ PRODUCT_PROPERTY_OVERRIDES +=					\
     dalvik.vm.dexopt-data-only=1
 
 # Enable Torch
-PRODUCT_PACKAGES += Torch
+#PRODUCT_PACKAGES += Torch
+
+# we need to somehow remove rom manager because it does nothing but brick this model of phone
+#PRODUCT_COPY_FILES := $(filter-out "vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk",$(PRODUCT_COPY_FILES))
 
 # Kernel Modules
 $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
@@ -189,9 +192,13 @@ PRODUCT_COPY_FILES +=										    \
     $(LOCAL_PATH)/prebuilt/etc/last_kmsg_backup.sh:system/etc/last_kmsg_backup.sh
 
 # configs
-PRODUCT_COPY_FILES +=								\
-    $(LOCAL_PATH)/prebuilt/etc/gps.conf:system/etc/gps.conf			\
-    $(LOCAL_PATH)/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg
+PRODUCT_COPY_FILES +=											\
+    $(LOCAL_PATH)/prebuilt/etc/gps.conf:system/etc/gps.conf						\
+    $(LOCAL_PATH)/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg					\
+    $(LOCAL_PATH)/prebuilt/etc/wifi/WCN1314_qcom_cfg.ini:system/etc/wifi/WCN1314_qcom_cfg.ini		\
+    $(LOCAL_PATH)/prebuilt/etc/wifi/WCN1314_qcom_wlan_nv.bin:system/etc/wifi/WCN1314_qcom_wlan_nv.bin	\
+    $(LOCAL_PATH)/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+
 
 # firmware
 PRODUCT_COPY_FILES +=														    \
@@ -271,6 +278,22 @@ PRODUCT_COPY_FILES +=\
 #    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so	    \
 #    $(LOCAL_PATH)/prebuilt/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
 
+# libraries the build system doesnt know how to make
+PRODUCT_COPY_FILES +=									    \
+    $(LOCAL_PATH)/prebuilt/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so	    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrDec.so:system/lib/libOmxAmrDec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrRtpDec.so:system/lib/libOmxAmrRtpDec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrwbDec.so:system/lib/libOmxAmrwbDec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so		    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so	    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so	    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so	    \
+    $(LOCAL_PATH)/prebuilt/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
+
 # audio and stuff
 PRODUCT_COPY_FILES +=									    \
     $(LOCAL_PATH)/prebuilt/lib/libaudioalsa.so:system/lib/libaudioalsa.so		    \
@@ -305,6 +328,12 @@ PRODUCT_COPY_FILES +=									    \
     $(LOCAL_PATH)/prebuilt/bin/ATFWD-daemon:system/bin/ATFWD-daemon			    \
     $(LOCAL_PATH)/prebuilt/bin/port-bridge:system/bin/port-bridge			    \
     $(LOCAL_PATH)/prebuilt/bin/rmt_storage:system/bin/rmt_storage
+
+# hell, throw rild in there, too.  maybe itll get the radio stuff working
+# (not tossing libril.so in the /out for linking against because something doesnt happen right)
+PRODUCT_COPY_FILES +=									    \
+    $(LOCAL_PATH)/prebuilt/bin/rild:system/bin/rild					    \
+    $(LOCAL_PATH)/prebuilt/lib/libril.so:system/lib/libril.so
 
 # libraries needed for the ril crap.  copy to /obj for linking against if they need to be
 PRODUCT_COPY_FILES +=										    \
