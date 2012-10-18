@@ -9,7 +9,7 @@ $(call inherit-product, build/target/product/full.mk)
 
 # Inherit some common CM stuff.
 # dont bother building themes until we can actually get it to boot
-$(call inherit-product, vendor/cyanogen/products/common_full_no_themes.mk)
+$(call inherit-product, vendor/cyanogen/products/common_full.mk)
 
 # languages
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
@@ -30,7 +30,7 @@ PRODUCT_MODEL			    := LG-VM696
 
 # Release name and versioning
 PRODUCT_RELEASE_NAME		    := LG Optimus Elite
-PRODUCT_VERSION_DEVICE_SPECIFIC	    :=
+PRODUCT_VERSION_DEVICE_SPECIFIC	    := VM696ZV5
 
 TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us
 
@@ -51,9 +51,11 @@ PRODUCT_BUILD_PROP_OVERRIDES +=									\
 	PRODUCT_MANUFACTURER=LGE								\
 	PRODUCT_DEFAULT_LANGUAGE=en								\
 	PRODUCT_DEFAULT_REGION=US								\
-	TARGET_BOARD_PLATFORM=msm7k								\
 	BUILD_FINGERPRINT="lge/m3s_virgin_us/m3s:2.3.7/ZV5.GWK74/47E5087D:user/release-keys"	\
 	PRIVATE_BUILD_DESC="m3s_virgin_us-user 2.3.7 ZV5.GWK74 47E5087D release-keys"
+
+
+#	TARGET_BOARD_PLATFORM=msm7k								\
 
 #PRODUCT_PROPERTY_OVERRIDES +=
 
@@ -100,12 +102,10 @@ PRODUCT_AAPT_PREF_CONFIG	    := mdpi
 # Packages
 # these are packages that are present in our stock (2.3.7) rom and it looks like the build system knows how to make them
 PRODUCT_PACKAGES +=			\
-    gps.default				\
-    copybit.msm7k			\
     gralloc.default			\
-    gralloc.msm7k			\
-    lights.msm7				\
-    liboverlay				\
+    gralloc.msm7x30			\
+    lights.msm7x30			\
+    overlay.default			\
     libstagefright			\
     libstagefright_amrnb_common		\
     libstagefright_avc_common		\
@@ -122,8 +122,11 @@ PRODUCT_PACKAGES +=			\
     libOmxVenc				\
     libmm-omxcore			\
     libdivxdrmdecrypt			\
-    libhardware_legacy
+    libhardware_legacy			\
+    com.android.future.usb.accessory
 
+PRODUCT_PACKAGES +=			\
+    gps.$(TARGET_BOOTLOADER_BOARD_NAME)
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -176,6 +179,9 @@ PRODUCT_COPY_FILES +=										\
     $(LOCAL_PATH)/prebuilt/usr/idc/touch_mcs8000.idc:system/usr/idc/touch_mcs8000.idc		\
     $(LOCAL_PATH)/prebuilt/usr/idc/gpio-side-keypad.idc:system/usr/idc/gpio-side-keypad.idc
 
+# TODO-
+# maybe push the /etc/sensor calibration files
+
 # Common Qualcomm scripts
 PRODUCT_COPY_FILES +=										    \
     $(LOCAL_PATH)/prebuilt/etc/init.qcom.sdio.sh:system/etc/init.qcom.sdio.sh			    \
@@ -197,7 +203,11 @@ PRODUCT_COPY_FILES +=											\
     $(LOCAL_PATH)/prebuilt/lib/egl/egl.cfg:system/lib/egl/egl.cfg					\
     $(LOCAL_PATH)/prebuilt/etc/wifi/WCN1314_qcom_cfg.ini:system/etc/wifi/WCN1314_qcom_cfg.ini		\
     $(LOCAL_PATH)/prebuilt/etc/wifi/WCN1314_qcom_wlan_nv.bin:system/etc/wifi/WCN1314_qcom_wlan_nv.bin	\
-    $(LOCAL_PATH)/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    $(LOCAL_PATH)/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf		\
+    $(LOCAL_PATH)/prebuilt/etc/OperatorPolicy.xml:system/etc/OperatorPolicy.xml				\
+    $(LOCAL_PATH)/prebuilt/etc/UserPolicy.xml:system/etc/UserPolicy.xml					\
+    $(LOCAL_PATH)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+
 
 
 # firmware
