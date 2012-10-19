@@ -453,6 +453,28 @@ on boot
     chown radio radio /sys/devices/platform/msm_hsusb/gadget/usb_port_enable
     chmod 664 /sys/devices/platform/msm_hsusb/gadget/usb_port_enable
 
+    # set all sysfs files used for cpufreq to be writable by "system" so the built-in scaling menu works
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/scaling_setspeed
+
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/ondemand/ignore_nice_load
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/ondemand/ignore_nice_load
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/ondemand/powersave_bias
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/ondemand/powersave_bias
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/ondemand/sampling_rate
+    chmod 664 /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold
+    chown root system /sys/devices/system/cpu/cpu0/cpufreq/ondemand/up_threshold
+
+
+
+
 on property:persist.service.usbport.enable=0
     write /sys/devices/platform/msm_hsusb/gadget/usb_port_enable "0"
 
