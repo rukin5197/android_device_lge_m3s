@@ -38,34 +38,10 @@ BOARD_FLASH_BLOCK_SIZE			:= 262144
 TARGET_USERIMAGES_USE_EXT4		:= true
 BOARD_HAS_NO_MISC_PARTITION		:= true
 
-BOARD_DATA_DEVICE			:= /dev/block/mmcblk0p13
-BOARD_DATA_FILESYSTEM			:= ext4
-BOARD_DATA_FILESYSTEM_OPTIONS		:= nosuid,nodev,relatime,resuid=1000,barrier=1,data=ordered,noauto_da_alloc
-
-BOARD_SYSTEM_DEVICE			:= /dev/block/mmcblk0p12
-BOARD_SYSTEM_FILESYSTEM			:= ext4
-BOARD_SYSTEM_FILESYSTEM_OPTIONS		:= relatime,barrier=1,data=ordered
-
-BOARD_CACHE_DEVICE			:= /dev/block/mmcblk0p6
-BOARD_CACHE_FILESYSTEM			:= ext4
-BOARD_CACHE_FILESYSTEM_OPTIONS		:= nosuid,nodev,relatime,barrier=1,data=ordered
-
 # vold stuff
 BOARD_VOLD_MAX_PARTITIONS		:= 24
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR	:= true
 #BOARD_USE_USB_MASS_STORAGE_SWITCH	:= true	    # no clue what this does, but we have the file to support it, so lets try it out
-COMMON_GLOBAL_CFLAGS			+= -DPARTITION_DEBUG -DNETLINK_DEBUG
-
-# these are the names that vold gets for internal and external
-#BOARD_SDCARD_DEVICE_PRIMARY		:= /dev/block/vold/179:15
-#BOARD_SDCARD_DEVICE_PRIMARY		:= /dev/block/vold/179:33
-
-# internal FAT = /dev/block/mmcblk0p15
-# microSD = /dev/block/mmcblk1p1
-
-BOARD_SDCARD_DEVICE_PRIMARY		:= /dev/block/mmcblk1p1
-BOARD_SDCARD_DEVICE_SECONDARY		:= /dev/block/mmcblk1
-#BOARD_SDEXT_DEVICE			:= /dev/block/mmcblk1p2
 
 TARGET_NO_BOOT				:= false
 TARGET_NO_RECOVERY			:= false
@@ -93,24 +69,13 @@ BOARD_HAVE_BLUETOOTH			:= true
 #TARGET_PROVIDES_LIBRIL			:= device/lge/m3s/prebuilt/lib/libril.so
 
 # QCOM Stuff
-BOARD_USES_QCOM_HARDWARE		:= true
-BOARD_USES_QCOM_LIBS			:= true
-BOARD_USE_QCOM_PMEM			:= true
-TARGET_USES_OVERLAY			:= false
-TARGET_HAVE_BYPASS			:= false
-TARGET_USES_C2D_COMPOSITION		:= true
-TARGET_USES_GENLOCK			:= false
-TARGET_QCOM_HDMI_OUT			:= false
-TARGET_FORCE_CPU_UPLOAD			:= true
-BOARD_EGL_CFG				:= device/lge/m3s/egl.cfg
-
 USE_OPENGL_RENDERER			:= true	    # used all up in the jni
 BOARD_USES_QCOM_HARDWARE		:= true	    # I don't see this one used for cm7
 BOARD_USES_QCOM_LIBS			:= true	    # this is apparently used for hardware/qcom/media in cm7, but not in cm9?
 TARGET_USES_OVERLAY			:= false    # used for some HDMI stuff in libhwcomposer
 TARGET_HAVE_BYPASS			:= false    # used to decide between 2 or 3 buffers in libsurfaceflinger
 TARGET_USES_C2D_COMPOSITION		:= true	    # used in libcopybit makefile.  our stock one uses cd2
-#TARGET_USES_GENLOCK			:= true	    # kernel should create "/dev/genlock" to use this
+TARGET_USES_GENLOCK			:= false    # kernel should create "/dev/genlock" to use this
 TARGET_QCOM_HDMI_OUT			:= false
 BOARD_EGL_CFG				:= device/lge/m3s/egl.cfg
 
@@ -154,7 +119,6 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE		:= lge_m3s
 # AMSS version to use for GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION	:= 50000
 
-COMMON_GLOBAL_CFLAGS				+= -DBOARD_CHARGING_CMDLINE_NAME='"lge.reboot"' -DBOARD_CHARGING_CMDLINE_VALUE='"pwroff"'
 
 
 

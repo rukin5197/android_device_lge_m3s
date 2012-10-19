@@ -1,3 +1,7 @@
+
+# qualcomm stuff
+import init.qcom.rc
+
 on early-init
     start ueventd
     # matthew.choi@lge.com 111019 LGE_FOTA
@@ -125,16 +129,6 @@ on init
     write /dev/cpuctl/bg_non_interactive/cpu.shares 52
 
 on fs
-    # mount mtd partitions
-    # Mount /system rw first to give the filesystem a chance to save a checkpoint
-    mount yaffs2 mtd@system /system
-    #mount yaffs2 mtd@system /system ro remount
-    mount yaffs2 mtd@userdata /data nosuid nodev
-    mount yaffs2 mtd@persist /persist nosuid nodev
-    mount yaffs2 mtd@cache /cache nosuid nodev
-    mount yaffs2 mtd@persist /persist nosuid nodev
-
-on emmc-fs
     # mount mmc partitions
     wait /dev/block/mmcblk0p12
     chmod 0777 /sbin/resize2fs_static
@@ -305,6 +299,9 @@ on post-fs
     # 20120521, jinw.kim@lge.com make ringtone, alarm property directory, from MS695 [START]
     mkdir /data/audioprop 0777 system system
     # 20120521, jinw.kim@lge.com make ringtone, alarm property directory, from MS695 [END]
+
+    # dirty, filthy hack to get the power-off charging to work
+    exec /system/bin/sh /sbin/charger.sh
 
 on boot
     # basic network init
@@ -564,7 +561,6 @@ service media /system/bin/logwrapper /system/bin/mediaserver
     ioprio rt 4
 
 service bootanim /system/bin/logwrapper /system/bin/bootanimation
-    /system/bin/log [init.rc] bootanim starting
     user graphics
     group graphics
     disabled
@@ -575,7 +571,7 @@ service dbus /system/bin/dbus-daemon --system --nofork
     user bluetooth
     group bluetooth net_bt_admin
 
-service bluetoothd /system/bin/bluetoothd -n
+service bluetoothd /system/bin/logwrapper /system/bin/bluetoothd -n
     socket bluetooth stream 660 bluetooth bluetooth
     socket dbus_bluetooth stream 660 bluetooth bluetooth
     # init.rc does not yet support applying capabilities, so run as root and
@@ -640,5 +636,4 @@ on property:ro.build.type=eng
 
 on property:ro.build.type=userdebug
    chmod 0777 /data/dontpanic
-
 

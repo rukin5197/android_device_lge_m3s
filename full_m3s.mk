@@ -194,8 +194,13 @@ PRODUCT_COPY_FILES +=										\
     $(LOCAL_PATH)/prebuilt/usr/idc/touch_mcs8000.idc:system/usr/idc/touch_mcs8000.idc		\
     $(LOCAL_PATH)/prebuilt/usr/idc/gpio-side-keypad.idc:system/usr/idc/gpio-side-keypad.idc
 
-# TODO-
-# maybe push the /etc/sensor calibration files
+# Sensor calibration files.  These SHOULD already exist since the stock rom would have copied them to /persist
+# which should be untouched by any rom updates and wiping.  But just incase, toss them in
+PRODUCT_COPY_FILES +=												    \
+    $(LOCAL_PATH)/prebuilt/etc/sensors/acdapi/calib.dat:system/etc/sensors/acdapi/calib.dat			    \
+    $(LOCAL_PATH)/prebuilt/etc/sensors/acdapi/param.dat:system/etc/sensors/acdapi/param.dat			    \
+    $(LOCAL_PATH)/prebuilt/etc/sensors/acdapi/sensor_data_init.sh:system/etc/sensors/acdapi/sensor_data_init.sh	    \
+    $(LOCAL_PATH)/prebuilt/etc/sensors/acdapi/sensors.dat:system/etc/sensors/acdapi/sensors.dat
 
 # Common Qualcomm scripts
 PRODUCT_COPY_FILES +=										    \
@@ -272,7 +277,8 @@ PRODUCT_COPY_FILES +=\
     $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
     $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
     $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
-    $(LOCAL_PATH)/prebuilt/root/init.qcom.rc:root/init.lge.rc \
+    $(LOCAL_PATH)/prebuilt/root/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/prebuilt/root/init.target.rc:root/init.target.rc \
     $(LOCAL_PATH)/prebuilt/root/sbin/bootlogo:root/sbin/bootlogo \
     $(LOCAL_PATH)/prebuilt/root/sbin/e2fsck_static:root/sbin/e2fsck_static \
     $(LOCAL_PATH)/prebuilt/root/sbin/tune2fs_static:root/sbin/tune2fs_static \
@@ -283,7 +289,8 @@ PRODUCT_COPY_FILES +=\
     $(LOCAL_PATH)/prebuilt/root/bootimages/LG_opening_logo.rle:root/bootimages/LG_opening_logo.rle \
     $(LOCAL_PATH)/prebuilt/root/init.qcom.sh:root/init.qcom.sh \
     $(LOCAL_PATH)/prebuilt/root/ueventd.rc:root/ueventd.rc \
-    $(LOCAL_PATH)/prebuilt/root/init.rc:root/init.rc
+    $(LOCAL_PATH)/prebuilt/root/init.rc:root/init.rc \
+    $(LOCAL_PATH)/prebuilt/root/sbin/charger.sh:root/sbin/charger.sh
 
 # libraries the build system doesnt know how to make
 #PRODUCT_COPY_FILES +=									    \
@@ -352,9 +359,6 @@ PRODUCT_COPY_FILES +=											    \
     $(LOCAL_PATH)/prebuilt/lib/egl/libGLESv2_adreno200.so:system/lib/egl/libGLESv2_adreno200.so		    \
     $(LOCAL_PATH)/prebuilt/lib/egl/libGLESv1_CM_adreno200.so:system/lib/egl/libGLESv1_CM_adreno200.so	    \
     $(LOCAL_PATH)/prebuilt/lib/egl/libq3dtools_adreno200.so:system/lib/egl/libq3dtools_adreno200.so
-
-# the build system apparently knows how to make this one
-# $(LOCAL_PATH)/prebuilt/lib/egl/libEGL_adreno200.so:system/lib/egl/libEGL_adreno200.so
 
 # binaries the build system doesn't know how to make
 PRODUCT_COPY_FILES +=									    \
