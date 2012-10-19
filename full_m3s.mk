@@ -86,9 +86,13 @@ PRODUCT_PROPERTY_OVERRIDES +=					\
 #PRODUCT_COPY_FILES := $(filter-out "vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk",$(PRODUCT_COPY_FILES))
 
 # The internal FAT is not mounted by vold by default
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.additionalmounts=/mnt/emmc \
-    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
+#PRODUCT_PROPERTY_OVERRIDES +=					\
+#    persist.sys.vold.switchexternal=1				\
+#    ro.additionalmounts=/mnt/sdcard/_ExternalSD			\
+#    ro.vold.switchablepair=/mnt/sdcard,/mnt/sdcard/_ExternalSD
+
+PRODUCT_PROPERTY_OVERRIDES +=					\
+    ro.additionalmounts=/mnt/sdcard/_ExternalSD
 
 # Kernel Modules
 $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
