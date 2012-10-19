@@ -30,8 +30,8 @@ BOARD_KERNEL_PAGESIZE			:= 4096
 # partition info
 BOARD_BOOTIMAGE_PARTITION_SIZE		:= 8388608
 BOARD_RECOVERYIMAGE_PARTITION_SIZE	:= 8388608
-BOARD_SYSTEMIMAGE_PARTITION_SIZE	:= 947912704
-BOARD_USERDATAIMAGE_PARTITION_SIZE	:= 377487360
+BOARD_SYSTEMIMAGE_PARTITION_SIZE	:= 377487360
+BOARD_USERDATAIMAGE_PARTITION_SIZE	:= 947912704
 BOARD_FLASH_BLOCK_SIZE			:= 262144
 
 # userimages use ext4
@@ -50,8 +50,11 @@ BOARD_CACHE_DEVICE			:= /dev/block/mmcblk0p6
 BOARD_CACHE_FILESYSTEM			:= ext4
 BOARD_CACHE_FILESYSTEM_OPTIONS		:= nosuid,nodev,relatime,barrier=1,data=ordered
 
-BOARD_VOLD_MAX_PARTITIONS		:= 22
-#BOARD_VOLD_EMMC_SHARES_DEV_MAJOR	:= true
+# vold stuff
+BOARD_VOLD_MAX_PARTITIONS		:= 24
+BOARD_VOLD_EMMC_SHARES_DEV_MAJOR	:= true
+#BOARD_USE_USB_MASS_STORAGE_SWITCH	:= true	    # no clue what this does, but we have the file to support it, so lets try it out
+COMMON_GLOBAL_CFLAGS			+= -DPARTITION_DEBUG -DNETLINK_DEBUG
 
 # these are the names that vold gets for internal and external
 #BOARD_SDCARD_DEVICE_PRIMARY		:= /dev/block/vold/179:15
@@ -129,20 +132,20 @@ BOARD_USE_QCOM_PMEM			:= true	    # we have a /dev/pmem, so lets use this
 
 
 
-# shameless copy/paste here https://github.com/mozilla-b2g/android-device-m4/blob/90b62c2a4ebfd3ee8b9738da96f5e38ac97009a0/BoardConfig.mk
-BOARD_HAS_ATH_WLAN			:= true
-WPA_SUPPLICANT_VERSION			:= VER_0_6_X
-#BOARD_WPA_SUPPLICANT_DRIVER		:= NL80211
-CONFIG_DRIVER_NL80211			:= y
-WIFI_DRIVER_MODULE_PATH			:= "/system/lib/modules/wlan.ko"
-WIFI_DRIVER_MODULE_NAME			:= "wlan"
-WIFI_SDIO_IF_DRIVER_MODULE_PATH		:= "/system/lib/modules/librasdioif.ko"
-WIFI_SDIO_IF_DRIVER_MODULE_NAME		:= "rasdioif"
 
-WIFI_TEST_INTERFACE			:= "sta"
-WIFI_DRIVER_FW_PATH_STA			:= "sta"
-WIFI_DRIVER_FW_PATH_AP			:= "ap"
-WIFI_DRIVER_FW_PATH_P2P			:= "p2p"
+
+
+
+# taken from http://forum.xda-developers.com/showthread.php?t=1068766&page=11 but changed values for our modules
+# i also tossed in the CAF wifi code for wifi.c and its makefile and wifi is working at least somewhat
+BOARD_WPA_SUPPLICANT_DRIVER		:= WEXT
+WPA_SUPPLICANT_VERSION			:= VER_0_6_X
+BOARD_WLAN_DEVICE			:= libra
+#WIFI_DRIVER_MODULE_PATH			:= "/system/lib/modules/wlan.ko"    # our value is the default one, so no need to set it
+#WIFI_DRIVER_MODULE_NAME			:= "wlan"
+WIFI_SDIO_IF_DRIVER_MODULE_PATH		:= "/system/lib/modules/librasdioif.ko"
+WIFI_SDIO_IF_DRIVER_MODULE_NAME		:= "librasdioif"
+
 
 # GPS HAL from e400.  maybe ours is the same as theirs
 BOARD_USES_QCOM_LIBRPC				:= true

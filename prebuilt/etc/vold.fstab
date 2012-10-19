@@ -25,8 +25,55 @@
 # OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN
 # IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+#######################
+## Regular device mount
+##
+## Format: dev_mount <label> <mount_point> <part> <sysfs_path1...>
+## label        - Label for the volume
+## mount_point  - Where the volume will be mounted
+## part         - Partition # (1 based), or 'auto' for first usable partition.
+## <sysfs_path> - List of sysfs paths to source devices
+######################
+
+# this works, but only the microSD is mounted at /sdcard.  the internal FAT and the _ExternalSD don't do anything
+#dev_mount sdcard /mnt/sdcard auto /devices/platform/msm_sdcc.4/mmc_host /devices/platform/msm_sdcc.2/mmc_host
+
+
 # LGE_CHANGE [2011.08.24] M3S : dev_mount sd card interface
 #dev_mount sdcard /mnt/sdcard auto /devices/platform/msm_sdcc.4/mmc_host /devices/platform/msm_sdcc.2/mmc_host
-dev_mount sdcard /mnt/sdcard auto /devices/platform/msm_sdcc.2/mmc_host
-dev_mount extsdcard /mnt/sdcard/_ExternalSD auto /devices/platform/msm_sdcc.4/mmc_host
+#dev_mount extsdcard /mnt/sdcard/_ExternalSD auto /devices/platform/msm_sdcc.4/mmc_host /devices/platform/msm_sdcc.2/mmc_host
 
+#dev_mount sdcard /mnt/sdcard 16 /devices/platform/msm_sdcc.4/mmc_host /devices/platform/msm_sdcc.2/mmc_host
+#dev_mount sdcard /mnt/sdcard auto /devices/platform/msm_sdcc.2/mmc_host/mmc0
+#dev_mount extsdcard /mnt/sdcard/_ExternalSD auto /devices/platform/msm_sdcc.4/mmc_host/mmc2
+
+
+#dev_mount   sdcard  /mnt/sdcard	auto	SDCARD=/devices/platform/msm_sdcc.2/mmc_host
+#dev_mount   sdcard  /mnt/sdcard	auto	/dev/block/vold/179:15
+#dev_mount   extsdcard	/mnt/sdcard/_ExternalSD	auto	/devices/platform/msm_sdcc.4/mmc_host
+
+
+dev_mount emmc /mnt/sdcard 15 /devices/platform/msm_sdcc.2/mmc_host/mmc0
+dev_mount sdcard /mnt/sdcard/_ExternalSD 1 /devices/platform/msm_sdcc.4/mmc_host/mmc2
+
+
+
+# stock values....
+# I/Vold    (  123): /dev/block/vold/179:15 being considered for volume sdcard
+# I/Vold    (  123): /dev/block/vold/179:33 being considered for volume extsdcard
+
+#D/NetlinkEvent(  123): NL param 'DEVPATH=/devices/platform/msm_sdcc.2/mmc_host/mmc0/mmc0:0001/block/mmcblk0/mmcblk0p15'
+#D/NetlinkEvent(  123): NL param 'MAJOR=179'
+#D/NetlinkEvent(  123): NL param 'MINOR=15'
+#D/NetlinkEvent(  123): NL param 'DEVNAME=mmcblk0p15'
+#D/NetlinkEvent(  123): NL param 'DEVTYPE=partition'
+#D/NetlinkEvent(  123): NL param 'PARTN=15'
+
+
+#D/NetlinkEvent(  123): NL param 'DEVPATH=/devices/platform/msm_sdcc.4/mmc_host/mmc2/mmc2:e624/block/mmcblk1/mmcblk1p1'
+#D/NetlinkEvent(  123): NL param 'MAJOR=179'
+#D/NetlinkEvent(  123): NL param 'MINOR=33'
+#D/NetlinkEvent(  123): NL param 'DEVNAME=mmcblk1p1'
+#D/NetlinkEvent(  123): NL param 'DEVTYPE=partition'
+#D/NetlinkEvent(  123): NL param 'PARTN=1'
+#keep this line.

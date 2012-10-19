@@ -31,6 +31,7 @@ PRODUCT_MODEL			    := LG-VM696
 # Release name and versioning
 PRODUCT_RELEASE_NAME		    := LG Optimus Elite
 PRODUCT_VERSION_DEVICE_SPECIFIC	    := VM696ZV5
+-include vendor/cyanogen/products/common_versions.mk
 
 TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us
 
@@ -74,11 +75,20 @@ ADDITIONAL_BUILD_PROPERTIES +=					\
 PRODUCT_PROPERTY_OVERRIDES +=					\
     dalvik.vm.dexopt-data-only=1
 
+# adb runs as root for easier debugging
+PRODUCT_PROPERTY_OVERRIDES +=					\
+    service.adb.root=1
+
 # Enable Torch
 #PRODUCT_PACKAGES += Torch
 
 # we need to somehow remove rom manager because it does nothing but brick this model of phone
 #PRODUCT_COPY_FILES := $(filter-out "vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk",$(PRODUCT_COPY_FILES))
+
+# The internal FAT is not mounted by vold by default
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.additionalmounts=/mnt/emmc \
+    ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 # Kernel Modules
 $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
@@ -123,7 +133,8 @@ PRODUCT_PACKAGES +=			\
     libmm-omxcore			\
     libdivxdrmdecrypt			\
     libhardware_legacy			\
-    com.android.future.usb.accessory
+    com.android.future.usb.accessory	\
+    libmm-omxcore
 
 PRODUCT_PACKAGES +=			\
     gps.$(TARGET_BOOTLOADER_BOARD_NAME)
@@ -153,7 +164,7 @@ PRODUCT_LOCALES += mdpi
 
 # SDCard
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+    $(LOCAL_PATH)/prebuilt/etc/vold.fstab:system/etc/vold.fstab
 
 # Keychar & Keylayout
 PRODUCT_COPY_FILES +=											\
@@ -206,7 +217,8 @@ PRODUCT_COPY_FILES +=											\
     $(LOCAL_PATH)/prebuilt/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf		\
     $(LOCAL_PATH)/prebuilt/etc/OperatorPolicy.xml:system/etc/OperatorPolicy.xml				\
     $(LOCAL_PATH)/prebuilt/etc/UserPolicy.xml:system/etc/UserPolicy.xml					\
-    $(LOCAL_PATH)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml
+    $(LOCAL_PATH)/prebuilt/etc/apns-conf.xml:system/etc/apns-conf.xml					\
+    $(LOCAL_PATH)/prebuilt/etc/01_qcomm_omx.cfg:system/etc/01_qcomm_omx.cfg
 
 
 
@@ -304,6 +316,16 @@ PRODUCT_COPY_FILES +=									    \
     $(LOCAL_PATH)/prebuilt/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so	    \
     $(LOCAL_PATH)/prebuilt/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
 
+# more omx stuff.  i dont know if we really need this.  but here it is
+#PRODUCT_COPY_FILES +=											    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_aacdec_sharedlibrary.so:system/lib/libomx_aacdec_sharedlibrary.so	    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_amrdec_sharedlibrary.so:system/lib/libomx_amrdec_sharedlibrary.so	    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_amrenc_sharedlibrary.so:system/lib/libomx_amrenc_sharedlibrary.so	    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_avcdec_sharedlibrary.so:system/lib/libomx_avcdec_sharedlibrary.so	    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_m4vdec_sharedlibrary.so:system/lib/libomx_m4vdec_sharedlibrary.so	    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_mp3dec_sharedlibrary.so:system/lib/libomx_mp3dec_sharedlibrary.so	    \
+#    $(LOCAL_PATH)/prebuilt/lib/libomx_sharedlibrary.so:system/lib/libomx_sharedlibrary.so
+
 # audio and stuff
 PRODUCT_COPY_FILES +=									    \
     $(LOCAL_PATH)/prebuilt/lib/libaudioalsa.so:system/lib/libaudioalsa.so		    \
@@ -315,6 +337,7 @@ PRODUCT_COPY_FILES +=									    \
 #    $(LOCAL_PATH)/prebuilt/lib/libhardware_legacy.so:obj/lib/libhardware_legacy.so	    \
 #    $(LOCAL_PATH)/prebuilt/lib/libwpa_client.so:system/lib/libwpa_client.so		    \
 #    $(LOCAL_PATH)/prebuilt/lib/libwpa_client.so:obj/lib/libwpa_client.so
+#/system/lib/libwfcu.so
 
 
 # egl stuff
