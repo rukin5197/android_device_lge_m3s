@@ -41,7 +41,8 @@ BOARD_HAS_NO_MISC_PARTITION		:= true
 # vold stuff
 BOARD_VOLD_MAX_PARTITIONS		:= 24
 BOARD_VOLD_EMMC_SHARES_DEV_MAJOR	:= true
-#BOARD_USE_USB_MASS_STORAGE_SWITCH	:= true	    # no clue what this does, but we have the file to support it, so lets try it out
+# no clue what this does, but we have the file to support it, so lets try it out
+BOARD_USE_USB_MASS_STORAGE_SWITCH	:= true
 
 TARGET_NO_BOOT				:= false
 TARGET_NO_RECOVERY			:= false
@@ -49,6 +50,8 @@ TARGET_NO_RECOVERY			:= false
 # Recovery
 TARGET_PREBUILT_KERNEL			:= device/lge/m3s/kernel
 TARGET_PREBUILT_RECOVERY_KERNEL		:= device/lge/m3s/recovery_kernel
+#TARGET_KERNEL_CONFIG			:= lge_m3s-perf_defconfig
+#TARGET_KERNEL_SOURCE			:= kernel/lge/vm696-pernel
 TARGET_RECOVERY_INITRC			:= device/lge/m3s/recovery/init.rc
 BOARD_CUSTOM_GRAPHICS			:= ../../../device/lge/m3s/recovery/graphics.c
 #BOARD_CUSTOM_RECOVERY_KEYMAPPING
@@ -69,19 +72,28 @@ BOARD_HAVE_BLUETOOTH			:= true
 #TARGET_PROVIDES_LIBRIL			:= device/lge/m3s/prebuilt/lib/libril.so
 
 # QCOM Stuff
-USE_OPENGL_RENDERER			:= true	    # used all up in the jni
-BOARD_USES_QCOM_HARDWARE		:= true	    # I don't see this one used for cm7
-BOARD_USES_QCOM_LIBS			:= true	    # this is apparently used for hardware/qcom/media in cm7, but not in cm9?
-TARGET_USES_OVERLAY			:= false    # used for some HDMI stuff in libhwcomposer
-TARGET_HAVE_BYPASS			:= false    # used to decide between 2 or 3 buffers in libsurfaceflinger
-TARGET_USES_C2D_COMPOSITION		:= true	    # used in libcopybit makefile.  our stock one uses cd2
-TARGET_USES_GENLOCK			:= false    # kernel should create "/dev/genlock" to use this
+
+# used all up in the jni
+USE_OPENGL_RENDERER			:= true
+# I don't see this one used for cm7
+BOARD_USES_QCOM_HARDWARE		:= true
+# this is apparently used for hardware/qcom/media in cm7, but not in cm9?
+BOARD_USES_QCOM_LIBS			:= true
+# used for some HDMI stuff in libhwcomposer
+TARGET_USES_OVERLAY			:= false
+# used to decide between 2 or 3 buffers in libsurfaceflinger
+TARGET_HAVE_BYPASS			:= false
+# used in libcopybit makefile.  our stock one uses cd2
+TARGET_USES_C2D_COMPOSITION		:= true
+# kernel should create "/dev/genlock" to use this
+TARGET_USES_GENLOCK			:= false
+
 TARGET_QCOM_HDMI_OUT			:= false
 BOARD_EGL_CFG				:= device/lge/m3s/egl.cfg
 
 # it looks like cm7 only uses these two when building non-msm7x30 stuff?
 TARGET_GRALLOC_USES_ASHMEM		:= true
-BOARD_USE_QCOM_PMEM			:= true	    # we have a /dev/pmem, so lets use this
+BOARD_USE_QCOM_PMEM			:= true
 
 # lge e400 has the same wifi setup as us, so lets try their config
 #BOARD_WLAN_DEVICE			:= qcwcn
@@ -106,7 +118,8 @@ BOARD_USE_QCOM_PMEM			:= true	    # we have a /dev/pmem, so lets use this
 BOARD_WPA_SUPPLICANT_DRIVER		:= WEXT
 WPA_SUPPLICANT_VERSION			:= VER_0_6_X
 BOARD_WLAN_DEVICE			:= libra
-#WIFI_DRIVER_MODULE_PATH			:= "/system/lib/modules/wlan.ko"    # our value is the default one, so no need to set it
+# our value is the default one, so no need to set it
+#WIFI_DRIVER_MODULE_PATH			:= "/system/lib/modules/wlan.ko"
 #WIFI_DRIVER_MODULE_NAME			:= "wlan"
 WIFI_SDIO_IF_DRIVER_MODULE_PATH		:= "/system/lib/modules/librasdioif.ko"
 WIFI_SDIO_IF_DRIVER_MODULE_NAME		:= "librasdioif"
@@ -118,6 +131,10 @@ BOARD_USES_QCOM_GPS				:= true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE		:= lge_m3s
 # AMSS version to use for GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION	:= 50000
+
+
+# modified version of the ota-zipper-upper
+TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT	:= device/lge/m3s/tools/ota_from_target_files
 
 
 

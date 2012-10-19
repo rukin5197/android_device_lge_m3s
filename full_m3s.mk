@@ -67,6 +67,19 @@ ADDITIONAL_BUILD_PROPERTIES +=					\
     ro.com.google.clientidbase.gmm=android-lge			\
     ro.com.google.clientidbase.ms=android-virgin-us
 
+# not present in our stock setup, but added to try and get cm7 to use cdma mode
+ADDITIONAL_BUILD_PROPERTIES +=					\
+    ro.telephony.default_network=4
+
+# HTC desire is an officially supported cm7 CMDA device.  Lets try using their haxx and see what happens
+# Default network type
+# 0 => WCDMA Preferred.
+PRODUCT_PROPERTY_OVERRIDES +=								    \
+    ro.telephony.default_network=4							    \
+    ro.com.google.locationfeatures=1							    \
+    ro.cdma.homesystem=128,64								    \
+    ro.cdma.data_retry_config=default_randomization=960000,960000,960000,960000,960000
+
 # adb on by default so we can wipe /data and still get logcat and dmesg crap
 ADDITIONAL_BUILD_PROPERTIES +=					\
     persist.service.adb.enable=1
@@ -98,7 +111,6 @@ PRODUCT_PROPERTY_OVERRIDES +=					\
 $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/$(PRODUCT_DEVICE)/overlay
-
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/lge/$(PRODUCT_DEVICE)/kernel
@@ -408,6 +420,10 @@ PRODUCT_COPY_FILES +=										    \
     $(LOCAL_PATH)/prebuilt/lib/libqueue.so:obj/lib/libqueue.so					    \
     $(LOCAL_PATH)/prebuilt/lib/libnv.so:system/lib/libnv.so					    \
     $(LOCAL_PATH)/prebuilt/lib/libnv.so:obj/lib/libnv.so
+
+# library needed to keep OMX from crashing over and over
+PRODUCT_COPY_FILES +=										    \
+    $(LOCAL_PATH)/prebuilt/lib/libqcomm_omx.so:system/lib/libqcomm_omx.so
 
 # required by sensors.default.so
 PRODUCT_COPY_FILES +=										    \
