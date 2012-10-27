@@ -248,6 +248,9 @@ def BuildBootableImage(sourcedir):
     cmd.extend(["--ramdisk", ramdisk_img.name,
                 "--output", img.name])
 
+    cmd.append("--ramdiskaddr")
+    cmd.append("1300000")
+
   p = Run(cmd, stdout=subprocess.PIPE)
   p.communicate()
   assert p.returncode == 0, "mkbootimg of %s image failed" % (

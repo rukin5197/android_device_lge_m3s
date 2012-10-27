@@ -54,7 +54,6 @@ TARGET_PREBUILT_RECOVERY_KERNEL		:= device/lge/m3s/recovery_kernel
 #TARGET_KERNEL_SOURCE			:= kernel/lge/vm696-pernel
 TARGET_RECOVERY_INITRC			:= device/lge/m3s/recovery/init.rc
 BOARD_CUSTOM_GRAPHICS			:= ../../../device/lge/m3s/recovery/graphics.c
-#BOARD_CUSTOM_RECOVERY_KEYMAPPING
 
 
 # Audio, Bluetooth, camera
@@ -62,10 +61,10 @@ BOARD_CUSTOM_GRAPHICS			:= ../../../device/lge/m3s/recovery/graphics.c
 USE_CAMERA_STUB				:= true
 #TARGET_PROVIDES_LIBAUDIO		:= true
 #BOARD_USES_AUDIO_LEGACY			:= false
-#BOARD_COMBO_DEVICE_SUPPORTED		:= true
 BOARD_HAVE_BLUETOOTH			:= true
-#BOARD_HAVE_BLUETOOTH_BCM		:= true
-#BOARD_USE_CAF_LIBCAMERA			:= true
+BOARD_HAVE_BLUETOOTH_BCM		:= true
+BOARD_USE_CAF_LIBCAMERA			:= true
+BOARD_CAMERA_USE_GETBUFFERINFO		:= true
 
 # RIL
 #BOARD_PROVIDES_LIBRIL			:= true
@@ -95,34 +94,29 @@ BOARD_EGL_CFG				:= device/lge/m3s/egl.cfg
 TARGET_GRALLOC_USES_ASHMEM		:= true
 BOARD_USE_QCOM_PMEM			:= true
 
-# lge e400 has the same wifi setup as us, so lets try their config
-#BOARD_WLAN_DEVICE			:= qcwcn
-#WIFI_EXT_MODULE_PATH			:= /system/lib/modules/librasdioif.ko
-#WIFI_DRIVER_MODULE_PATH			:= /system/lib/modules/wlan.ko
-#WIFI_EXT_MODULE_NAME			:= librasdioif
-#WIFI_DRIVER_MODULE_NAME			:= wlan
-#BOARD_WPA_SUPPLICANT_PRIVATE_LIB	:= lib_driver_cmd_wext
-#BOARD_WPA_SUPPLICANT_DRIVER		:= WEXT
-#WPA_SUPPLICANT_VERSION			:= VER_0_6_X
-#BOARD_WEXT_NO_COMBO_SCAN		:= true
+BOARD_USES_QCOM_LIBRPC			:= true
 
 
 
 
 
 
-
-
-# taken from http://forum.xda-developers.com/showthread.php?t=1068766&page=11 but changed values for our modules
-# i also tossed in the CAF wifi code for wifi.c and its makefile and wifi is working at least somewhat
+# wifi stuff
 BOARD_WPA_SUPPLICANT_DRIVER		:= WEXT
+# stock wpa_supplicant is version 0.8, but cm7 only has 0.5 and 0.6
 WPA_SUPPLICANT_VERSION			:= VER_0_6_X
-BOARD_WLAN_DEVICE			:= libra
-# our value is the default one, so no need to set it
-#WIFI_DRIVER_MODULE_PATH			:= "/system/lib/modules/wlan.ko"
-#WIFI_DRIVER_MODULE_NAME			:= "wlan"
-WIFI_SDIO_IF_DRIVER_MODULE_PATH		:= "/system/lib/modules/librasdioif.ko"
-WIFI_SDIO_IF_DRIVER_MODULE_NAME		:= "librasdioif"
+BOARD_WLAN_DEVICE			:= wlan0
+# qualcomm's wifi.c uses these names.  we dont need them if we're using the cm7 wifi.c
+#WIFI_SDIO_IF_DRIVER_MODULE_PATH		:= "/system/lib/modules/librasdioif.ko"
+#WIFI_SDIO_IF_DRIVER_MODULE_NAME		:= "librasdioif"
+
+# module paths
+WIFI_DRIVER_MODULE_PATH			:= "/system/lib/modules/wlan.ko"
+WIFI_EXT_MODULE_PATH			:= /system/lib/modules/librasdioif.ko
+# module names
+WIFI_DRIVER_MODULE_NAME			:= "wlan"
+WIFI_EXT_MODULE_NAME			:= "librasdioif"
+
 
 
 # GPS HAL from e400.  maybe ours is the same as theirs
@@ -131,7 +125,6 @@ BOARD_USES_QCOM_GPS				:= true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE		:= lge_m3s
 # AMSS version to use for GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION	:= 50000
-
 
 # modified version of the ota-zipper-upper
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT	:= device/lge/m3s/tools/ota_from_target_files

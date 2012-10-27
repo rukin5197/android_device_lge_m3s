@@ -301,7 +301,7 @@ on post-fs
     # 20120521, jinw.kim@lge.com make ringtone, alarm property directory, from MS695 [END]
 
     # dirty, filthy hack to get the power-off charging to work
-    #exec /system/bin/sh /sbin/charger.sh
+    exec /sbin/checkchargerMode
 
 on boot
     # basic network init

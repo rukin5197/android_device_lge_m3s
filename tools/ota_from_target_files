@@ -173,31 +173,31 @@ class Item:
     i = cls.ITEMS.get("system/etc/install-recovery.sh", None)
     if i: i.uid, i.gid, i.mode = 0, 0, 0544
 
-    # HAXX - make the sh scripts in etc match our stock ones
+    # HAXX - these are all sh scripts.  make them executable
     i = cls.ITEMS.get("system/etc/format_fat32.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/format_first.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0777
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.goldfish.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0550
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.bt.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.coex.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.fm.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.ftm_module.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0777
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.ftm_module_out.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0777
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.post_boot.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.sdio.sh", None)
     if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/init.qcom.wifi.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
     i = cls.ITEMS.get("system/etc/last_kmsg_backup.sh", None)
-    if i: i.uid, i.gid, i.mode = 0, 0, 0644
+    if i: i.uid, i.gid, i.mode = 0, 0, 0755
 
   def CountChildMetadata(self):
     """Count up the (uid, gid, mode) tuples for all children and
@@ -413,7 +413,6 @@ def WriteFullOTAPackage(input_zip, output_zip):
 
   script.FormatPartition("/system")
   script.Mount("/system")
-  script.UnpackPackageDir("recovery", "/system")
   script.UnpackPackageDir("system", "/system")
 
   symlinks = CopySystemFiles(input_zip, output_zip)
@@ -435,6 +434,10 @@ def WriteFullOTAPackage(input_zip, output_zip):
 
   script.ShowProgress(0.2, 10)
   script.WriteRawImage("/boot", "boot.img")
+
+  script.FormatPartition("/data")
+  script.Mount("/data")
+  script.UnpackPackageDir("data", "/data")
 
   script.ShowProgress(0.1, 0)
   device_specific.FullOTA_InstallEnd()

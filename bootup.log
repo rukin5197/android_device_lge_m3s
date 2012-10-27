@@ -1,0 +1,2422 @@
+--------- beginning of /dev/log/main
+I/DEBUG   (  123): debuggerd: Oct 26 2012 15:17:21
+--------- beginning of /dev/log/system
+I/Vold    (  143): Vold 2.1 (the revenge) firing up
+D/Vold    (  143): Volume emmc state changing -1 (Initializing) -> 0 (No-Media)
+D/Vold    (  143): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+I/Netd    (  138): Netd 1.0 starting
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): modem is not present in configuration
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/Vold    (  143): Volume emmc state changing 0 (No-Media) -> 2 (Pending)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/Vold    (  143): Volume emmc state changing 2 (Pending) -> 1 (Idle-Unmounted)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+W/Vold    (  143): Duplicate state (1)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/Vold    (  143): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+D/Vold    (  143): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+I/DEBUG   (  123): debuggerd committing suicide to free the zombie!
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+W/Vold    (  143): Ignoring unknown switch 'usb_connected'
+W/Vold    (  143): Ignoring unknown switch 'usb_configuration'
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/DMM     (  204): DMM Disabled. movable_start_bytes not set: 0 
+W/Vold    (  143): Ignoring unknown switch 'usb_connected'
+I/DMM     (  206): Self-Refresh-Only Disabled. low_power_memory_start_bytes not set:0 
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+W/Vold    (  143): Ignoring unknown switch 'MSM72K_UDC'
+W/Vold    (  143): Ignoring unknown switch 'MSM72K_UDC'
+W/Vold    (  143): Ignoring unknown switch 'usb_configuration'
+D/AndroidRuntime(  140): 
+D/AndroidRuntime(  140): >>>>>> AndroidRuntime START com.android.internal.os.ZygoteInit <<<<<<
+I/AndroidRuntime(  140): Heap size: -Xmx64m
+D/AndroidRuntime(  140): CheckJNI is OFF
+D/dalvikvm(  140): creating instr width table
+I/        (  141): ServiceManager: 0xad50
+D/AudioHardwareMSM7X30(  141): Could not open libhtc_acoustic.so
+D/AudioHardwareMSM7X30(  141): msm_mixer_open: Opening the device
+D/AudioHardwareMSM7X30(  141): msm_mixer_count:mixer_cnt = 33
+V/AudioHardwareMSM7X30(  141): got device_count 21
+I/AudioHardwareMSM7X30(  141): ******* name[0] = [handset_voice_rx] *********
+I/AudioHardwareMSM7X30(  141): index = 0
+I/AudioHardwareMSM7X30(  141): Found device: handset_voice_rx:index = 0, dev_id: 0
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 5 for device 0
+I/AudioHardwareMSM7X30(  141): ******* name[1] = [headset_stereo_voice_rx] *********
+I/AudioHardwareMSM7X30(  141): index = 2
+I/AudioHardwareMSM7X30(  141): Found device: headset_stereo_voice_rx:index = 2, dev_id: 1
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 5 for device 1
+I/AudioHardwareMSM7X30(  141): ******* name[2] = [speaker_stereo_voice_rx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[3] = [tty_headset_mono_rx] *********
+I/AudioHardwareMSM7X30(  141): index = 10
+I/AudioHardwareMSM7X30(  141): Found device: tty_headset_mono_rx:index = 10, dev_id: 3
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 37 for device 3
+I/AudioHardwareMSM7X30(  141): ******* name[4] = [bt_sco_voice_rx] *********
+I/AudioHardwareMSM7X30(  141): index = 17
+I/AudioHardwareMSM7X30(  141): Found device: bt_sco_voice_rx:index = 17, dev_id: 4
+I/AudioHardwareMSM7X30(  141): class ID = 1,capablity = 5 for device 4
+I/AudioHardwareMSM7X30(  141): ******* name[5] = [handset_audio_rx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[6] = [headset_stereo_audio_rx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[7] = [speaker_stereo_audio_rx] *********
+I/AudioHardwareMSM7X30(  141): index = 6
+I/AudioHardwareMSM7X30(  141): Found device: speaker_stereo_audio_rx:index = 6, dev_id: 7
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 5 for device 7
+I/AudioHardwareMSM7X30(  141): ******* name[8] = [headset_speaker_stereo_rx] *********
+I/AudioHardwareMSM7X30(  141): index = 12
+I/AudioHardwareMSM7X30(  141): Found device: headset_speaker_stereo_rx:index = 12, dev_id: 8
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 5 for device 8
+I/AudioHardwareMSM7X30(  141): ******* name[9] = [bt_sco_audio_rx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[10] = [a2dp_rx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[11] = [handset_voice_tx] *********
+I/AudioHardwareMSM7X30(  141): index = 1
+I/AudioHardwareMSM7X30(  141): Found device: handset_voice_tx:index = 1, dev_id: 11
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 6 for device 11
+I/AudioHardwareMSM7X30(  141): ******* name[12] = [headset_voice_tx] *********
+I/AudioHardwareMSM7X30(  141): index = 4
+I/AudioHardwareMSM7X30(  141): Found device: headset_voice_tx:index = 4, dev_id: 12
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 6 for device 12
+I/AudioHardwareMSM7X30(  141): ******* name[13] = [speaker_voice_tx] *********
+I/AudioHardwareMSM7X30(  141): index = 11
+I/AudioHardwareMSM7X30(  141): Found device: speaker_voice_tx:index = 11, dev_id: 13
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 6 for device 13
+I/AudioHardwareMSM7X30(  141): ******* name[14] = [tty_tx] *********
+I/AudioHardwareMSM7X30(  141): index = 9
+I/AudioHardwareMSM7X30(  141): Found device: tty_tx:index = 9, dev_id: 14
+I/AudioHardwareMSM7X30(  141): class ID = 0,capablity = 38 for device 14
+I/mediaserver(  126): mixer_cnt =33
+I/AudioHardwareMSM7X30(  141): ******* name[15] = [bt_sco_tx] *********
+I/AudioHardwareMSM7X30(  141): index = 18
+I/AudioHardwareMSM7X30(  141): Found device: bt_sco_tx:index = 18, dev_id: 15
+I/AudioHardwareMSM7X30(  141): class ID = 1,capablity = 6 for device 15
+I/AudioHardwareMSM7X30(  141): ******* name[16] = [mic1_rec_tx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[17] = [cam_rec_tx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[18] = [voice_rec_tx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[19] = [handset_loopback_tx] *********
+I/AudioHardwareMSM7X30(  141): ******* name[20] = [headset_loopback_tx] *********
+D/AudioHardwareInterface(  141): setMode(NORMAL)
+I/AudioHardwareMSM7X30(  141): Set master volume to 7.
+V/AudioHardwareMSM7X30(  141): set_volume_rpc(0, 0, 7)
+V/AudioHardwareMSM7X30(  141): set_volume_rpc(1, 0, 7)
+V/AudioHardwareMSM7X30(  141): set_volume_rpc(3, 0, 7)
+V/AudioHardwareMSM7X30(  141): set_volume_rpc(2, 0, 7)
+I/CameraService(  141): CameraService started (pid=141)
+D/AudioHardwareMSM7X30(  141): AudioHardware::openOutputStream
+D/AudioFlinger(  141): setParameters(): io 1, keyvalue routing=2, tid 210, calling tid 141
+I/AudioFlinger(  141): AudioFlinger's thread 0xf010 ready to run
+V/AudioHardwareMSM7X30(  141): AudioStreamOutMSM72xx::setParameters() routing=2
+V/AudioHardwareMSM7X30(  141): set output routing 0x2
+D/AudioHardwareMSM7X30(  141): doRouting()
+I/AudioHardwareMSM7X30(  141): Routing audio to Speakerphone
+V/AudioHardwareMSM7X30(  141): doAudioRouteOrMute() device 1, mMode 0, mMicMute 1
+V/AudioHardwareMSM7X30(  141): do_route_audio_rpc(1, 1, 1)
+V/AudioHardwareMSM7X30(  141): In SPEAKER
+D/AudioHardwareMSM7X30(  141): new_rx = 7
+D/AudioHardwareMSM7X30(  141): new_tx = 13
+D/AudioHardwareMSM7X30(  141): updateDeviceInfo: E rx_device 6 and tx_device 11
+D/AudioHardwareMSM7X30(  141): No active voicecall/playback, disabling cur_rx 65535
+D/AudioHardwareMSM7X30(  141): No active voicecall/recording, disabling cur_tx 65535
+D/AudioHardwareMSM7X30(  141): updateDeviceInfo: X cur_rx 6 cur_tx 11
+D/AudioHardwareMSM7X30(  141): setVoiceVolume(1.000000)
+I/AudioHardwareMSM7X30(  141): Setting in-call volume to 100 (available range is 0 to 100)
+E/AudioHardwareMSM7X30(  141): msm_set_voice_rx_vol(100) failed errno = 1
+D/AudioHardwareMSM7X30(  141): AudioStreamOutMSM72xx::standby()
+I/mediaserver(  126): msm_mixer_elem_write failed.
+D/dalvikvm(  140): DexOpt: --- BEGIN 'core.jar' (bootstrap=1) ---
+D/dalvikvm(  213): creating instr width table
+D/dalvikvm(  213): Ignoring duplicate verify attempt on Ljava/lang/Object;
+D/dalvikvm(  213): Ignoring duplicate verify attempt on Ljava/lang/Class;
+D/dalvikvm(  213): DexOpt: load 132ms, verify+opt 1211ms
+D/dalvikvm(  140): DexOpt: --- END 'core.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/core.jar': unzip in 171ms, rewrite 2897ms
+D/dalvikvm(  140): DexOpt: --- BEGIN 'bouncycastle.jar' (bootstrap=1) ---
+D/dalvikvm(  216): creating instr width table
+D/dalvikvm(  216): DexOpt: load 15ms, verify+opt 229ms
+D/dalvikvm(  140): DexOpt: --- END 'bouncycastle.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/bouncycastle.jar': unzip in 24ms, rewrite 641ms
+D/dalvikvm(  140): DexOpt: --- BEGIN 'ext.jar' (bootstrap=1) ---
+D/dalvikvm(  217): creating instr width table
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/dalvikvm(  217): DexOpt: load 46ms, verify+opt 435ms
+D/dalvikvm(  140): DexOpt: --- END 'ext.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/ext.jar': unzip in 40ms, rewrite 976ms
+I/DEBUG   (  223): debuggerd: Oct 26 2012 15:17:21
+D/dalvikvm(  140): DexOpt: --- BEGIN 'framework.jar' (bootstrap=1) ---
+D/dalvikvm(  229): creating instr width table
+D/dalvikvm(  229): Note: class Landroid/opengl/GLWrapperBase; has 211 unimplemented (abstract) methods
+D/dalvikvm(  229): DexOpt: load 316ms, verify+opt 2329ms
+D/dalvikvm(  140): DexOpt: --- END 'framework.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/framework.jar': unzip in 717ms, rewrite 4450ms
+D/dalvikvm(  140): DexOpt: --- BEGIN 'android.policy.jar' (bootstrap=1) ---
+D/dalvikvm(  232): creating instr width table
+D/dalvikvm(  232): DexOpt: load 24ms, verify+opt 137ms
+D/dalvikvm(  140): DexOpt: --- END 'android.policy.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/android.policy.jar': unzip in 11ms, rewrite 234ms
+D/dalvikvm(  140): DexOpt: --- BEGIN 'services.jar' (bootstrap=1) ---
+D/dalvikvm(  233): creating instr width table
+D/dalvikvm(  233): DexOpt: load 39ms, verify+opt 735ms
+D/dalvikvm(  140): DexOpt: --- END 'services.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/services.jar': unzip in 52ms, rewrite 1304ms
+D/dalvikvm(  140): DexOpt: --- BEGIN 'core-junit.jar' (bootstrap=1) ---
+D/dalvikvm(  234): creating instr width table
+D/dalvikvm(  234): DexOpt: load 1ms, verify+opt 9ms
+D/dalvikvm(  140): DexOpt: --- END 'core-junit.jar' (success) ---
+D/dalvikvm(  140): DEX prep '/system/framework/core-junit.jar': unzip in 0ms, rewrite 336ms
+I/SamplingProfilerIntegration(  140): Profiler is disabled.
+I/Zygote  (  140): Preloading classes...
+D/dalvikvm(  140): GC_EXPLICIT freed 47K, 77% free 237K/1024K, external 0K/0K, paused 2ms
+I/bluetooth_ScoSocket.cpp(  140): Entry name = MY-CAR ScoTypes = 0x7f
+I/bluetooth_ScoSocket.cpp(  140): Entry name = Motorola HF850 ScoTypes = 0x7
+W/MediaProfiles(  140): could not find media config xml file
+I/app_process(  125): In mgmain JNI_OnLoad
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/RenderScript_jni(  140): RenderScript JNI library not found!
+D/szipinf (  140): Initializing inflate state
+D/dalvikvm(  140): GC_FOR_MALLOC freed 2915K, 57% free 2208K/5123K, external 0K/0K, paused 37ms
+D/dalvikvm(  140): GC_FOR_MALLOC freed 2632K, 52% free 2486K/5123K, external 0K/0K, paused 34ms
+I/app_process(  125): Jan 21, 1980 8:10:10 PM libcore.icu.TimeZones createZoneStringsFor
+I/app_process(  125): INFO: Loaded time zone names for en_US in 733ms.
+I/Zygote  (  140): ...preloaded 1829 classes in 2545ms.
+D/Zygote  (  140): setreuid() error ignored, same uid.
+D/dalvikvm(  140): GC_EXPLICIT freed 851K, 48% free 2677K/5123K, external 0K/0K, paused 28ms
+I/Zygote  (  140): Preload resources disabled, skipped.
+D/dalvikvm(  140): GC_EXPLICIT freed 25K, 49% free 2652K/5123K, external 0K/0K, paused 22ms
+D/dalvikvm(  140): GC_EXPLICIT freed <1K, 49% free 2652K/5123K, external 0K/0K, paused 22ms
+D/dalvikvm(  140): GC_EXPLICIT freed <1K, 49% free 2652K/5123K, external 0K/0K, paused 21ms
+I/dalvikvm(  140): System server process 235 has been created
+I/Zygote  (  140): Accepting command socket connections
+I/sysproc (  235): Entered system_init()
+I/sysproc (  235): ServiceManager: 0x12e870
+I/SurfaceFlinger(  235): SurfaceFlinger is starting
+I/SurfaceFlinger(  235): dithering enabled
+I/SurfaceFlinger(  235): SurfaceFlinger's main thread ready to run. Initializing graphics H/W...
+W/msm7x30.gralloc(  235): FBIOPUT_VSCREENINFO failed, page flipping not supported
+W/msm7x30.gralloc(  235): page flipping not supported (yres_virtual=480, requested=960)
+I/msm7x30.gralloc(  235): using (fd=27)
+I/msm7x30.gralloc(  235): id           = msmfb40_10100
+I/msm7x30.gralloc(  235): xres         = 320 px
+I/msm7x30.gralloc(  235): yres         = 480 px
+I/msm7x30.gralloc(  235): xres_virtual = 320 px
+I/msm7x30.gralloc(  235): yres_virtual = 1440 px
+I/msm7x30.gralloc(  235): bpp          = 32
+I/msm7x30.gralloc(  235): r            = 24:8
+I/msm7x30.gralloc(  235): g            = 16:8
+I/msm7x30.gralloc(  235): b            =  8:8
+I/msm7x30.gralloc(  235): width        = 51 mm (159.372543 dpi)
+I/msm7x30.gralloc(  235): height       = 76 mm (160.421051 dpi)
+I/msm7x30.gralloc(  235): refresh rate = 0.03 Hz
+D/libEGL  (  235): loaded /system/lib/egl/libGLES_android.so
+W/SurfaceFlinger(  235): ro.sf.lcd_density not defined, using 160 dpi by default.
+I/SurfaceFlinger(  235): EGL informations:
+I/SurfaceFlinger(  235): # of configs : 8
+I/SurfaceFlinger(  235): vendor    : Android
+I/SurfaceFlinger(  235): version   : 1.4 Android META-EGL
+I/SurfaceFlinger(  235): extensions: EGL_KHR_image EGL_KHR_image_base EGL_KHR_image_pixmap EGL_KHR_gl_texture_2D_image EGL_KHR_gl_texture_cubemap_image EGL_KHR_gl_renderbuffer_image EGL_ANDROID_image_native_buffer EGL_ANDROID_swap_rectangle EGL_ANDROID_get_render_buffer 
+I/SurfaceFlinger(  235): Client API: OpenGL ES
+I/SurfaceFlinger(  235): EGLSurface: 8-8-8-8, config=0x4
+I/SurfaceFlinger(  235): OpenGL informations:
+I/SurfaceFlinger(  235): vendor    : Android
+I/SurfaceFlinger(  235): renderer  : Android PixelFlinger 1.4
+I/SurfaceFlinger(  235): version   : OpenGL ES-CM 1.0
+I/SurfaceFlinger(  235): extensions: GL_OES_byte_coordinates GL_OES_fixed_point GL_OES_single_precision GL_OES_read_format GL_OES_compressed_paletted_texture GL_OES_draw_texture GL_OES_matrix_get GL_OES_query_matrix GL_OES_EGL_image GL_OES_compressed_ETC1_RGB8_texture GL_ARB_texture_compression GL_ARB_texture_non_power_of_two GL_ANDROID_user_clip_plane GL_ANDROID_vertex_buffer_object GL_ANDROID_generate_mipmap 
+I/SurfaceFlinger(  235): GL_MAX_TEXTURE_SIZE = 4096
+I/SurfaceFlinger(  235): GL_MAX_VIEWPORT_DIMS = 4096
+I/SurfaceFlinger(  235): flags = 000c0000
+D/SensorService(  235): nuSensorService starting...
+D/libEGL  (  248): loaded /system/lib/egl/libGLES_android.so
+W/zipro   (  248): Unable to open zip '/data/local/bootanimation.zip': No such file or directory
+I/ARMAssembler(  235): generated scanline__00000077:03010101_00000004_00000000 [ 37 ipp] (57 ins) at [0x484bc1e8:0x484bc2cc] in 122071 ns
+E/        (  235): open parameter file.
+I/ARMAssembler(  248): generated scanline__00000077:03010104_00008004_00000000 [ 84 ipp] (103 ins) at [0x405501e8:0x40550384] in 122070 ns
+E/        (  235): data_fd = 39
+I/SensorService(  235): 3-axis Accelerometer
+I/SensorService(  235): ALPS 3-axis Magnetic field sensor
+I/SensorService(  235): ALPS Orientation sensor
+I/SensorService(  235): GP2A Proximity sensor
+I/sysproc (  235): System server: starting Android runtime.
+I/sysproc (  235): System server: starting Android services.
+I/sysproc (  235): System server: entering thread pool.
+D/SensorService(  235): nuSensorService thread starting...
+I/SystemServer(  235): Entered the Android system server!
+I/SystemServer(  235): Entropy Service
+W/EntropyService(  235): unable to load initial entropy (first boot?)
+W/EntropyService(  235): java.io.FileNotFoundException: /data/system/entropy.dat (No such file or directory)
+W/EntropyService(  235): 	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)
+W/EntropyService(  235): 	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)
+W/EntropyService(  235): 	at java.io.FileInputStream.<init>(FileInputStream.java:80)
+W/EntropyService(  235): 	at java.io.FileInputStream.<init>(FileInputStream.java:132)
+W/EntropyService(  235): 	at com.android.server.RandomBlock.fromFile(RandomBlock.java:45)
+W/EntropyService(  235): 	at com.android.server.EntropyService.loadInitialEntropy(EntropyService.java:99)
+W/EntropyService(  235): 	at com.android.server.EntropyService.<init>(EntropyService.java:86)
+W/EntropyService(  235): 	at com.android.server.EntropyService.<init>(EntropyService.java:76)
+W/EntropyService(  235): 	at com.android.server.ServerThread.run(SystemServer.java:163)
+I/SystemServer(  235): Power Manager
+I/SystemServer(  235): Activity Manager
+I/ActivityManager(  235): Memory class: 64
+I/SystemServer(  235): Telephony Registry
+I/SystemServer(  235): Package Manager
+I/installd(  128): new connection
+I/Installer(  235): connecting...
+D/dalvikvm(  235): GC_CONCURRENT freed 150K, 47% free 3015K/5639K, external 0K/0K, paused 2ms+10ms
+D/installd(  128): DexInv: --- BEGIN '/system/framework/android.test.runner.jar' ---
+I/PackageManager(  235): No settings file; creating initial state
+D/dalvikvm(  258): creating instr width table
+D/dalvikvm(  258): DexOpt: load 11ms, verify+opt 115ms
+D/installd(  128): DexInv: --- END '/system/framework/android.test.runner.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/com.android.location.provider.jar' ---
+D/dalvikvm(  259): creating instr width table
+D/dalvikvm(  259): DexOpt: load 1ms, verify+opt 9ms
+D/installd(  128): DexInv: --- END '/system/framework/com.android.location.provider.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/javax.obex.jar' ---
+D/dalvikvm(  260): creating instr width table
+D/dalvikvm(  260): DexOpt: load 1ms, verify+opt 19ms
+D/installd(  128): DexInv: --- END '/system/framework/javax.obex.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/com.android.future.usb.accessory.jar' ---
+D/dalvikvm(  261): creating instr width table
+D/dalvikvm(  261): DexOpt: load 0ms, verify+opt 4ms
+D/installd(  128): DexInv: --- END '/system/framework/com.android.future.usb.accessory.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/svc.jar' ---
+D/dalvikvm(  262): creating instr width table
+D/dalvikvm(  262): DexOpt: load 13ms, verify+opt 4ms
+D/installd(  128): DexInv: --- END '/system/framework/svc.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/sqlite-jdbc.jar' ---
+D/dalvikvm(  263): creating instr width table
+D/dalvikvm(  263): DexOpt: load 9ms, verify+opt 61ms
+D/installd(  128): DexInv: --- END '/system/framework/sqlite-jdbc.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/pm.jar' ---
+D/dalvikvm(  264): creating instr width table
+D/dalvikvm(  264): DexOpt: load 1ms, verify+opt 29ms
+D/installd(  128): DexInv: --- END '/system/framework/pm.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/monkey.jar' ---
+D/dalvikvm(  265): creating instr width table
+D/dalvikvm(  265): DexOpt: load 3ms, verify+opt 48ms
+D/installd(  128): DexInv: --- END '/system/framework/monkey.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/input.jar' ---
+D/dalvikvm(  266): creating instr width table
+D/dalvikvm(  266): DexOpt: load 0ms, verify+opt 5ms
+D/installd(  128): DexInv: --- END '/system/framework/input.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/ime.jar' ---
+D/dalvikvm(  267): creating instr width table
+D/dalvikvm(  267): DexOpt: load 0ms, verify+opt 4ms
+D/installd(  128): DexInv: --- END '/system/framework/ime.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/bmgr.jar' ---
+D/dalvikvm(  268): creating instr width table
+D/dalvikvm(  268): DexOpt: load 1ms, verify+opt 5ms
+D/installd(  128): DexInv: --- END '/system/framework/bmgr.jar' (success) ---
+D/installd(  128): DexInv: --- BEGIN '/system/framework/am.jar' ---
+D/dalvikvm(  269): creating instr width table
+D/dalvikvm(  269): DexOpt: load 1ms, verify+opt 14ms
+D/installd(  128): DexInv: --- END '/system/framework/am.jar' (success) ---
+I/PackageManager(  235): /system/framework/framework-res.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 326K, 47% free 3215K/6023K, external 0K/0K, paused 2ms+3ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 298K, 47% free 3261K/6151K, external 0K/0K, paused 18ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 46K, 48% free 3309K/6279K, external 0K/0K, paused 29ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 5.837MB for 194578-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 46% free 3499K/6471K, external 0K/0K, paused 17ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 94K, 48% free 3405K/6471K, external 0K/0K, paused 26ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 279K, 48% free 3424K/6471K, external 0K/0K, paused 18ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 94K, 46% free 3520K/6471K, external 0K/0K, paused 29ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 215K, 47% free 3487K/6471K, external 0K/0K, paused 27ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 40K, 46% free 3535K/6471K, external 0K/0K, paused 18ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 6.053MB for 188434-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 45% free 3719K/6663K, external 0K/0K, paused 34ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 88K, 46% free 3631K/6663K, external 0K/0K, paused 18ms
+D/dalvikvm(  235): GC_CONCURRENT freed 225K, 42% free 3918K/6663K, external 0K/0K, paused 2ms+3ms
+D/dalvikvm(  235): GC_CONCURRENT freed 82K, 38% free 4323K/6919K, external 0K/0K, paused 2ms+2ms
+D/dalvikvm(  235): GC_CONCURRENT freed 276K, 38% free 4610K/7367K, external 0K/0K, paused 2ms+3ms
+I/PackageManager(  235): /system/app/VpnServices.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/VpnServices.apk' ---
+D/dalvikvm(  271): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 443K, 39% free 4618K/7559K, external 0K/0K, paused 2ms+29ms
+D/dalvikvm(  271): DexOpt: load 3ms, verify+opt 31ms
+D/installd(  128): DexInv: --- END '/system/app/VpnServices.apk' (success) ---
+I/PackageManager(  235): /system/app/VoiceDialer.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/VoiceDialer.apk' ---
+D/dalvikvm(  272): creating instr width table
+D/dalvikvm(  272): DexOpt: load 6ms, verify+opt 73ms
+D/installd(  128): DexInv: --- END '/system/app/VoiceDialer.apk' (success) ---
+I/PackageManager(  235): /system/app/UserDictionaryProvider.apk changed; collecting certs
+I/PackageManager(  235): New shared user android.uid.shared: id=10001
+D/installd(  128): DexInv: --- BEGIN '/system/app/UserDictionaryProvider.apk' ---
+D/dalvikvm(  273): creating instr width table
+D/dalvikvm(  273): DexOpt: load 2ms, verify+opt 9ms
+D/installd(  128): DexInv: --- END '/system/app/UserDictionaryProvider.apk' (success) ---
+I/PackageManager(  235): /system/app/TtsService.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/TtsService.apk' ---
+D/dalvikvm(  274): creating instr width table
+D/dalvikvm(  274): DexOpt: load 2ms, verify+opt 30ms
+D/installd(  128): DexInv: --- END '/system/app/TtsService.apk' (success) ---
+I/PackageManager(  235): /system/app/ThemeManager.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/ThemeManager.apk' ---
+D/dalvikvm(  275): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 2000K, 59% free 3130K/7623K, external 0K/0K, paused 2ms+10ms
+D/dalvikvm(  275): DexOpt: load 2ms, verify+opt 29ms
+D/installd(  128): DexInv: --- END '/system/app/ThemeManager.apk' (success) ---
+I/PackageManager(  235): /system/app/ThemeChooser.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/ThemeChooser.apk' ---
+D/dalvikvm(  276): creating instr width table
+D/dalvikvm(  276): DexOpt: load 11ms, verify+opt 35ms
+D/installd(  128): DexInv: --- END '/system/app/ThemeChooser.apk' (success) ---
+I/PackageManager(  235): /system/app/TelephonyProvider.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/TelephonyProvider.apk' ---
+D/dalvikvm(  279): creating instr width table
+D/dalvikvm(  279): DexOpt: load 2ms, verify+opt 63ms
+D/installd(  128): DexInv: --- END '/system/app/TelephonyProvider.apk' (success) ---
+I/PackageManager(  235): /system/app/SystemUI.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 410K, 58% free 3226K/7623K, external 0K/0K, paused 2ms+3ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/SystemUI.apk' ---
+D/dalvikvm(  280): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 318K, 57% free 3316K/7623K, external 0K/0K, paused 2ms+9ms
+D/dalvikvm(  280): DexOpt: load 53ms, verify+opt 140ms
+D/installd(  128): DexInv: --- END '/system/app/SystemUI.apk' (success) ---
+I/PackageManager(  235): /system/app/Superuser.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 297K, 54% free 3531K/7623K, external 0K/0K, paused 2ms+4ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Superuser.apk' ---
+D/dalvikvm(  281): creating instr width table
+D/dalvikvm(  281): DexOpt: load 60ms, verify+opt 217ms
+D/installd(  128): DexInv: --- END '/system/app/Superuser.apk' (success) ---
+I/PackageManager(  235): /system/app/SpareParts.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/SpareParts.apk' ---
+D/dalvikvm(  282): creating instr width table
+D/dalvikvm(  282): DexOpt: load 5ms, verify+opt 8ms
+D/installd(  128): DexInv: --- END '/system/app/SpareParts.apk' (success) ---
+I/PackageManager(  235): /system/app/SoundRecorder.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/SoundRecorder.apk' ---
+D/dalvikvm(  283): creating instr width table
+D/dalvikvm(  283): DexOpt: load 5ms, verify+opt 42ms
+D/installd(  128): DexInv: --- END '/system/app/SoundRecorder.apk' (success) ---
+I/PackageManager(  235): /system/app/SettingsProvider.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/SettingsProvider.apk' ---
+D/dalvikvm(  284): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 652K, 56% free 3375K/7623K, external 0K/0K, paused 2ms+11ms
+D/dalvikvm(  284): DexOpt: load 3ms, verify+opt 36ms
+D/installd(  128): DexInv: --- END '/system/app/SettingsProvider.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Settings.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 495K, 56% free 3378K/7623K, external 0K/0K, paused 2ms+3ms
+D/dalvikvm(  235): GC_CONCURRENT freed 282K, 53% free 3608K/7623K, external 0K/0K, paused 2ms+3ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Settings.apk' ---
+D/dalvikvm(  285): creating instr width table
+D/dalvikvm(  285): DexOpt: load 77ms, verify+opt 478ms
+D/installd(  128): DexInv: --- END '/system/app/Settings.apk' (success) ---
+W/ResourceType(  235): getEntry failing because entryIndex 296 is beyond type entryCount 171
+W/ResourceType(  235): Failure getting entry for 0x01030128 (t=2 e=296) in package 0 (error -2147483647)
+I/PackageManager(  235): /system/app/RomManager.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 324K, 51% free 3795K/7623K, external 0K/0K, paused 12ms+7ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/RomManager.apk' ---
+D/dalvikvm(  286): creating instr width table
+D/dalvikvm(  286): DexOpt: 'Landroid/os/SystemProperties;' has an earlier definition; blocking out
+D/dalvikvm(  286): DexOpt: not verifying 'Landroid/os/SystemProperties;': multiple definitions
+D/dalvikvm(  286): DexOpt: couldn't find static field
+I/dalvikvm(  286): DexOpt: not resolving ambiguous class 'Landroid/os/SystemProperties;'
+I/dalvikvm(  286): DexOpt: not resolving ambiguous class 'Landroid/os/SystemProperties;'
+I/dalvikvm(  286): DexOpt: not resolving ambiguous class 'Landroid/os/SystemProperties;'
+I/dalvikvm(  286): DexOpt: not resolving ambiguous class 'Landroid/os/SystemProperties;'
+D/dalvikvm(  286): DexOpt: load 71ms, verify+opt 393ms
+D/installd(  128): DexInv: --- END '/system/app/RomManager.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/QuickSearchBox.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/QuickSearchBox.apk' ---
+D/dalvikvm(  235): GC_CONCURRENT freed 814K, 55% free 3433K/7623K, external 0K/0K, paused 1ms+8ms
+D/dalvikvm(  287): creating instr width table
+D/dalvikvm(  287): DexOpt: load 85ms, verify+opt 340ms
+D/installd(  128): DexInv: --- END '/system/app/QuickSearchBox.apk' (success) ---
+I/PackageManager(  235): /system/app/Provision.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Provision.apk' ---
+D/dalvikvm(  290): creating instr width table
+D/dalvikvm(  290): DexOpt: load 3ms, verify+opt 2ms
+D/installd(  128): DexInv: --- END '/system/app/Provision.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Protips.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Protips.apk' ---
+D/dalvikvm(  291): creating instr width table
+D/dalvikvm(  291): DexOpt: load 1ms, verify+opt 4ms
+D/installd(  128): DexInv: --- END '/system/app/Protips.apk' (success) ---
+I/PackageManager(  235): /system/app/PicoTts.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/PicoTts.apk' ---
+D/dalvikvm(  292): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 438K, 56% free 3421K/7623K, external 0K/0K, paused 2ms+8ms
+D/dalvikvm(  292): DexOpt: load 9ms, verify+opt 7ms
+D/installd(  128): DexInv: --- END '/system/app/PicoTts.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Phone.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 480K, 55% free 3452K/7623K, external 0K/0K, paused 2ms+3ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Phone.apk' ---
+D/dalvikvm(  235): GC_CONCURRENT freed 248K, 53% free 3630K/7623K, external 0K/0K, paused 2ms+25ms
+D/dalvikvm(  293): creating instr width table
+D/dalvikvm(  293): DexOpt: load 58ms, verify+opt 375ms
+D/installd(  128): DexInv: --- END '/system/app/Phone.apk' (success) ---
+I/PackageManager(  235): /system/app/Pacman.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Pacman.apk' ---
+D/dalvikvm(  294): creating instr width table
+D/dalvikvm(  294): DexOpt: load 4ms, verify+opt 45ms
+D/installd(  128): DexInv: --- END '/system/app/Pacman.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/PackageInstaller.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/PackageInstaller.apk' ---
+D/dalvikvm(  295): creating instr width table
+D/dalvikvm(  295): DexOpt: load 5ms, verify+opt 44ms
+D/installd(  128): DexInv: --- END '/system/app/PackageInstaller.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Music.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 333K, 51% free 3805K/7623K, external 0K/0K, paused 1ms+6ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Music.apk' ---
+D/dalvikvm(  296): creating instr width table
+D/dalvikvm(  296): DexOpt: load 50ms, verify+opt 173ms
+D/installd(  128): DexInv: --- END '/system/app/Music.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Mms.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 739K, 54% free 3577K/7623K, external 0K/0K, paused 1ms+4ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Mms.apk' ---
+D/dalvikvm(  235): GC_CONCURRENT freed 439K, 54% free 3537K/7623K, external 0K/0K, paused 2ms+10ms
+D/dalvikvm(  297): creating instr width table
+D/dalvikvm(  297): DexOpt: load 107ms, verify+opt 325ms
+D/installd(  128): DexInv: --- END '/system/app/Mms.apk' (success) ---
+I/PackageManager(  235): /system/app/MediaProvider.apk changed; collecting certs
+I/PackageManager(  235): New shared user android.media: id=10015
+D/installd(  128): DexInv: --- BEGIN '/system/app/MediaProvider.apk' ---
+D/dalvikvm(  298): creating instr width table
+D/dalvikvm(  298): DexOpt: load 3ms, verify+opt 51ms
+D/installd(  128): DexInv: --- END '/system/app/MediaProvider.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/LatinIME.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 302K, 51% free 3736K/7623K, external 0K/0K, paused 2ms+4ms
+D/dalvikvm(  235): GC_CONCURRENT freed 528K, 52% free 3720K/7623K, external 0K/0K, paused 9ms+4ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/LatinIME.apk' ---
+D/dalvikvm(  299): creating instr width table
+D/dalvikvm(  299): DexOpt: load 17ms, verify+opt 170ms
+D/installd(  128): DexInv: --- END '/system/app/LatinIME.apk' (success) ---
+I/PackageManager(  235): /system/app/HTMLViewer.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/HTMLViewer.apk' ---
+D/dalvikvm(  300): creating instr width table
+D/dalvikvm(  300): DexOpt: load 5ms, verify+opt 33ms
+D/installd(  128): DexInv: --- END '/system/app/HTMLViewer.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Gallery3D.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Gallery3D.apk' ---
+D/dalvikvm(  235): GC_CONCURRENT freed 323K, 49% free 3905K/7623K, external 0K/0K, paused 2ms+44ms
+D/dalvikvm(  301): creating instr width table
+D/dalvikvm(  301): DexOpt: load 22ms, verify+opt 266ms
+D/installd(  128): DexInv: --- END '/system/app/Gallery3D.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/FileManager.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/FileManager.apk' ---
+D/dalvikvm(  304): creating instr width table
+D/dalvikvm(  304): DexOpt: load 38ms, verify+opt 173ms
+D/installd(  128): DexInv: --- END '/system/app/FileManager.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Email.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 690K, 52% free 3711K/7623K, external 0K/0K, paused 2ms+4ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Email.apk' ---
+D/dalvikvm(  305): creating instr width table
+D/dalvikvm(  305): DexOpt: load 69ms, verify+opt 645ms
+D/installd(  128): DexInv: --- END '/system/app/Email.apk' (success) ---
+I/PackageManager(  235): /system/app/DrmProvider.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/DrmProvider.apk' ---
+D/dalvikvm(  306): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 522K, 53% free 3637K/7623K, external 0K/0K, paused 2ms+9ms
+D/dalvikvm(  306): DexOpt: load 1ms, verify+opt 25ms
+D/installd(  128): DexInv: --- END '/system/app/DrmProvider.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/DownloadProviderUi.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/DownloadProviderUi.apk' ---
+D/dalvikvm(  307): creating instr width table
+D/dalvikvm(  307): DexOpt: load 11ms, verify+opt 52ms
+D/installd(  128): DexInv: --- END '/system/app/DownloadProviderUi.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/DownloadProvider.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/DownloadProvider.apk' ---
+D/dalvikvm(  308): creating instr width table
+D/dalvikvm(  308): DexOpt: load 49ms, verify+opt 255ms
+D/installd(  128): DexInv: --- END '/system/app/DownloadProvider.apk' (success) ---
+I/PackageManager(  235): /system/app/Development.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Development.apk' ---
+D/dalvikvm(  309): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 541K, 53% free 3584K/7623K, external 0K/0K, paused 2ms+22ms
+D/dalvikvm(  309): DexOpt: load 23ms, verify+opt 127ms
+D/installd(  128): DexInv: --- END '/system/app/Development.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/DeskClock.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/DeskClock.apk' ---
+D/dalvikvm(  310): creating instr width table
+D/dalvikvm(  310): DexOpt: load 17ms, verify+opt 94ms
+D/installd(  128): DexInv: --- END '/system/app/DeskClock.apk' (success) ---
+I/PackageManager(  235): /system/app/DefaultContainerService.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/DefaultContainerService.apk' ---
+D/dalvikvm(  311): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 388K, 53% free 3655K/7623K, external 0K/0K, paused 2ms+24ms
+D/dalvikvm(  311): DexOpt: load 2ms, verify+opt 13ms
+D/installd(  128): DexInv: --- END '/system/app/DefaultContainerService.apk' (success) ---
+I/PackageManager(  235): /system/app/DSPManager.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/DSPManager.apk' ---
+D/dalvikvm(  312): creating instr width table
+D/dalvikvm(  312): DexOpt: load 9ms, verify+opt 28ms
+D/installd(  128): DexInv: --- END '/system/app/DSPManager.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+W/PackageParser(  235): Unknown element under <manifest>: meta-data at /system/app/Cyanbread.apk Binary XML file line #43
+I/PackageManager(  235): /system/app/Cyanbread.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 410K, 51% free 3756K/7623K, external 0K/0K, paused 2ms+3ms
+D/dalvikvm(  235): GC_CONCURRENT freed 254K, 48% free 4013K/7623K, external 0K/0K, paused 2ms+2ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 94K, 49% free 3919K/7623K, external 0K/0K, paused 36ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 232K, 49% free 3894K/7623K, external 0K/0K, paused 23ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 46K, 49% free 3942K/7623K, external 0K/0K, paused 36ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 6.457MB for 194578-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 48% free 4132K/7815K, external 0K/0K, paused 36ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 94K, 49% free 4038K/7815K, external 0K/0K, paused 22ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 255K, 49% free 4057K/7815K, external 0K/0K, paused 36ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 88K, 47% free 4153K/7815K, external 0K/0K, paused 37ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 6.591MB for 120438-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 47% free 4271K/7943K, external 0K/0K, paused 22ms
+D/dalvikvm(  235): GC_CONCURRENT freed 231K, 43% free 4551K/7943K, external 0K/0K, paused 2ms+17ms
+D/dalvikvm(  235): GC_CONCURRENT freed 319K, 41% free 4743K/7943K, external 0K/0K, paused 2ms+17ms
+I/PackageManager(  235): /system/app/ContactsProvider.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 59K, 35% free 5208K/7943K, external 0K/0K, paused 2ms+3ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/ContactsProvider.apk' ---
+D/dalvikvm(  315): creating instr width table
+D/dalvikvm(  315): DexOpt: load 6ms, verify+opt 159ms
+D/installd(  128): DexInv: --- END '/system/app/ContactsProvider.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Contacts.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 642K, 38% free 5260K/8391K, external 0K/0K, paused 2ms+13ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Contacts.apk' ---
+D/dalvikvm(  316): creating instr width table
+D/dalvikvm(  316): DexOpt: load 72ms, verify+opt 301ms
+D/installd(  128): DexInv: --- END '/system/app/Contacts.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/CertInstaller.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/CertInstaller.apk' ---
+D/dalvikvm(  317): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 1897K, 53% free 4009K/8391K, external 0K/0K, paused 2ms+20ms
+D/dalvikvm(  317): DexOpt: load 36ms, verify+opt 46ms
+D/installd(  128): DexInv: --- END '/system/app/CertInstaller.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Camera.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Camera.apk' ---
+D/dalvikvm(  318): creating instr width table
+D/dalvikvm(  318): DexOpt: load 37ms, verify+opt 137ms
+D/installd(  128): DexInv: --- END '/system/app/Camera.apk' (success) ---
+I/PackageManager(  235): /system/app/CalendarProvider.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 798K, 56% free 3723K/8391K, external 0K/0K, paused 2ms+5ms
+I/PackageManager(  235): New shared user android.uid.calendar: id=10028
+D/installd(  128): DexInv: --- BEGIN '/system/app/CalendarProvider.apk' ---
+D/dalvikvm(  319): creating instr width table
+D/dalvikvm(  319): DexOpt: load 49ms, verify+opt 303ms
+D/installd(  128): DexInv: --- END '/system/app/CalendarProvider.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Calendar.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Calendar.apk' ---
+D/dalvikvm(  320): creating instr width table
+D/dalvikvm(  320): DexOpt: load 56ms, verify+opt 204ms
+D/installd(  128): DexInv: --- END '/system/app/Calendar.apk' (success) ---
+I/PackageManager(  235): /system/app/Calculator.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Calculator.apk' ---
+D/dalvikvm(  321): creating instr width table
+D/dalvikvm(  235): GC_CONCURRENT freed 449K, 56% free 3727K/8391K, external 0K/0K, paused 2ms+18ms
+D/dalvikvm(  321): DexOpt: load 23ms, verify+opt 53ms
+D/installd(  128): DexInv: --- END '/system/app/Calculator.apk' (success) ---
+I/PackageManager(  235): /system/app/CMWallpapers.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/CMWallpapers.apk' ---
+D/dalvikvm(  322): creating instr width table
+D/dalvikvm(  322): DexOpt: load 18ms, verify+opt 24ms
+D/installd(  128): DexInv: --- END '/system/app/CMWallpapers.apk' (success) ---
+I/PackageManager(  235): /system/app/CMUpdateNotify.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/CMUpdateNotify.apk' ---
+D/dalvikvm(  323): creating instr width table
+D/dalvikvm(  323): DexOpt: 'Landroid/os/SystemProperties;' has an earlier definition; blocking out
+D/dalvikvm(  323): DexOpt: not verifying 'Landroid/os/SystemProperties;': multiple definitions
+D/dalvikvm(  235): GC_CONCURRENT freed 434K, 56% free 3703K/8391K, external 0K/0K, paused 1ms+3ms
+I/dalvikvm(  323): DexOpt: not resolving ambiguous class 'Landroid/os/SystemProperties;'
+D/dalvikvm(  323): DexOpt: load 13ms, verify+opt 25ms
+D/installd(  128): DexInv: --- END '/system/app/CMUpdateNotify.apk' (success) ---
+I/PackageManager(  235): /system/app/CMStats.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/CMStats.apk' ---
+D/dalvikvm(  324): creating instr width table
+D/dalvikvm(  324): DexOpt: 'Landroid/os/SystemProperties;' has an earlier definition; blocking out
+D/dalvikvm(  324): DexOpt: not verifying 'Landroid/os/SystemProperties;': multiple definitions
+I/dalvikvm(  324): DexOpt: not resolving ambiguous class 'Landroid/os/SystemProperties;'
+D/dalvikvm(  324): DexOpt: load 5ms, verify+opt 32ms
+D/installd(  128): DexInv: --- END '/system/app/CMStats.apk' (success) ---
+I/PackageManager(  235): /system/app/CMScreenshot.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/CMScreenshot.apk' ---
+D/dalvikvm(  325): creating instr width table
+D/dalvikvm(  325): DexOpt: load 4ms, verify+opt 6ms
+D/installd(  128): DexInv: --- END '/system/app/CMScreenshot.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/CMParts.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 451K, 56% free 3764K/8391K, external 0K/0K, paused 2ms+4ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/CMParts.apk' ---
+D/dalvikvm(  326): creating instr width table
+D/dalvikvm(  326): DexOpt: load 52ms, verify+opt 163ms
+D/installd(  128): DexInv: --- END '/system/app/CMParts.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/Browser.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 355K, 54% free 3919K/8391K, external 0K/0K, paused 2ms+4ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/Browser.apk' ---
+D/dalvikvm(  329): creating instr width table
+D/dalvikvm(  329): DexOpt: load 39ms, verify+opt 213ms
+D/installd(  128): DexInv: --- END '/system/app/Browser.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+W/PackageParser(  235): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #132
+W/PackageParser(  235): No actions in intent filter at /system/app/Bluetooth.apk Binary XML file line #154
+I/PackageManager(  235): /system/app/Bluetooth.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/Bluetooth.apk' ---
+D/dalvikvm(  330): creating instr width table
+D/dalvikvm(  330): DexOpt: load 26ms, verify+opt 199ms
+D/installd(  128): DexInv: --- END '/system/app/Bluetooth.apk' (success) ---
+I/PackageManager(  235): /system/app/ApplicationsProvider.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/ApplicationsProvider.apk' ---
+D/dalvikvm(  331): creating instr width table
+D/dalvikvm(  331): DexOpt: load 5ms, verify+opt 47ms
+D/installd(  128): DexInv: --- END '/system/app/ApplicationsProvider.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+W/PackageParser(  235): Unknown element under <manifest>: meta-data at /system/app/Androidian.apk Binary XML file line #43
+I/PackageManager(  235): /system/app/Androidian.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 433K, 53% free 3998K/8391K, external 0K/0K, paused 2ms+5ms
+D/dalvikvm(  235): GC_CONCURRENT freed 463K, 53% free 4001K/8391K, external 0K/0K, paused 1ms+2ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 52K, 52% free 4043K/8391K, external 0K/0K, paused 38ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 6.554MB for 194578-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 51% free 4233K/8583K, external 0K/0K, paused 24ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 373K, 52% free 4173K/8583K, external 0K/0K, paused 31ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 94K, 51% free 4269K/8583K, external 0K/0K, paused 39ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 6.716MB for 132072-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 50% free 4398K/8775K, external 0K/0K, paused 24ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 255K, 51% free 4300K/8775K, external 0K/0K, paused 30ms
+D/dalvikvm(  235): GC_FOR_MALLOC freed 88K, 50% free 4396K/8775K, external 0K/0K, paused 39ms
+I/dalvikvm-heap(  235): Grow heap (frag case) to 6.839MB for 132072-byte allocation
+D/dalvikvm(  235): GC_FOR_MALLOC freed 0K, 50% free 4525K/8967K, external 0K/0K, paused 24ms
+D/dalvikvm(  235): GC_CONCURRENT freed 231K, 47% free 4805K/8967K, external 0K/0K, paused 2ms+3ms
+D/dalvikvm(  235): GC_CONCURRENT freed 210K, 43% free 5135K/8967K, external 0K/0K, paused 1ms+3ms
+D/dalvikvm(  235): GC_CONCURRENT freed 188K, 38% free 5562K/8967K, external 0K/0K, paused 2ms+3ms
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/AndroidTerm.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/AndroidTerm.apk' ---
+D/dalvikvm(  332): creating instr width table
+D/dalvikvm(  332): DexOpt: load 31ms, verify+opt 60ms
+D/installd(  128): DexInv: --- END '/system/app/AndroidTerm.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/AccountAndSyncSettings.apk changed; collecting certs
+D/installd(  128): DexInv: --- BEGIN '/system/app/AccountAndSyncSettings.apk' ---
+D/dalvikvm(  333): creating instr width table
+D/dalvikvm(  333): DexOpt: load 7ms, verify+opt 61ms
+D/installd(  128): DexInv: --- END '/system/app/AccountAndSyncSettings.apk' (success) ---
+D/szipinf (  235): Initializing inflate state
+I/PackageManager(  235): /system/app/ADWLauncher.apk changed; collecting certs
+D/dalvikvm(  235): GC_CONCURRENT freed 692K, 38% free 5592K/8967K, external 0K/0K, paused 2ms+13ms
+D/installd(  128): DexInv: --- BEGIN '/system/app/ADWLauncher.apk' ---
+D/dalvikvm(  334): creating instr width table
+D/dalvikvm(  334): DexOpt: load 96ms, verify+opt 341ms
+D/installd(  128): DexInv: --- END '/system/app/ADWLauncher.apk' (success) ---
+D/PackageManager(  235): No files in app dir /vendor/app
+I/PackageManager(  235): Time to scan packages: 28.01 seconds
+I/PackageManager(  235): Platform changed from 0 to 10; regranting permissions for internal storage
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.contacts
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+W/PackageManager(  235): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+W/PackageManager(  235): Unknown permission com.google.android.c2dm.permission.RECEIVE in package com.koushikdutta.rommanager
+W/PackageManager(  235): Unknown permission com.android.vending.BILLING in package com.koushikdutta.rommanager
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.contacts
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cp in package com.android.providers.contacts
+W/PackageManager(  235): Unknown permission com.google.android.gm.permission.WRITE_GMAIL in package com.android.settings
+W/PackageManager(  235): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.android.settings
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+W/PackageManager(  235): Unknown permission com.google.android.c2dm.permission.RECEIVE in package com.cyanogenmod.updatenotify
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+W/PackageManager(  235): Unknown permission android.permission.READ_OWNER_DATA in package com.android.email
+W/PackageManager(  235): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x8be45)
+D/dalvikvm(  235): GC_CONCURRENT freed 2237K, 55% free 4086K/8967K, external 0K/0K, paused 2ms+6ms
+D/dalvikvm(  235): GC_EXPLICIT freed 518K, 60% free 3675K/8967K, external 0K/0K, paused 41ms
+D/szipinf (  235): Initializing inflate state
+I/SystemServer(  235): Account Manager
+I/SyncManager(  235): No initial accounts
+I/SyncManager(  235): No initial status
+I/SyncManager(  235): No initial pending operations
+I/SyncManager(  235): No initial statistics
+I/SystemServer(  235): Content Manager
+D/szipinf (  235): Initializing inflate state
+I/ActivityThread(  235): Pub settings: com.android.providers.settings.SettingsProvider
+I/SystemServer(  235): System Content Providers
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+W/SettingsProvider(  235): Unable to add bookmark: com.google.android.gm/com.google.android.gm.ConversationListActivityGmail
+W/SettingsProvider(  235): android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.gm/com.google.android.gm.ConversationListActivityGmail}
+W/SettingsProvider(  235): 	at android.app.ContextImpl$ApplicationPackageManager.getActivityInfo(ContextImpl.java:1891)
+W/SettingsProvider(  235): 	at com.android.providers.settings.DatabaseHelper.loadBookmarks(DatabaseHelper.java:887)
+W/SettingsProvider(  235): 	at com.android.providers.settings.DatabaseHelper.loadBookmarks(DatabaseHelper.java:925)
+W/SettingsProvider(  235): 	at com.android.providers.settings.DatabaseHelper.onCreate(DatabaseHelper.java:135)
+W/SettingsProvider(  235): 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:126)
+W/SettingsProvider(  235): 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:187)
+W/SettingsProvider(  235): 	at com.android.providers.settings.SettingsProvider.query(SettingsProvider.java:405)
+W/SettingsProvider(  235): 	at com.android.providers.settings.SettingsProvider.ensureAndroidIdIsSet(SettingsProvider.java:324)
+W/SettingsProvider(  235): 	at com.android.providers.settings.SettingsProvider.onCreate(SettingsProvider.java:260)
+W/SettingsProvider(  235): 	at android.content.ContentProvider.attachInfo(ContentProvider.java:798)
+W/SettingsProvider(  235): 	at android.app.ActivityThread.installProvider(ActivityThread.java:3706)
+W/SettingsProvider(  235): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:3461)
+W/SettingsProvider(  235): 	at android.app.ActivityThread.installSystemProviders(ActivityThread.java:3812)
+W/SettingsProvider(  235): 	at com.android.server.am.ActivityManagerService.installSystemProviders(ActivityManagerService.java:5645)
+W/SettingsProvider(  235): 	at com.android.server.ServerThread.run(SystemServer.java:199)
+W/SettingsProvider(  235): Unable to add bookmark: com.android.im/com.android.im.app.LandingPage
+W/SettingsProvider(  235): android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.android.im/com.android.im.app.LandingPage}
+W/SettingsProvider(  235): 	at android.app.ContextImpl$ApplicationPackageManager.getActivityInfo(ContextImpl.java:1891)
+W/SettingsProvider(  235): 	at com.android.providers.settings.DatabaseHelper.loadBookmarks(DatabaseHelper.java:887)
+W/SettingsProvider(  235): 	at com.android.providers.settings.DatabaseHelper.loadBookmarks(DatabaseHelper.java:925)
+W/SettingsProvider(  235): 	at com.android.providers.settings.DatabaseHelper.onCreate(DatabaseHelper.java:135)
+W/SettingsProvider(  235): 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:126)
+W/SettingsProvider(  235): 	at android.database.sqlite.SQLiteOpenHelper.getReadableDatabase(SQLiteOpenHelper.java:187)
+W/SettingsProvider(  235): 	at com.android.providers.settings.SettingsProvider.query(SettingsProvider.java:405)
+W/SettingsProvider(  235): 	at com.android.providers.settings.SettingsProvider.ensureAndroidIdIsSet(SettingsProvider.java:324)
+W/SettingsProvider(  235): 	at com.android.providers.settings.SettingsProvider.onCreate(SettingsProvider.java:260)
+W/SettingsProvider(  235): 	at android.content.ContentProvider.attachInfo(ContentProvider.java:798)
+W/SettingsProvider(  235): 	at android.app.ActivityThread.installProvider(ActivityThread.java:3706)
+W/SettingsProvider(  235): 	at android.app.ActivityThread.installContentProviders(ActivityThread.java:3461)
+W/SettingsProvider(  235): 	at android.app.ActivityThread.installSystemProviders(ActivityThread.java:3812)
+W/SettingsProvider(  235): 	at com.android.server.am.ActivityManagerService.installSystemProviders(ActivityManagerService.java:5645)
+W/SettingsProvider(  235): 	at com.android.server.ServerThread.run(SystemServer.java:199)
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/SettingsProvider(  235): Generated and saved new ANDROID_ID [dca88f8e4d57f54f]
+D/SettingsProvider(  235): cache for settings table 'secure' rows=21; fullycached=true
+I/SystemServer(  235): Battery Service
+I/SystemServer(  235): Lights Service
+D/SettingsProvider(  235): cache for settings table 'system' rows=44; fullycached=true
+I/SystemServer(  235): Vibrator Service
+I/SystemServer(  235): Alarm Manager
+I/SystemServer(  235): Init Watchdog
+I/SystemServer(  235): Window Manager
+I/InputManager(  235): Initializing input manager
+I/WindowManager(  235): names for haptic settings for haptic long array: haptic_long_array default: haptic_long_array_default
+I/WindowManager(  235): pulled string: null default: 0,1,20,21
+I/WindowManager(  235): Had to load default haptic settings for: haptic_long_array saving 0,1,20,21to settings
+D/dalvikvm(  235): GC_CONCURRENT freed 271K, 57% free 3858K/8967K, external 0K/0K, paused 2ms+4ms
+I/WindowManager(  235): names for haptic settings for haptic down array: haptic_down_array default: haptic_down_array_default
+I/WindowManager(  235): pulled string: null default: 0,10,20,30
+I/WindowManager(  235): Had to load default haptic settings for: haptic_down_array saving 0,10,20,30to settings
+I/WindowManager(  235): names for haptic settings for haptic tap array: haptic_tap_array default: haptic_tap_array_default
+I/WindowManager(  235): pulled string: null default: 40
+I/WindowManager(  235): Had to load default haptic settings for: haptic_tap_array saving 40to settings
+I/WindowManager(  235): names for haptic settings for haptic up array: haptic_up_array default: haptic_up_array_default
+I/WindowManager(  235): pulled string: null default: 5,18
+I/WindowManager(  235): Had to load default haptic settings for: haptic_up_array saving 5,18to settings
+I/InputManager(  235): Starting input manager
+I/SystemServer(  235): Bluetooth Service
+I/BluetoothProfileState(  235): Message:Entering Stable State
+I/BluetoothProfileState(  235): Message:Entering Stable State
+I/EventHub(  235): New keyboard: device->id=0x20000 devname='7k_handset' propName='hw.keyboards.131072.devname' keylayout='/system/usr/keylayout/7k_handset.kl'
+I/EventHub(  235): New device: path=/dev/input/event6 name=7k_handset id=0x20000 (of 0x1) index=1 fd=97 classes=0x81
+I/EventHub(  235): New keyboard: device->id=0x10001 devname='gpio-side-keypad' propName='hw.keyboards.65537.devname' keylayout='/system/usr/keylayout/gpio-side-keypad.kl'
+I/EventHub(  235): New device: path=/dev/input/event4 name=gpio-side-keypad id=0x10001 (of 0x2) index=2 fd=101 classes=0x1
+I/EventHub(  235): New keyboard: device->id=0x10002 devname='touch_mcs8000' propName='hw.keyboards.65538.devname' keylayout='/system/usr/keylayout/touch_mcs8000.kl'
+I/EventHub(  235): New device: path=/dev/input/event3 name=touch_mcs8000 id=0x10002 (of 0x3) index=3 fd=102 classes=0x15
+V/SystemServer(  235): Bluetooth Network Service
+I/EventHub(  235): New keyboard: device->id=0x10003 devname='ats_input' propName='hw.keyboards.65539.devname' keylayout='/system/usr/keylayout/ats_input.kl'
+I/EventHub(  235): New device: path=/dev/input/event2 name=ats_input id=0x10003 (of 0x4) index=4 fd=103 classes=0x15
+E/KeyLayoutMap(  235): /system/usr/keylayout/qwerty.kl:175: expected keycode, got 'SCRAPS'
+I/EventHub(  235): New keyboard: device->id=0x10004 devname='h2w headset' propName='hw.keyboards.65540.devname' keylayout='/system/usr/keylayout/qwerty.kl'
+I/EventHub(  235): New device: path=/dev/input/event0 name=h2w headset id=0x10004 (of 0x5) index=5 fd=104 classes=0x1
+I/EventHub(  235): New keyboard: device->id=0x20005 devname='atcmd_virtual_kbd' propName='hw.keyboards.131077.devname' keylayout='/system/usr/keylayout/atcmd_virtual_kbd.kl'
+I/EventHub(  235): New device: path=/dev/input/event1 name=atcmd_virtual_kbd id=0x20005 (of 0x6) index=6 fd=105 classes=0x1
+I/SystemServer(  235): Device Policy
+I/InputReader(  235): Device added: id=0x20005, name=atcmd_virtual_kbd, sources=00000101
+I/InputReader(  235): Device added: id=0x10004, name=h2w headset, sources=00000101
+I/InputReader(  235): Device added: id=0x10003, name=ats_input, sources=00001103
+I/InputReader(  235): Device added: id=0x10002, name=touch_mcs8000, sources=00001103
+I/InputManager-Callbacks(  235): No input device calibration properties found for device h2w headset.
+I/InputManager-Callbacks(  235): No input device calibration properties found for device ats_input.
+I/InputReader(  235): Device added: id=0x0, name=gpio-side-keypad, sources=00000101
+I/InputReader(  235): Device added: id=0x20000, name=7k_handset, sources=80000101
+D/szipinf (  235): Initializing inflate state
+I/InputManager-Callbacks(  235): No input device calibration properties found for device 7k_handset.
+I/SystemServer(  235): Status Bar
+I/SystemServer(  235): Clipboard Service
+I/SystemServer(  235): Input Method Service
+I/InputManagerService(  235): Enabled input methods: com.android.inputmethod.latin/.LatinIME
+I/InputManagerService(  235): Enabled input methods or default IME has not been set, enabling all
+I/InputManagerService(  235): Adding: com.android.inputmethod.latin/.LatinIME
+I/InputManagerService(  235): Selected default: com.android.inputmethod.latin/.LatinIME
+I/SystemServer(  235): NetStat Service
+I/SystemServer(  235): NetworkManagement Service
+I/SystemServer(  235): Connectivity Service
+I/ConnectivityService(  235): hostname has been set: android-dca88f8e4d57f54f
+I/WifiService(  235): WifiService starting up with Wi-Fi disabled
+D/NetworkManagmentService(  235): Registering observer
+I/SystemServer(  235): Throttle Service
+I/SystemServer(  235): Accessibility Manager
+I/SystemServer(  235): Mount Service
+I/SystemServer(  235): Profile Manager
+W/Profile (  235): Null Pointer - UUID not found for Default.  New UUID generated: ac5c994c-4c47-4526-b9d0-8b0060a80791
+W/Profile (  235): Null Pointer - UUID not found for Work.  New UUID generated: aa776b69-d599-486c-ab01-689fa950df38
+D/VoldCmdListener(  143): volume list
+I/PackageManager(  235): Updating external media status from unmounted to unmounted
+W/Profile (  235): Null Pointer - UUID not found for Home.  New UUID generated: 11e63c46-5af5-431d-b614-2b39df33df00
+W/Profile (  235): Null Pointer - UUID not found for Silent.  New UUID generated: c569fe4d-ba38-4f6f-a868-b9399fff3489
+D/VoldCmdListener(  143): share status ums
+W/Profile (  235): Null Pointer - UUID not found for Night.  New UUID generated: 044018a9-7846-4920-9c27-14d380ef46f5
+D/ProfileService(  235): Set active profile to: ac5c994c-4c47-4526-b9d0-8b0060a80791 - Default
+D/ProfileService(  235): Saving profile data...
+D/dalvikvm(  235): GC_CONCURRENT freed 346K, 56% free 4024K/8967K, external 0K/0K, paused 2ms+17ms
+D/ProfileService(  235): Save completed.
+I/SystemServer(  235): Notification Manager
+I/SystemServer(  235): Device Storage Monitor
+I/SystemServer(  235): Location Manager
+I/SystemServer(  235): Search Service
+I/SystemServer(  235): DropBox Service
+I/SystemServer(  235): Wallpaper Service
+W/WallpaperService(  235): failed parsing /data/system/wallpaper_info.xml java.io.FileNotFoundException: /data/system/wallpaper_info.xml (No such file or directory)
+I/SystemServer(  235): Audio Service
+D/AudioHardwareMSM7X30(  141): setVoiceVolume(0.800000)
+I/AudioHardwareMSM7X30(  141): Setting in-call volume to 80 (available range is 0 to 100)
+E/AudioHardwareMSM7X30(  141): msm_set_voice_rx_vol(80) failed errno = 1
+I/mediaserver(  126): msm_mixer_elem_write failed.
+D/AudioHardwareInterface(  141): setMode(NORMAL)
+W/AudioPolicyManager(  141): setPhoneState() setting same state 0
+I/SystemServer(  235): Headset Observer
+I/SystemServer(  235): HDMI Observer
+W/HDMIObserver(  235): This kernel does not have hdmi support
+I/SystemServer(  235): Dock Observer
+W/DockObserver(  235): This kernel does not have dock station support
+W/UsbDeviceSettingsManager(  235): settings file not found
+I/SystemServer(  235): USB Service
+I/SystemServer(  235): UI Mode Manager Service
+I/mediaserver(  126): OMXCORE API - OMX_Init 
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 0
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 1
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 2
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 3
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 4
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 5
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 6
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 7
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 8
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 9
+I/mediaserver(  126): OMXCORE API - OMX_ComponentNameEnum bebd488c 128 10
+I/SystemServer(  235): Backup Service
+V/BackupManagerService(  235): No ancestral data
+D/dalvikvm(  235): GC_CONCURRENT freed 324K, 54% free 4210K/8967K, external 0K/0K, paused 2ms+23ms
+I/BackupManagerService(  235): Backup enabled => false
+I/SystemServer(  235): AppWidget Service
+I/SystemServer(  235): Recognition Service
+I/SystemServer(  235): DiskStats Service
+I/SystemServer(  235): AssetRedirectionManager Service
+I/WindowManager(  235): SAFE MODE not enabled
+D/dalvikvm(  235): JIT started for system_server
+I/power   (  235): *** set_screen_state 1
+I/Zygote  (  235): Process: zygote socket opened
+D/PowerManagerService(  235): system ready!
+I/ActivityManager(  235): Sending system update to: ComponentInfo{com.android.providers.contacts/com.android.providers.contacts.ContactsUpgradeReceiver}
+I/ActivityManager(  235): Sending system update to: ComponentInfo{com.android.providers.calendar/com.android.providers.calendar.CalendarUpgradeReceiver}
+E/lights  (  235): write_int failed to open /sys/class/leds/red/brightness
+I/ActivityManager(  235): Start proc android.process.acore for broadcast com.android.providers.contacts/.ContactsUpgradeReceiver: pid=373 uid=10001 gids={3003, 1015}
+D/szipinf (  235): Initializing inflate state
+I/ActivityManager(  235): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.provision/.DefaultActivity } from pid 0
+W/AssetRedirectionManager(  235): No such resource found for com.tmobile.theme.Cyanbread:@drawable/frameworks_res_btn_toggle_off
+W/AssetRedirectionManager(  235): No such resource found for android:drawable/star_small_on
+W/AssetRedirectionManager(  235): No such resource found for android:drawable/star_small_half
+I/ActivityManager(  235): Launching preboot mode app: ProcessRecord{405999a8 373:android.process.acore/10001}
+D/szipinf (  373): Initializing inflate state
+I/ContactsUpgradeReceiver(  373): Creating or opening contacts database
+D/dalvikvm(  235): GC_CONCURRENT freed 425K, 54% free 4177K/8967K, external 0K/0K, paused 2ms+5ms
+I/ContactsDatabaseHelper(  373): Bootstrapping database
+D/dalvikvm(  373): GC_CONCURRENT freed 363K, 52% free 2747K/5639K, external 0K/0K, paused 2ms+2ms
+I/ContactsProviderV1(  373): Bootstrapping database legacy support
+I/ActivityManager(  235): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarUpgradeReceiver: pid=385 uid=10028 gids={3003}
+I/ActivityManager(  235): Launching preboot mode app: ProcessRecord{405bc738 385:com.android.providers.calendar/10028}
+D/szipinf (  385): Initializing inflate state
+I/CalendarUpgradeReceiver(  385): Creating or opening calendar database
+I/CalendarDatabaseHelper(  385): Bootstrapping database
+I/ActivityManager(  235): Writing new set of last done pre-boot receivers...
+I/Process (  235): Sending signal. PID: 373 SIG: 9
+I/ActivityManager(  235): Removing system update proc: ProcessRecord{405999a8 373:android.process.acore/10001}
+I/ActivityManager(  235): Removing system update proc: ProcessRecord{405bc738 385:com.android.providers.calendar/10028}
+I/Process (  235): Sending signal. PID: 385 SIG: 9
+D/szipinf (  235): Initializing inflate state
+I/ActivityManager(  235): System now ready
+I/SystemServer(  235): Making services ready
+I/StatusBarManagerService(  235): Starting service: ComponentInfo{com.android.systemui/com.android.systemui.statusbar.StatusBarService}
+I/ActivityManager(  235): Start proc com.android.systemui for service com.android.systemui/.statusbar.StatusBarService: pid=393 uid=1000 gids={1015, 3002, 3001, 3003}
+I/ActivityManager(  235): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=0 keys=0/0/0 nav=0/0 orien=0 layout=0 uiMode=17 seq=2 themeResource=null}
+W/RecognitionManagerService(  235): no available voice recognition services found
+I/UsbService(  235): Device not provisioned, skipping USB broadcast
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+W/AssetRedirectionManager(  235): No such resource found for com.android.music:drawable/progress_horizontal
+W/AssetRedirectionManager(  235): No such resource found for com.android.music:drawable/btn_playback_top_selected
+W/AssetRedirectionManager(  235): No such resource found for com.android.music:drawable/ic_mp_album_playback
+W/AssetRedirectionManager(  235): No such resource found for com.android.music:drawable/ic_mp_artist_playback
+W/AssetRedirectionManager(  235): No such resource found for com.android.music:drawable/ic_mp_song_playback
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  393): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+W/AssetRedirectionManager(  235): No such resource found for com.android.systemui:drawable/stat_sys_data_wimax_signal_3_fully
+W/AssetRedirectionManager(  235): No such resource found for com.android.systemui:drawable/stat_sys_data_wimax_signal_2_fully
+W/AssetRedirectionManager(  235): No such resource found for com.android.systemui:drawable/stat_sys_data_wimax_signal_1_fully
+W/AssetRedirectionManager(  235): No such resource found for com.android.systemui:drawable/stat_sys_data_wimax_signal_0_fully
+I/ActivityManager(  235): Start proc com.android.inputmethod.latin for service com.android.inputmethod.latin/.LatinIME: pid=402 uid=10016 gids={}
+D/NetworkManagmentService(  235): Registering observer
+E/ThrottleService(  235): Error reading data file
+I/ActivityManager(  235): Start proc com.android.phone for added application com.android.phone: pid=406 uid=1001 gids={3002, 3001, 3003, 1015}
+I/PowerWidget(  393): Clearing any old widget stuffs
+I/PowerWidget(  393): Setting up widget
+D/dalvikvm(  235): GC_CONCURRENT freed 428K, 53% free 4260K/8967K, external 0K/0K, paused 2ms+4ms
+D/dalvikvm(  235): GC_EXTERNAL_ALLOC freed 15K, 53% free 4245K/8967K, external 0K/0K, paused 50ms
+W/WindowManager(  235): HistoryRecord{40828350 com.android.provision/.DefaultActivity} failed creating starting window
+W/WindowManager(  235): android.view.InflateException: Binary XML file line #25: Error inflating class android.widget.FrameLayout
+W/WindowManager(  235): 	at android.view.LayoutInflater.createView(LayoutInflater.java:518)
+W/WindowManager(  235): 	at com.android.internal.policy.impl.PhoneLayoutInflater.onCreateView(PhoneLayoutInflater.java:56)
+W/WindowManager(  235): 	at android.view.LayoutInflater.createViewFromTag(LayoutInflater.java:568)
+W/WindowManager(  235): 	at android.view.LayoutInflater.rInflate(LayoutInflater.java:623)
+W/WindowManager(  235): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:408)
+W/WindowManager(  235): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:320)
+W/WindowManager(  235): 	at android.view.LayoutInflater.inflate(LayoutInflater.java:276)
+W/WindowManager(  235): 	at com.android.internal.policy.impl.PhoneWindow.generateLayout(PhoneWindow.java:2301)
+W/WindowManager(  235): 	at com.android.internal.policy.impl.PhoneWindow.installDecor(PhoneWindow.java:2356)
+W/WindowManager(  235): 	at com.android.internal.policy.impl.PhoneWindow.getDecorView(PhoneWindow.java:1522)
+W/WindowManager(  235): 	at com.android.internal.policy.impl.PhoneWindowManager.addStartingWindow(PhoneWindowManager.java:1140)
+W/WindowManager(  235): 	at com.android.server.WindowManagerService$H.handleMessage(WindowManagerService.java:8004)
+W/WindowManager(  235): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+W/WindowManager(  235): 	at android.os.Looper.loop(Looper.java:130)
+W/WindowManager(  235): 	at com.android.server.WindowManagerService$WMThread.run(WindowManagerService.java:596)
+W/WindowManager(  235): Caused by: java.lang.reflect.InvocationTargetException
+W/WindowManager(  235): 	at java.lang.reflect.Constructor.constructNative(Native Method)
+W/WindowManager(  235): 	at java.lang.reflect.Constructor.newInstance(Constructor.java:415)
+W/WindowManager(  235): 	at android.view.LayoutInflater.createView(LayoutInflater.java:505)
+W/WindowManager(  235): 	... 14 more
+W/WindowManager(  235): Caused by: java.lang.ArrayIndexOutOfBoundsException
+W/WindowManager(  235): 	at android.content.res.AssetManager.getPooledString(AssetManager.java:296)
+W/WindowManager(  235): 	at android.content.res.TypedArray.loadStringValueAt(TypedArray.java:726)
+W/WindowManager(  235): 	at android.content.res.TypedArray.getValueAt(TypedArray.java:711)
+W/WindowManager(  235): 	at android.content.res.TypedArray.getDrawable(TypedArray.java:591)
+W/WindowManager(  235): 	at android.view.View.<init>(View.java:1972)
+W/WindowManager(  235): 	at android.view.ViewGroup.<init>(ViewGroup.java:292)
+W/WindowManager(  235): 	at android.widget.FrameLayout.<init>(FrameLayout.java:88)
+W/WindowManager(  235): 	at android.widget.FrameLayout.<init>(FrameLayout.java:84)
+W/WindowManager(  235): 	... 17 more
+I/PowerWidget(  393): Default buttons being loaded
+I/PowerWidget(  393): Button list: toggleWifi|toggleBluetooth|toggleGPS|toggleSound
+I/ActivityManager(  235): Start proc com.android.provision for activity com.android.provision/.DefaultActivity: pid=409 uid=10008 gids={}
+D/szipinf (  409): Initializing inflate state
+D/szipinf (  402): Initializing inflate state
+D/szipinf (  402): Initializing inflate state
+I/InputReader(  235): Device reconfigured: id=0x10002, name=touch_mcs8000, display size is now 320x480
+I/InputReader(  235): Device reconfigured: id=0x10003, name=ats_input, display size is now 320x480
+I/InputManager-Callbacks(  235): No virtual keys found for device touch_mcs8000.
+I/InputManager-Callbacks(  235): No virtual keys found for device ats_input.
+I/ActivityManager(  235): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=1 layout=18 uiMode=17 seq=3 themeResource=null}
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  406): Initializing inflate state
+D/dalvikvm(  393): GC_EXTERNAL_ALLOC freed 92K, 49% free 2746K/5379K, external 0K/0K, paused 214ms
+D/szipinf (  235): Initializing inflate state
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+W/BackupManagerService(  235): dataChanged but no participant pkg='com.android.providers.settings' uid=10008
+I//system/bin/tc(  138): RTNETLINK answers: No such file or directory
+I/logwrapper(  138): /system/bin/tc terminated by exit(2)
+D/szipinf (  235): Initializing inflate state
+I//system/bin/tc(  138): RTNETLINK answers: Invalid argument
+I/logwrapper(  138): /system/bin/tc terminated by exit(2)
+D/szipinf (  235): Initializing inflate state
+I//system/bin/tc(  138): Cannot find device "ifb0"
+I/logwrapper(  138): /system/bin/tc terminated by exit(1)
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/szipinf (  406): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+I/LocationManagerService(  235): Setting GPS Source to: 0
+I//system/bin/tc(  138): RTNETLINK answers: No such file or directory
+I/logwrapper(  138): /system/bin/tc terminated by exit(2)
+I//system/bin/tc(  138): RTNETLINK answers: Invalid argument
+I/logwrapper(  138): /system/bin/tc terminated by exit(2)
+I//system/bin/tc(  138): Cannot find device "ifb0"
+I/logwrapper(  138): /system/bin/tc terminated by exit(1)
+D/dalvikvm(  402): GC_EXTERNAL_ALLOC freed 90K, 49% free 2777K/5379K, external 0K/0K, paused 131ms
+D/dalvikvm(  402): GC_FOR_MALLOC freed <1K, 49% free 2777K/5379K, external 821K/1333K, paused 34ms
+I/dalvikvm-heap(  402): Grow heap (frag case) to 6.736MB for 841021-byte allocation
+D/dalvikvm(  402): GC_FOR_MALLOC freed <1K, 43% free 3598K/6215K, external 821K/1333K, paused 30ms
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+I/ActivityManager(  235): Force stopping package com.android.provision uid=10008
+I/Process (  235): Sending signal. PID: 409 SIG: 9
+I/ActivityManager(  235): Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.HOME] flg=0x10000000 cmp=com.android.launcher/.Launcher } from pid 0
+D/dalvikvm(  402): GC_CONCURRENT freed 10K, 42% free 3621K/6215K, external 821K/1333K, paused 1ms+27ms
+W/SurfaceComposerClient(  235): Destroying surface while a transaction is open. Client 0x157c18: destroying surface 1, mTransactionOpen=1
+D/szipinf (  235): Initializing inflate state
+W/AssetRedirectionManager(  235): No such resource found for com.tmobile.theme.Cyanbread:@drawable/shortcut_selector
+I/ActivityThread(  406): Pub mms: com.android.providers.telephony.MmsProvider
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/home_button_pressed
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/home_button_focused
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/all_apps_button_pressed
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/all_apps_button_focused
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/hotseat_phone_focused
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/hotseat_phone_pressed
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/hotseat_phone_normal
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/hotseat_browser_focused
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/hotseat_browser_pressed
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:drawable/hotseat_browser_normal
+D/dalvikvm(  235): GC_CONCURRENT freed 474K, 53% free 4297K/8967K, external 600K/1112K, paused 2ms+4ms
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:color/apps3d_glow_pressed
+W/AssetRedirectionManager(  235): No such resource found for com.android.launcher:color/apps3d_glow_focused
+I/ActivityThread(  406): Pub sms: com.android.providers.telephony.SmsProvider
+I/ActivityThread(  406): Pub telephony: com.android.providers.telephony.TelephonyProvider
+I/ActivityThread(  406): Pub icc: com.android.phone.IccProvider
+I/ActivityThread(  406): Pub mms-sms: com.android.providers.telephony.MmsSmsProvider
+I/ActivityManager(  235): Start proc com.android.launcher for activity com.android.launcher/.Launcher: pid=451 uid=10039 gids={1015}
+D/szipinf (  235): Initializing inflate state
+I/ActivityManager(  235): Start proc android.process.acore for content provider com.android.providers.userdictionary/.UserDictionaryProvider: pid=452 uid=10001 gids={3003, 1015}
+I/StatusBarManagerService(  235): registerStatusBar bar=com.android.internal.statusbar.IStatusBar$Stub$Proxy@405376b0
+I/PowerWidget(  393): Clearing any old widget stuffs
+I/ActivityManager(  235): Start proc com.android.voicedialer for broadcast com.android.voicedialer/.VoiceDialerReceiver: pid=454 uid=10000 gids={3002}
+I/PowerWidget(  393): Setting up widget
+I/PowerWidget(  393): Default buttons being loaded
+I/PowerWidget(  393): Button list: toggleWifi|toggleBluetooth|toggleGPS|toggleSound
+D/szipinf (  235): Initializing inflate state
+D/VoldCmdListener(  143): share status ums
+D/StorageNotification(  393): Startup with UMS connection false (media state unmounted)
+I/StorageNotification(  393): UMS connection changed to true (media state unmounted)
+D/dalvikvm(  140): GC_EXPLICIT freed 10K, 51% free 2664K/5379K, external 0K/0K, paused 228ms
+V/AudioManager(  393): shouldVibrate, group: a126d48a-aaef-47c4-baed-7f0e44aeffe5 mode: DEFAULT
+D/szipinf (  452): Initializing inflate state
+W/ActivityManager(  235): Unable to start service Intent { act=@0 }: not found
+I/ActivityThread(  452): Pub com.android.social: com.android.providers.contacts.SocialProvider
+D/szipinf (  454): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+I/ActivityThread(  452): Pub applications: com.android.providers.applications.ApplicationsProvider
+D/VoiceDialerReceiver(  454): onReceive Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.android.provision flg=0x10000000 cmp=com.android.voicedialer/.VoiceDialerReceiver (has extras) }
+D/dalvikvm(  140): GC_EXPLICIT freed <1K, 51% free 2664K/5379K, external 0K/0K, paused 170ms
+V/RecognizerEngine(  454): deleteCachedGrammarFiles /data/data/com.android.voicedialer/files/openentries.txt
+D/szipinf (  451): Initializing inflate state
+I/ActivityThread(  451): Pub com.android.launcher.settings: com.android.launcher.LauncherProvider
+D/dalvikvm(  140): GC_EXPLICIT freed <1K, 51% free 2664K/5379K, external 0K/0K, paused 52ms
+I/ActivityManager(  235): Start proc com.cyanogenmod.cmparts for broadcast com.cyanogenmod.cmparts/.intents.LEDNotificationReceiver: pid=480 uid=1000 gids={1015, 3002, 3001, 3003}
+I/ActivityThread(  452): Pub contacts;com.android.contacts: com.android.providers.contacts.ContactsProvider2
+D/dalvikvm(  393): GC_CONCURRENT freed 126K, 48% free 2903K/5511K, external 423K/512K, paused 1ms+38ms
+D/dalvikvm(  235): GC_EXTERNAL_ALLOC freed 242K, 52% free 4315K/8967K, external 600K/1112K, paused 65ms
+W/ActivityManager(  235): Unable to start service Intent { act=@0 }: not found
+D/szipinf (  480): Initializing inflate state
+D/dalvikvm(  406): GC_CONCURRENT freed 183K, 48% free 2904K/5575K, external 0K/0K, paused 2ms+2ms
+D/dalvikvm(  451): GC_EXTERNAL_ALLOC freed 133K, 49% free 2775K/5379K, external 0K/0K, paused 244ms
+D/szipinf (  480): Initializing inflate state
+E/TelephonyProvider(  406): Failed setting numeric '311490' to the current operator
+D/MccTable(  406): updateMccMncConfiguration: mcc=311, mnc=490
+D/dalvikvm(  235): GC_EXTERNAL_ALLOC freed 50K, 53% free 4273K/8967K, external 1800K/2312K, paused 99ms
+I/ActivityThread(  480): Pub com.cyanogenmod.cmparts.provider.Settings: com.cyanogenmod.cmparts.provider.SettingsProvider
+D/AlarmManagerService(  235): Kernel timezone updated to 300 minutes west of GMT
+W/GpsLocationProvider(  235): Failed to enable location provider
+D/dalvikvm(  235): GC_EXPLICIT freed 4K, 53% free 4277K/8967K, external 1200K/2400K, paused 131ms
+D/dalvikvm(  235): GC_EXPLICIT freed 0K, 53% free 4277K/8967K, external 1200K/2400K, paused 68ms
+D/dalvikvm(  451): GC_EXTERNAL_ALLOC freed 139K, 49% free 2845K/5511K, external 492K/512K, paused 144ms
+V/AudioManager(  393): shouldVibrate, group: a126d48a-aaef-47c4-baed-7f0e44aeffe5 mode: DEFAULT
+D/MccTable(  406): timezone set to America/New_York
+D/MccTable(  406): locale set to en_us
+D/ResourceType(  406): calling getConfigurations
+D/ResourceType(  406): called getConfigurations size=229
+I/ActivityManager(  235): Config changed: { scale=1.0 imsi=0/0 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=1 layout=18 uiMode=17 seq=4 themeResource=null}
+D/ViewConsistency(  451): AbsListView com.android.launcher.AllAppsGridView@40546fd0 enabled= true
+D/ProfileService(  235): Found active: ac5c994c-4c47-4526-b9d0-8b0060a80791
+D/MccTable(  406): WIFI_NUM_ALLOWED_CHANNELS set to 11
+I/WifiService(  235): WifiService trying to setNumAllowed to 11 with persist set to true
+I/ActivityManager(  235): Config changed: { scale=1.0 imsi=311/490 loc=en_US touch=3 keys=1/1/2 nav=1/1 orien=1 layout=18 uiMode=17 seq=5 themeResource=null}
+I/ActivityManager(  235): Start proc com.android.settings for broadcast com.android.settings/.widget.SettingsAppWidgetProvider: pid=491 uid=1000 gids={1015, 3002, 3001, 3003}
+D/CallManager(  406): registerPhone(CDMA Handler{4054bee0})
+I/TelephonyRegistry(  235): notifyMessageWaitingChanged: false
+D/dalvikvm(  393): GC_EXTERNAL_ALLOC freed 95K, 47% free 3020K/5639K, external 511K/512K, paused 214ms
+D/CallFeaturesSetting(  406): exception is java.io.FileNotFoundException: /data/data/com.android.phone/files/blacklist.dat (No such file or directory)
+V/ContactsProvider(  452): Importing legacy contacts
+I/ActivityThread(  452): Pub call_log: com.android.providers.contacts.CallLogProvider
+I/ActivityThread(  452): Pub user_dictionary: com.android.providers.userdictionary.UserDictionaryProvider
+D/dalvikvm(  451): GC_EXTERNAL_ALLOC freed 31K, 48% free 2882K/5511K, external 1022K/1025K, paused 273ms
+D/ViewConsistency(  451): AbsListView com.android.launcher.AllAppsGridView@40546fd0 enabled= true
+D/BT HS/HF(  406): CDMA call state: IDLE prev state:IDLE
+D/ProfileService(  235): Set active profile to: ac5c994c-4c47-4526-b9d0-8b0060a80791 - Default
+D/ProfileService(  235): Saving profile data...
+W/ActivityManager(  235): Unable to start service Intent { act=com.android.ussd.IExtendedNetworkService }: not found
+D/ProfileService(  235): Save completed.
+D/szipinf (  491): Initializing inflate state
+D/HomeLoaders(  451): load applications
+D/HomeLoaders(  451): loading user items in Thread[main,5,main]
+D/HomeLoaders(  451):   --> starting workspace loader
+I/TelephonyRegistry(  235): notifyServiceState: 3 home null null null  Unknown CSS not supported -1 -1RoamInd: -1DefRoamInd: -1EmergOnly: false
+D/dalvikvm(  451): GC_EXTERNAL_ALLOC freed 113K, 48% free 2895K/5511K, external 1204K/1553K, paused 102ms
+D/HomeLoaders(  451):   ----> running workspace loader (1)
+I/TelephonyRegistry(  235): notifyDataConnection: state=0 isDataConnectivityPossible=false reason=radioTurnedOff interfaceName=null networkType=0
+D/dalvikvm(  451): GC_EXTERNAL_ALLOC freed 4K, 48% free 2895K/5511K, external 2252K/2812K, paused 76ms
+D/BT HSHFP(  406): Starting BluetoothHeadsetService
+D/szipinf (  491): Initializing inflate state
+D/LauncherProvider(  451): creating new launcher database
+I/ActivityManager(  235): Start proc com.android.deskclock for broadcast com.android.deskclock/.AlarmInitReceiver: pid=508 uid=10022 gids={}
+D/LauncherProvider(  451): converting database from an older format, but not onUpgrade
+I/TelephonyRegistry(  235): notifyServiceState: 1 home null null null  Unknown CSS not supported 0 0RoamInd: 2DefRoamInd: 0EmergOnly: false
+D/HomeLoaders(  451): aborting loaders
+D/HomeLoaders(  451):   --> aborting workspace loader
+D/HomeLoaders(  451):   ----> workspace loader 1 stopped from Thread[main,5,main]
+D/szipinf (  508): Initializing inflate state
+D/szipinf (  508): Initializing inflate state
+D/dalvikvm(  451): GC_EXPLICIT freed 13K, 48% free 2912K/5511K, external 1652K/2852K, paused 72ms
+D/szipinf (  451): Initializing inflate state
+I/ActivityThread(  508): Pub com.android.deskclock: com.android.deskclock.AlarmProvider
+D/szipinf (  235): Initializing inflate state
+D/ViewConsistency(  451): AbsListView com.android.launcher.AllAppsGridView@40578dd8 enabled= true
+I/ContactsDatabaseHelper(  452): Switching to locale en_US
+D/ViewConsistency(  451): AbsListView com.android.launcher.AllAppsGridView@40578dd8 enabled= true
+D/HomeLoaders(  451): load applications
+D/HomeLoaders(  451): loading user items in Thread[main,5,main]
+D/HomeLoaders(  451):   --> stopping workspace loader
+D/HomeLoaders(  451):   ----> workspace loader 1 stopped from Thread[main,5,main]
+D/dalvikvm(  452): GC_CONCURRENT freed 188K, 48% free 2914K/5575K, external 0K/0K, paused 2ms+4ms
+W/BackupManagerService(  235): dataChanged but no participant pkg='com.android.providers.settings' uid=10022
+V/SipBroadcastReceiver(  406): start auto registration
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/dalvikvm(  406): GC_CONCURRENT freed 245K, 48% free 3047K/5831K, external 0K/0K, paused 2ms+33ms
+D/dalvikvm(  235): GC_CONCURRENT freed 500K, 52% free 4371K/8967K, external 600K/1200K, paused 3ms+39ms
+D/AlarmManagerService(  235): Kernel timezone updated to 240 minutes west of GMT
+D/szipinf (  451): Initializing inflate state
+I/ActivityManager(  235): Start proc com.koushikdutta.rommanager for broadcast com.koushikdutta.rommanager/.CheckinReceiver: pid=519 uid=10006 gids={1015, 3003}
+D/SystemClock(  406): Setting time of day to sec=1351296164
+D/szipinf (  235): Initializing inflate state
+W/AssetRedirectionManager(  235): No such resource found for com.android.camera:drawable/camera_background
+D/AlarmManagerService(  235): Kernel timezone updated to 240 minutes west of GMT
+I/TelephonyRegistry(  235): notifyServiceState: 0 home SPG           111000  IS95A CSS not supported 8 4274RoamInd: 2DefRoamInd: 0EmergOnly: false
+I/TelephonyRegistry(  235): notifyDataConnection: state=0 isDataConnectivityPossible=false reason=null interfaceName=null networkType=4
+D/szipinf (  451): Initializing inflate state
+I/TelephonyRegistry(  235): notifyServiceState: 0 home SPG           310127  1xRTT CSS not supported 8 4274RoamInd: 2DefRoamInd: 0EmergOnly: false
+I/TelephonyRegistry(  235): notifyDataConnection: state=0 isDataConnectivityPossible=false reason=null interfaceName=null networkType=7
+I/SearchManagerService(  235): Building list of searchable activities
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  519): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/PurchasingManager(  519): In App Purchasing SDK - Sandbox Mode: PurchasingObserver registered: com.clockworkmod.billing.b@4051fa78
+I/PurchasingManager(  519): Purchasing Framework initialization complete. Build ID 1.0.3
+D/SandboxRequestHandler(  519): In App Purchasing SDK - Sandbox Mode: sendGetUserIdRequest
+W/ActivityManager(  235): Unable to start service Intent { act=com.amazon.testclient.iap.appUserId flg=0x10000000 (has extras) }: not found
+I/ContactsDatabaseHelper(  452): Locale change completed in 997ms
+I/LegacyContactImporter(  452): Legacy contacts database does not exist at /data/data/com.android.providers.contacts/databases/contacts.db
+D/szipinf (  235): Initializing inflate state
+V/ContactsProvider(  452): Completed import of legacy contacts
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+W/Resources(  451): Converting to int: TypedValue{t=0x3/d=0x26 "4" a=-1}
+W/Resources(  451): Converting to int: TypedValue{t=0x3/d=0x1c "1" a=-1}
+D/szipinf (  451): Initializing inflate state
+W/LauncherProvider(  451): Unable to add favorite: com.android.vending/com.android.vending.AssetBrowserActivity
+W/LauncherProvider(  451): android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.android.vending/com.android.vending.AssetBrowserActivity}
+W/LauncherProvider(  451): 	at android.app.ContextImpl$ApplicationPackageManager.getActivityInfo(ContextImpl.java:1891)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider$DatabaseHelper.addAppShortcut(LauncherProvider.java:633)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider$DatabaseHelper.loadFavorites(LauncherProvider.java:594)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider$DatabaseHelper.onCreate(LauncherProvider.java:251)
+W/LauncherProvider(  451): 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:126)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider.query(LauncherProvider.java:109)
+W/LauncherProvider(  451): 	at android.content.ContentProvider$Transport.query(ContentProvider.java:187)
+W/LauncherProvider(  451): 	at android.content.ContentResolver.query(ContentResolver.java:271)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherModel$DesktopItemsLoader.updateShortcutLabels(LauncherModel.java:1076)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherModel$DesktopItemsLoader.load_workspace(LauncherModel.java:820)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherModel$DesktopItemsLoader.run(LauncherModel.java:806)
+W/LauncherProvider(  451): 	at java.lang.Thread.run(Thread.java:1019)
+D/szipinf (  451): Initializing inflate state
+W/Resources(  451): Converting to int: TypedValue{t=0x3/d=0x26 "4" a=-1}
+W/Resources(  451): Converting to int: TypedValue{t=0x3/d=0x20 "2" a=-1}
+D/szipinf (  452): Initializing inflate state
+W/System.err(  519): java.lang.Exception: no proof string
+W/System.err(  519): 	at com.clockworkmod.billing.aa.a(Unknown Source)
+W/System.err(  519): 	at com.clockworkmod.billing.aa.a(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.as.c(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.as.a(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.CheckinReceiver.onReceive(Unknown Source)
+W/System.err(  519): 	at android.app.ActivityThread.handleReceiver(ActivityThread.java:1915)
+W/System.err(  519): 	at android.app.ActivityThread.access$2400(ActivityThread.java:123)
+W/System.err(  519): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:989)
+W/System.err(  519): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+W/System.err(  519): 	at android.os.Looper.loop(Looper.java:130)
+W/System.err(  519): 	at android.app.ActivityThread.main(ActivityThread.java:3835)
+W/System.err(  519): 	at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(  519): 	at java.lang.reflect.Method.invoke(Method.java:507)
+W/System.err(  519): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+W/System.err(  519): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+W/System.err(  519): 	at dalvik.system.NativeStart.main(Native Method)
+D/szipinf (  451): Initializing inflate state
+W/LauncherProvider(  451): Unable to add favorite: com.google.android.talk/com.google.android.talk.SigningInActivity
+W/LauncherProvider(  451): android.content.pm.PackageManager$NameNotFoundException: ComponentInfo{com.google.android.talk/com.google.android.talk.SigningInActivity}
+W/LauncherProvider(  451): 	at android.app.ContextImpl$ApplicationPackageManager.getActivityInfo(ContextImpl.java:1891)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider$DatabaseHelper.addAppShortcut(LauncherProvider.java:633)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider$DatabaseHelper.loadFavorites(LauncherProvider.java:594)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider$DatabaseHelper.onCreate(LauncherProvider.java:251)
+W/LauncherProvider(  451): 	at android.database.sqlite.SQLiteOpenHelper.getWritableDatabase(SQLiteOpenHelper.java:126)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherProvider.query(LauncherProvider.java:109)
+W/LauncherProvider(  451): 	at android.content.ContentProvider$Transport.query(ContentProvider.java:187)
+W/LauncherProvider(  451): 	at android.content.ContentResolver.query(ContentResolver.java:271)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherModel$DesktopItemsLoader.updateShortcutLabels(LauncherModel.java:1076)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherModel$DesktopItemsLoader.load_workspace(LauncherModel.java:820)
+W/LauncherProvider(  451): 	at com.android.launcher.LauncherModel$DesktopItemsLoader.run(LauncherModel.java:806)
+W/LauncherProvider(  451): 	at java.lang.Thread.run(Thread.java:1019)
+D/HomeLoaders(  451):   ----> workspace loader 1 finished loading data
+D/HomeLoaders(  451):   ----> worskpace items=0
+D/HomeLoaders(  451):   ----> worskpace widgets=0
+D/HomeLoaders(  451):   ----> worskpace loader was stopped
+D/HomeLoaders(  451):   --> starting workspace loader
+I/ActivityManager(  235): Start proc com.android.quicksearchbox for broadcast com.android.quicksearchbox/.SearchWidgetProvider: pid=529 uid=10007 gids={3003}
+D/HomeLoaders(  451):   ----> running workspace loader (2)
+I/ActivityManager(  235): Displayed com.android.launcher/.Launcher: +4s568ms (total +7s539ms)
+D/szipinf (  529): Initializing inflate state
+D/szipinf (  529): Initializing inflate state
+I/ActivityThread(  529): Pub com.android.quicksearchbox.google: com.android.quicksearchbox.google.GoogleSuggestionProvider
+D/HomeLoaders(  451):   ----> workspace loader 2 finished loading data
+D/HomeLoaders(  451):   ----> worskpace items=9
+D/HomeLoaders(  451):   ----> worskpace widgets=3
+D/HomeLoaders(  451):   --> done loading workspace; not stopped
+D/HomeLoaders(  451):   ----> items cloned, ready to refresh UI
+D/HomeLoaders(  451):   ----> loading applications from workspace loader
+D/HomeLoaders(  451):   --> starting applications loader unlocked
+D/HomeLoaders(  451):   --> starting applications loader
+D/HomeLoaders(  451):   ----> onDesktopItemsLoaded()
+I/ActivityThread(  529): Pub com.android.quicksearchbox.shortcuts: com.android.quicksearchbox.ShortcutsProvider
+D/Launcher(  451): ------> binding 9 items
+D/Launcher(  451): ------> binding 3 widgets
+D/Launcher(  451): ------> start binding items
+D/HomeLoaders(  451):   ----> running applications loader (1)
+W/SurfaceComposerClient(  235): Destroying surface while a transaction is open. Client 0x157c18: destroying surface 2, mTransactionOpen=1
+I/ActivityManager(  235): Start proc com.android.protips for broadcast com.android.protips/.ProtipWidget: pid=539 uid=10009 gids={}
+D/dalvikvm(  451): GC_CONCURRENT freed 504K, 50% free 3045K/6087K, external 2042K/2852K, paused 2ms+2ms
+D/szipinf (  539): Initializing inflate state
+D/szipinf (  539): Initializing inflate state
+D/PowerManagerService(  235): bootCompleted
+I/SurfaceFlinger(  235): Boot is finished (39318 ms)
+I/ARMAssembler(  235): generated scanline__00000077:03010101_00000002_00000000 [ 30 ipp] (50 ins) at [0x484bc2d0:0x484bc398] in 91553 ns
+D/szipinf (  451): Initializing inflate state
+D/VoldCmdListener(  143): volume mount /mnt/sdcard
+I/Vold    (  143): /dev/block/vold/179:15 being considered for volume emmc
+D/Vold    (  143): Volume emmc state changing 1 (Idle-Unmounted) -> 3 (Checking)
+I/StorageNotification(  393): Media {/mnt/sdcard} state changed from {unmounted} -> {checking}
+D/szipinf (  451): Initializing inflate state
+I//system/bin/fsck_msdos(  143): ** /dev/block/vold/179:15
+I//system/bin/fsck_msdos(  143): ** Phase 1 - Read and Compare FATs
+I//system/bin/fsck_msdos(  143): Attempting to allocate 123 KB for FAT
+D/dalvikvm(  235): GC_CONCURRENT freed 414K, 51% free 4420K/8967K, external 600K/1200K, paused 2ms+5ms
+I//system/bin/fsck_msdos(  143): Attempting to allocate 123 KB for FAT
+I//system/bin/fsck_msdos(  143): ** Phase 2 - Check Cluster Chains
+D/szipinf (  451): Initializing inflate state
+I//system/bin/fsck_msdos(  143): ** Phase 3 - Checking Directories
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/HomeLoaders(  451):   ----> cleared application list
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/dalvikvm(  452): GC_CONCURRENT freed 384K, 50% free 2996K/5895K, external 0K/0K, paused 2ms+3ms
+D/szipinf (  452): Initializing inflate state
+D/dalvikvm(  451): GC_CONCURRENT freed 544K, 50% free 3194K/6279K, external 2131K/2313K, paused 2ms+2ms
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  451): Initializing inflate state
+I/ActivityManager(  235): Start proc com.android.music for broadcast com.android.music/.MediaAppWidgetProvider4x2: pid=562 uid=10013 gids={3003, 1015}
+D/szipinf (  562): Initializing inflate state
+D/szipinf (  562): Initializing inflate state
+V/OtaStartupReceiver(  406): resolvInfo = null, provisioned = true, runningSetupWizard = true
+D/dalvikvm(  235): GC_EXPLICIT freed 115K, 51% free 4413K/8967K, external 600K/1200K, paused 51ms
+I/ActivityManager(  235): Start proc com.bel.android.dspmanager for broadcast com.bel.android.dspmanager/.ServiceLaunchReceiver: pid=570 uid=10024 gids={3002}
+D/szipinf (  451): Initializing inflate state
+D/szipinf (  570): Initializing inflate state
+I/HeadsetService(  570): Starting service.
+D/VoiceDialerReceiver(  454): onReceive Intent { act=android.intent.action.BOOT_COMPLETED cmp=com.android.voicedialer/.VoiceDialerReceiver }
+V/RecognizerEngine(  454): deleteCachedGrammarFiles /data/data/com.android.voicedialer/files/openentries.txt
+I/ActivityManager(  235): Start proc com.android.mms for broadcast com.android.mms/.transaction.MmsSystemEventReceiver: pid=579 uid=10014 gids={3003, 1015}
+I/Effect-Equalizer(  141): EQ_PARAM_NUM_BANDS OK
+W/System.err(  519): java.io.FileNotFoundException: /sdcard/clockworkmod/.settings (Permission denied)
+W/System.err(  519): 	at org.apache.harmony.luni.platform.OSFileSystem.open(Native Method)
+W/System.err(  519): 	at dalvik.system.BlockGuard$WrappedFileSystem.open(BlockGuard.java:232)
+W/System.err(  519): 	at java.io.FileOutputStream.<init>(FileOutputStream.java:94)
+W/System.err(  519): 	at java.io.FileOutputStream.<init>(FileOutputStream.java:165)
+W/System.err(  519): 	at java.io.FileOutputStream.<init>(FileOutputStream.java:144)
+W/System.err(  519): 	at com.koushikdutta.rommanager.as.a(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.DownloadService.onCreate(Unknown Source)
+W/System.err(  519): 	at android.app.ActivityThread.handleCreateService(ActivityThread.java:2066)
+W/System.err(  519): 	at android.app.ActivityThread.access$2500(ActivityThread.java:123)
+W/System.err(  519): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:993)
+W/System.err(  519): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+W/System.err(  519): 	at android.os.Looper.loop(Looper.java:130)
+W/System.err(  519): 	at android.app.ActivityThread.main(ActivityThread.java:3835)
+W/System.err(  519): 	at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(  519): 	at java.lang.reflect.Method.invoke(Method.java:507)
+W/System.err(  519): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+W/System.err(  519): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+W/System.err(  519): 	at dalvik.system.NativeStart.main(Native Method)
+I/HeadsetService(  570): Phone status idle: enable DSP.
+I/Effect-BassBoost(  141): New strength: 0
+I/Effect-Equalizer(  141): Setting band 2 to 0
+I/Effect-Equalizer(  141): Setting band 2 to 1
+I/Effect-Equalizer(  141): Setting band 2 to 2
+I/Effect-Equalizer(  141): Setting band 2 to 3
+I/Effect-Equalizer(  141): Setting band 2 to 4
+I/Effect-Equalizer(  141): Setting loudness correction reference to 100.000000 dB
+W/System.err(  519): java.lang.Exception: no proof string
+W/System.err(  519): 	at com.clockworkmod.billing.aa.a(Unknown Source)
+W/System.err(  519): 	at com.clockworkmod.billing.aa.a(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.as.c(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.as.a(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.DownloadService.b(Unknown Source)
+W/System.err(  519): 	at com.koushikdutta.rommanager.DownloadService.onStartCommand(Unknown Source)
+W/System.err(  519): 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2160)
+W/System.err(  519): 	at android.app.ActivityThread.access$2800(ActivityThread.java:123)
+W/System.err(  519): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1002)
+W/System.err(  519): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+W/System.err(  519): 	at android.os.Looper.loop(Looper.java:130)
+W/System.err(  519): 	at android.app.ActivityThread.main(ActivityThread.java:3835)
+W/System.err(  519): 	at java.lang.reflect.Method.invokeNative(Native Method)
+W/System.err(  519): 	at java.lang.reflect.Method.invoke(Method.java:507)
+W/System.err(  519): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+W/System.err(  519): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+W/System.err(  519): 	at dalvik.system.NativeStart.main(Native Method)
+I/ClockworkModBilling(  519): Refreshing Market purchases...
+I/ClockworkBilling(  519): com.clockworkmod.billing.BillingReceiver.REFRESH_MARKET
+W/ActivityManager(  235): Unable to start service Intent { act=com.android.vending.billing.MarketBillingService.BIND }: not found
+D/szipinf (  579): Initializing inflate state
+D/dalvikvm(  235): GC_CONCURRENT freed 183K, 48% free 4751K/8967K, external 600K/1200K, paused 3ms+3ms
+D/szipinf (  579): Initializing inflate state
+D/dalvikvm(  235): GC_FOR_MALLOC freed 171K, 48% free 4665K/8967K, external 600K/1200K, paused 43ms
+I/ActivityThread(  579): Pub com.android.mms.SuggestionsProvider: com.android.mms.SuggestionsProvider
+E/ActivityThread(  519): Service com.koushikdutta.rommanager.DownloadService has leaked IntentReceiver com.clockworkmod.billing.bh@4054e810 that was originally registered here. Are you missing a call to unregisterReceiver()?
+E/ActivityThread(  519): android.app.IntentReceiverLeaked: Service com.koushikdutta.rommanager.DownloadService has leaked IntentReceiver com.clockworkmod.billing.bh@4054e810 that was originally registered here. Are you missing a call to unregisterReceiver()?
+E/ActivityThread(  519): 	at android.app.LoadedApk$ReceiverDispatcher.<init>(LoadedApk.java:756)
+E/ActivityThread(  519): 	at android.app.LoadedApk.getReceiverDispatcher(LoadedApk.java:551)
+E/ActivityThread(  519): 	at android.app.ContextImpl.registerReceiverInternal(ContextImpl.java:823)
+E/ActivityThread(  519): 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:810)
+E/ActivityThread(  519): 	at android.app.ContextImpl.registerReceiver(ContextImpl.java:804)
+E/ActivityThread(  519): 	at android.content.ContextWrapper.registerReceiver(ContextWrapper.java:318)
+E/ActivityThread(  519): 	at com.clockworkmod.billing.aa.a(Unknown Source)
+E/ActivityThread(  519): 	at com.koushikdutta.rommanager.as.c(Unknown Source)
+E/ActivityThread(  519): 	at com.koushikdutta.rommanager.as.a(Unknown Source)
+E/ActivityThread(  519): 	at com.koushikdutta.rommanager.DownloadService.b(Unknown Source)
+E/ActivityThread(  519): 	at com.koushikdutta.rommanager.DownloadService.onStartCommand(Unknown Source)
+E/ActivityThread(  519): 	at android.app.ActivityThread.handleServiceArgs(ActivityThread.java:2160)
+E/ActivityThread(  519): 	at android.app.ActivityThread.access$2800(ActivityThread.java:123)
+E/ActivityThread(  519): 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1002)
+E/ActivityThread(  519): 	at android.os.Handler.dispatchMessage(Handler.java:99)
+E/ActivityThread(  519): 	at android.os.Looper.loop(Looper.java:130)
+E/ActivityThread(  519): 	at android.app.ActivityThread.main(ActivityThread.java:3835)
+E/ActivityThread(  519): 	at java.lang.reflect.Method.invokeNative(Native Method)
+E/ActivityThread(  519): 	at java.lang.reflect.Method.invoke(Method.java:507)
+E/ActivityThread(  519): 	at com.android.internal.os.ZygoteInit$MethodAndArgsCaller.run(ZygoteInit.java:864)
+E/ActivityThread(  519): 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:622)
+E/ActivityThread(  519): 	at dalvik.system.NativeStart.main(Native Method)
+I/RecoverySystem(  235): Deleted: /cache/recovery/last_install
+I/RecoverySystem(  235): Deleted: /cache/recovery/log
+D/dalvikvm(  235): GC_FOR_MALLOC freed 241K, 50% free 4557K/8967K, external 600K/1200K, paused 39ms
+W/Resources(  579): Converting to string: TypedValue{t=0x10/d=0x7d0 a=-1}
+D/dalvikvm(  579): GC_EXTERNAL_ALLOC freed 69K, 50% free 2726K/5379K, external 0K/0K, paused 39ms
+W/Resources(  579): Converting to string: TypedValue{t=0x10/d=0x12 a=-1}
+W/Resources(  579): Converting to string: TypedValue{t=0x10/d=0x12 a=-1}
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+I/BootReceiver(  235): Copying /proc/last_kmsg to DropBox (SYSTEM_LAST_KMSG)
+D/dalvikvm(  235): GC_FOR_MALLOC freed 299K, 48% free 4697K/8967K, external 600K/1200K, paused 36ms
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+D/szipinf (  452): Initializing inflate state
+I/ActivityManager(  235): Start proc android.process.media for content provider com.android.providers.downloads/.DownloadProvider: pid=600 uid=10015 gids={1015, 2001, 3003}
+D/AlarmManagerService(  235): Kernel timezone updated to 240 minutes west of GMT
+D/SystemClock(  406): Setting time of day to sec=1351296168
+D/szipinf (  600): Initializing inflate state
+D/szipinf (  600): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+I/ActivityThread(  600): Pub media: com.android.providers.media.MediaProvider
+V/MediaProvider(  600): Attached volume: internal
+I/ActivityThread(  600): Pub downloads: com.android.providers.downloads.DownloadProvider
+I/ActivityThread(  600): Pub drm: com.android.providers.drm.DrmProvider
+I/ActivityManager(  235): Start proc com.android.email for broadcast com.android.email/.service.EmailBroadcastReceiver: pid=611 uid=10020 gids={3003, 1015}
+I/DownloadManager(  600): Upgrading downloads database from version 0 to version 106, which will destroy all old data
+D/dalvikvm(  140): GC_EXPLICIT freed 11K, 51% free 2664K/5379K, external 0K/0K, paused 134ms
+D/szipinf (  611): Initializing inflate state
+D/dalvikvm(  140): GC_EXPLICIT freed <1K, 51% free 2664K/5379K, external 0K/0K, paused 67ms
+D/szipinf (  611): Initializing inflate state
+I/ActivityThread(  611): Pub com.android.email.provider: com.android.email.provider.EmailProvider
+I/ActivityThread(  611): Pub com.android.email.attachmentprovider: com.android.email.provider.AttachmentProvider
+I/ActivityThread(  611): Pub com.android.exchange.provider: com.android.exchange.provider.ExchangeProvider
+D/dalvikvm(  140): GC_EXPLICIT freed <1K, 51% free 2664K/5379K, external 0K/0K, paused 61ms
+D/EAS SyncManager(  611): !!! EAS SyncManager, onCreate
+I/ActivityManager(  235): Start proc com.android.providers.calendar for broadcast com.android.providers.calendar/.CalendarReceiver: pid=626 uid=10028 gids={3003}
+D/EAS SyncManager(  611): !!! EAS SyncManager, onStartCommand
+D/szipinf (  626): Initializing inflate state
+D/Email   (  611): BOOT_COMPLETED
+I/Email   (  611): Onetime initialization: 1
+I/ActivityThread(  626): Pub com.android.calendar: com.android.providers.calendar.CalendarProvider2
+D/MediaScannerService(  600): start scanning volume internal
+D/EmailProvider(  611): Creating EmailProvider database
+I/Email   (  611): Onetime initialization: completed.
+I/ActivityManager(  235): Start proc com.cyanogenmod.stats for broadcast com.cyanogenmod.stats/.ReportingServiceManager: pid=637 uid=10033 gids={3003}
+D/szipinf (  637): Initializing inflate state
+D/dalvikvm(  611): GC_CONCURRENT freed 298K, 51% free 2811K/5639K, external 0K/0K, paused 2ms+2ms
+D/Calendar(  626): missed alarms found: 0
+D/CMStats (  637): BOOT_COMPLETED: Setting checkedin=false
+I/ActivityManager(  235): Start proc com.android.bluetooth for broadcast com.android.bluetooth/.opp.BluetoothOppReceiver: pid=645 uid=10036 gids={3003, 3002, 3001, 1015}
+D/EmailProvider(  611): Creating EmailProviderBody database
+D/szipinf (  645): Initializing inflate state
+D/szipinf (  645): Initializing inflate state
+D/szipinf (  235): Initializing inflate state
+I/ActivityThread(  645): Pub com.android.bluetooth.opp: com.android.bluetooth.opp.BluetoothOppProvider
+D/dalvikvm(  235): GC_CONCURRENT freed 749K, 50% free 4499K/8967K, external 600K/1200K, paused 4ms+3ms
+D/Calendar(  626): missed alarms found: 0
+I/MediaProvider(  600): Upgrading media database from version 63 to 101, which will destroy all old data
+D/EAS SyncManager(  611): !!! EAS SyncManager, stopping self
+D/Eas Debug(  611): Logging: 
+D/EAS SyncManager(  611): !!! EAS SyncManager, onDestroy
+D/EAS SyncManager(  611): !!! EAS SyncManager, onCreate
+D/EAS SyncManager(  611): !!! EAS SyncManager, onStartCommand
+D/EAS SyncManager(  611): !!! EAS SyncManager, stopping self
+D/EAS SyncManager(  611): !!! EAS SyncManager, onStartCommand
+D/EAS SyncManager(  611): !!! EAS SyncManager, stopping self
+D/EAS SyncManager(  611): !!! EAS SyncManager, onDestroy
+D/SystemClock(  406): Setting time of day to sec=1351296171
+I//system/bin/fsck_msdos(  143): ** Phase 4 - Checking for Lost Files
+I//system/bin/fsck_msdos(  143): 6298 files, 379808 free (11869 clusters)
+I/Vold    (  143): Filesystem check completed OK
+E/MetadataRetrieverClient(  141): failed to extract an album art
+I/Vold    (  143): Filesystem type is: VFAT
+I/Vold    (  143): Device /dev/block/vold/179:15, target /mnt/sdcard mounted @ /mnt/secure/staging
+I/PackageManager(  235): Updating external media status from unmounted to mounted
+D/Vold    (  143): Volume emmc state changing 3 (Checking) -> 4 (Mounted)
+I/StorageNotification(  393): Media {/mnt/sdcard} state changed from {checking} -> {mounted}
+D/VoldCmdListener(  143): volume mount /mnt/sdcard/_ExternalSD
+I/Vold    (  143): /dev/block/vold/179:33 being considered for volume sdcard
+D/Vold    (  143): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+I/StorageNotification(  393): Media {/mnt/sdcard/_ExternalSD} state changed from {unmounted} -> {checking}
+I//system/bin/fsck_msdos(  143): ** /dev/block/vold/179:33
+I//system/bin/fsck_msdos(  143): ** Phase 1 - Read and Compare FATs
+I//system/bin/fsck_msdos(  143): Attempting to allocate 3803 KB for FAT
+I/ActivityManager(  235): Start proc com.cooliris.media for broadcast com.cooliris.media/com.cooliris.cache.BootReceiver: pid=663 uid=10018 gids={1015, 3003}
+D/szipinf (  663): Initializing inflate state
+I/ActivityThread(  663): Pub com.cooliris.picasa.contentprovider: com.cooliris.picasa.PicasaContentProvider
+D/szipinf (  663): Initializing inflate state
+I//system/bin/fsck_msdos(  143): Attempting to allocate 3803 KB for FAT
+W/BackupManagerService(  235): dataChanged but no participant pkg='com.android.providers.settings' uid=10015
+I/BootReceiver(  663): Got intent with action android.intent.action.MEDIA_MOUNTED
+I/CPUSettings(  480): Restore disabled by user preference.
+E/MetadataRetrieverClient(  141): failed to extract an album art
+I//system/bin/fsck_msdos(  143): ** Phase 2 - Check Cluster Chains
+I//system/bin/fsck_msdos(  143): ** Phase 3 - Checking Directories
+D/dalvikvm(  600): GC_CONCURRENT freed 250K, 49% free 2852K/5575K, external 0K/0K, paused 2ms+2ms
+E/MetadataRetrieverClient(  141): failed to extract an album art
+E/MetadataRetrieverClient(  141): failed to extract an album art
+W/KeyCharacterMap(  451): Can't open keycharmap file
+W/KeyCharacterMap(  451): Error loading keycharmap file '/system/usr/keychars/touch_mcs8000.kcm.bin'. hw.keyboards.65538.devname='touch_mcs8000'
+W/KeyCharacterMap(  451): Using default keymap: /system/usr/keychars/qwerty.kcm.bin
+D/szipinf (  451): Initializing inflate state
+I/ARMAssembler(  235): generated scanline__00000077:03515101_00001001_00000000 [ 78 ipp] (98 ins) at [0x484bc3a0:0x484bc528] in 91552 ns
+I/ARMAssembler(  235): generated scanline__00000077:03515101_00000001_00000000 [ 60 ipp] (79 ins) at [0x484bc530:0x484bc66c] in 91553 ns
+E/MetadataRetrieverClient(  141): failed to extract an album art
+D/dalvikvm(  235): GC_CONCURRENT freed 455K, 50% free 4530K/8967K, external 600K/1200K, paused 3ms+4ms
+D/szipinf (  235): Initializing inflate state
+I/ActivityManager(  235): Starting: Intent { act=android.settings.SETTINGS flg=0x10200000 cmp=com.android.settings/.Settings } from pid 451
+W/BackupManagerService(  235): dataChanged but no participant pkg='com.android.providers.settings' uid=10015
+I/UsageStats(  235): No package stats for pkg:com.android.launcher
+I/ARMAssembler(  235): generated scanline__00000077:03515101_00001002_00000000 [ 74 ipp] (94 ins) at [0x484bc670:0x484bc7e8] in 122070 ns
+D/dalvikvm(  491): GC_EXTERNAL_ALLOC freed 74K, 49% free 2781K/5379K, external 0K/0K, paused 170ms
+D/ViewConsistency(  491): AbsListView android.widget.ListView@405370e0 enabled= true
+D/ViewConsistency(  491): AbsListView android.widget.ListView@405370e0 enabled= true
+I/ActivityManager(  235): Displayed com.android.settings/.Settings: +717ms
+E/msm7x30.gralloc(  235): [unregister] handle 0x240670 still locked (state=40000001)
+E/MetadataRetrieverClient(  141): failed to extract an album art
+E/MetadataRetrieverClient(  141): failed to extract an album art
+E/MetadataRetrieverClient(  141): failed to extract an album art
+D/dalvikvm(  600): GC_CONCURRENT freed 405K, 51% free 2888K/5831K, external 0K/0K, paused 1ms+3ms
+E/MetadataRetrieverClient(  141): failed to extract an album art
+I/ActivityManager(  235): Starting: Intent { act=android.intent.action.MAIN cmp=com.android.settings/.WirelessSettings } from pid 491
+D/ViewConsistency(  491): AbsListView android.widget.ListView@40555048 enabled= true
+D/ViewConsistency(  491): AbsListView android.widget.ListView@40555048 enabled= true
+V/NFC     (  491): this device does not have NFC support
+I/ActivityManager(  235): Displayed com.android.settings/.WirelessSettings: +368ms
+E/MetadataRetrieverClient(  141): failed to extract an album art
+D/dalvikvm(  393): GC_CONCURRENT freed 265K, 49% free 3023K/5831K, external 546K/996K, paused 2ms+3ms
+D/dalvikvm(  491): GC_CONCURRENT freed 103K, 47% free 2990K/5575K, external 392K/543K, paused 2ms+2ms
+D/SettingsAppWidgetProvider(  491): Widget is from a previous version... Let's update
+D/SettingsAppWidgetProvider(  491): No instances yet... Wait for at least one instance to exist before adding global settings
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+E/MetadataRetrieverClient(  141): failed to extract an album art
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/dalvikvm(  600): GC_CONCURRENT freed 430K, 51% free 2858K/5831K, external 0K/0K, paused 2ms+2ms
+W/BackupManagerService(  235): dataChanged but no participant pkg='com.android.providers.settings' uid=10015
+I//system/bin/fsck_msdos(  143): ** Phase 4 - Checking for Lost Files
+I//system/bin/fsck_msdos(  143): 16236 files, 1365376 free (304812 clusters)
+I/Vold    (  143): Filesystem check completed OK
+I/Vold    (  143): Filesystem type is: VFAT
+I/Vold    (  143): Device /dev/block/vold/179:33, target /mnt/sdcard/_ExternalSD mounted @ /mnt/secure/staging
+I/Vold    (  143): Skipping bindmounts for alternate volume (/mnt/sdcard/_ExternalSD)
+D/Vold    (  143): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+I/StorageNotification(  393): Media {/mnt/sdcard/_ExternalSD} state changed from {checking} -> {mounted}
+I/BootReceiver(  663): Got intent with action android.intent.action.MEDIA_MOUNTED
+D/VoldCmdListener(  143): asec list
+I/PackageManager(  235): No secure containers on sdcard
+I/PackageManager(  235): Platform changed from 0 to 10; regranting permissions for external storage
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.contacts
+E/MetadataRetrieverClient(  141): failed to extract an album art
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.calendar
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cl in package com.android.providers.calendar
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.mail in package com.android.calendar
+W/PackageManager(  235): Not granting permission android.permission.SEND_DOWNLOAD_COMPLETED_INTENTS to package com.android.browser (protectionLevel=2 flags=0x9be45)
+W/PackageManager(  235): Unknown permission com.google.android.c2dm.permission.RECEIVE in package com.koushikdutta.rommanager
+W/PackageManager(  235): Unknown permission com.android.vending.BILLING in package com.koushikdutta.rommanager
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.providers.contacts
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.cp in package com.android.providers.contacts
+W/PackageManager(  235): Unknown permission com.google.android.gm.permission.WRITE_GMAIL in package com.android.settings
+W/PackageManager(  235): Unknown permission com.google.android.gm.permission.READ_GMAIL in package com.android.settings
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.settings
+W/PackageManager(  235): Unknown permission com.google.android.c2dm.permission.RECEIVE in package com.cyanogenmod.updatenotify
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.ACCESS_GOOGLE_PASSWORD in package com.android.development
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH in package com.android.development
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.ALL_SERVICES in package com.android.development
+W/PackageManager(  235): Unknown permission com.google.android.googleapps.permission.GOOGLE_AUTH.YouTubeUser in package com.android.development
+W/PackageManager(  235): Unknown permission android.permission.READ_OWNER_DATA in package com.android.email
+W/PackageManager(  235): Not granting permission android.permission.DEVICE_POWER to package com.android.deskclock (protectionLevel=2 flags=0x8be45)
+D/szipinf (  235): Initializing inflate state
+D/VoiceDialerReceiver(  454): onReceive Intent { act=android.intent.action.PACKAGE_CHANGED dat=package:com.android.email flg=0x10000000 cmp=com.android.voicedialer/.VoiceDialerReceiver (has extras) }
+V/RecognizerEngine(  454): deleteCachedGrammarFiles /data/data/com.android.voicedialer/files/openentries.txt
+D/szipinf (  235): Initializing inflate state
+D/HomeLoaders(  451): application intent received: android.intent.action.PACKAGE_CHANGED, replacing=false
+D/HomeLoaders(  451):   --> package:com.android.email
+D/HomeLoaders(  451):   --> sync package com.android.email
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/Tethering(  235): wlan0 is not a tetherable iface, ignoring
+E/WifiHW  (  235): Unable to open connection to supplicant on "/data/system/wpa_supplicant/wlan0": No such file or directory
+D/SettingsAppWidgetProvider(  491): Widget is from a previous version... Let's update
+D/SettingsAppWidgetProvider(  491): No instances yet... Wait for at least one instance to exist before adding global settings
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/wifi    (  235): wifi doCommand: ret=-1
+W/GpsLocationProvider(  235): Failed to enable location provider
+D/dalvikvm(  235): GC_CONCURRENT freed 459K, 49% free 4574K/8967K, external 631K/1200K, paused 4ms+5ms
+E/MetadataRetrieverClient(  141): failed to extract an album art
+E/MetadataRetrieverClient(  141): failed to extract an album art
+E/MetadataRetrieverClient(  141): failed to extract an album art
+E/MetadataRetrieverClient(  141): failed to extract an album art
+D/MediaScanner(  600):  prescan time: 1188ms
+D/MediaScanner(  600):     scan time: 12154ms
+D/MediaScanner(  600): postscan time: 2ms
+D/MediaScanner(  600):    total time: 13344ms
+I/BootReceiver(  663): Got intent with action android.intent.action.MEDIA_SCANNER_FINISHED
+D/MediaScannerService(  600): done scanning volume internal
+D/MediaScannerService(  600): start scanning volume external
+V/MediaProvider(  600): /mnt/sdcard volume ID: -12974147
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/dalvikvm(  600): GC_CONCURRENT freed 424K, 51% free 2891K/5831K, external 0K/0K, paused 2ms+3ms
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00
+I/MediaProvider(  600): Upgrading media database from version 63 to 101, which will destroy all old data
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289919108
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289912419
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289868160
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289788966
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289896999
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289882923
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289877663
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289854291
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289918721
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289907102
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289912166
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289841039
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289780003
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289792916
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289790666
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289842626
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289763981
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289914615
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289918392
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289792361
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289864887
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289808505
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289783103
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289780436
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289830986
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289913965
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289856191
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289884547
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289889641
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289903910
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289917286
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289875519
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289880179
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289789908
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289759447
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289906350
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289832079
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289872357
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289913497
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289922761
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289923916
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289836123
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289891763
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289903010
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289909549
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289847757
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289883368
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289774235
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289905119
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289792669
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289923694
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289897254
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289907503
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289915076
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289922994
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289924156
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289904169
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289811681
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289801527
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289844874
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289886701
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289782764
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289837628
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289791607
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289783744
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289907982
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289888808
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289908704
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289883723
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289923335
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289917729
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289909284
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289906653
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289851407
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289864491
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289876364
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289782409
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289912758
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289763000
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289888273
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289759672
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289815246
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289884921
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289901993
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289902731
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289899608
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289878873
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289918150
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289861910
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289884101
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289879641
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289910828
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289902266
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289878524
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289914249
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289894940
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289893997
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289911499
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289794804
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289865205
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289877259
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289813260
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289900886
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289770553
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289901340
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289762205
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289896240
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289834545
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289785733
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289786163
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289802474
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289907748
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289900141
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289806166
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289896532
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289913254
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289898685
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289889994
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289901737
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289910509
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289920185
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289776232
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289886300
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289857972
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289893447
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289885773
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289843386
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289772288
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289910173
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289902522
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289882592
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289852913
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289887108
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289898242
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289899027
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289790980
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289797875
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289799665
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289903563
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289829998
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289849593
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289885288
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289787892
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289761798
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289921265
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289887642
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289765842
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289920646
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289778057
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289880552
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289860868
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289887975
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289866219
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289895938
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289846456
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289905962
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289897579
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289911853
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289920976
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289794571
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289804069
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289870000
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289833042
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289894366
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289922063
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289788625
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289921680
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289922501
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289764993
+V/MediaProvider(  600): deleting obsolete album art /mnt/sdcard/Android/data/com.android.providers.media/albumthumbs/1351289908350
+V/MediaProvider(  600): Attached volume: external
+I/ActivityManager(  235): Starting: Intent { act=android.intent.action.MAIN cmp=com.android.settings/.wifi.WifiSettings } from pid 491
+D/ViewConsistency(  491): AbsListView android.widget.ListView@40556248 enabled= true
+D/ViewConsistency(  491): AbsListView android.widget.ListView@40556248 enabled= true
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/MediaScanner(  600): found .nomedia, skipping directory
+I/ActivityManager(  235): Displayed com.android.settings/.wifi.WifiSettings: +276ms
+D/dalvikvm(  600): GC_EXTERNAL_ALLOC freed 300K, 52% free 2851K/5831K, external 0K/0K, paused 24ms
+D/dalvikvm(  600): GC_EXTERNAL_ALLOC freed 12K, 52% free 2843K/5831K, external 9K/521K, paused 33ms
+D/skia    (  600): --- decoder->decode returned false
+W/MediaThumbRequest(  600): Can't create mini thumbnail for /mnt/sdcard/DCIM/Screenshots/screenshot-20121018-041103am.png
+D/dalvikvm(  600): GC_EXTERNAL_ALLOC freed 32K, 51% free 2861K/5831K, external 609K/609K, paused 27ms
+D/dalvikvm(  600): GC_EXTERNAL_ALLOC freed 31K, 51% free 2859K/5831K, external 99K/663K, paused 33ms
+D/skia    (  600): --- decoder->decode returned false
+W/MediaThumbRequest(  600): Can't create mini thumbnail for /mnt/sdcard/DCIM/Screenshots/screenshot-20121018-110515pm.png
+D/dalvikvm(  600): GC_EXTERNAL_ALLOC freed 38K, 51% free 2873K/5831K, external 609K/609K, paused 44ms
+D/skia    (  600): --- SkImageDecoder::Factory returned null
+D/dalvikvm(  600): GC_FOR_MALLOC freed 135K, 51% free 2882K/5831K, external 99K/611K, paused 18ms
+I/dalvikvm-heap(  600): Grow heap (frag case) to 5.434MB for 106610-byte allocation
+D/dalvikvm(  600): GC_FOR_MALLOC freed 13K, 51% free 2973K/5959K, external 63K/575K, paused 16ms
+V/WifiStateTracker(  235): Connection to supplicant established, state=INACTIVE
+D/dalvikvm(  600): GC_CONCURRENT freed 505K, 52% free 2915K/6023K, external 9K/521K, paused 4ms+2ms
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: INACTIVE ==> SCANNING
+I/TelephonyRegistry(  235): notifyDataConnection: state=0 isDataConnectivityPossible=false reason=apnSwitched interfaceName=null networkType=7
+D/Tethering(  235): MasterInitialState.processMessage what=3
+D/CMStats (  637): CONNECTIVITY_ACTION: noConnectivity = true
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: SCANNING ==> INACTIVE
+D/dalvikvm(  491): GC_EXTERNAL_ALLOC freed 189K, 47% free 3179K/5895K, external 542K/543K, paused 31ms
+I/ARMAssembler(  235): generated scanline__00000077:03515101_00000000_00000000 [ 41 ipp] (55 ins) at [0x484bc7f0:0x484bc8cc] in 61035 ns
+D/dalvikvm(  402): GC_EXTERNAL_ALLOC freed 897K, 55% free 2878K/6279K, external 1332K/1333K, paused 200ms
+D/LatinIME(  402): mLongPressDelay = 400
+D/LatinKeyboardBaseView(  402): mLongPressDelay = 400
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: INACTIVE ==> SCANNING
+I/TelephonyRegistry(  235): notifyMessageWaitingChanged: false
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: SCANNING ==> INACTIVE
+D/dalvikvm(  600): GC_CONCURRENT freed 375K, 52% free 2925K/6023K, external 9K/521K, paused 1ms+23ms
+D/PointerTracker(  402): mLongPressKeyTimeout = 400
+D/szipinf (  235): Initializing inflate state
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: INACTIVE ==> SCANNING
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=1 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: SCANNING ==> INACTIVE
+D/dalvikvm(  600): GC_CONCURRENT freed 321K, 50% free 3021K/6023K, external 130K/521K, paused 2ms+2ms
+D/dalvikvm(  235): GC_CONCURRENT freed 486K, 49% free 4611K/8967K, external 600K/1112K, paused 3ms+29ms
+D/dalvikvm(  491): GC_CONCURRENT freed 214K, 46% free 3230K/5959K, external 588K/1058K, paused 2ms+54ms
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=2 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: INACTIVE ==> SCANNING
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+I/wpa_supplicant(  691): Trying to associate with 4c:60:de:2a:b1:d6 (SSID='SecretTalibanHideout' freq=2462 MHz)
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=4c:60:de:2a:b1:d6
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/WifiMonitor(  235): Event [Trying to associate with 4c:60:de:2a:b1:d6 (SSID='SecretTalibanHideout' freq=2462 MHz)]
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=-1 state=3 BSSID=4c:60:de:2a:b1:d6]
+V/WifiStateTracker(  235): Changing supplicant state: SCANNING ==> ASSOCIATING
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+W/wpa_supplicant(  691): Ignoring scan action, already scanning.
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=4c:60:de:2a:b1:d6
+I/wpa_supplicant(  691): Associated with 4c:60:de:2a:b1:d6
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=0 state=4 BSSID=4c:60:de:2a:b1:d6]
+V/WifiMonitor(  235): Event [Associated with 4c:60:de:2a:b1:d6]
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/WifiStateTracker(  235): Changing supplicant state: ASSOCIATING ==> ASSOCIATED
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: ASSOCIATED ==> FOUR_WAY_HANDSHAKE
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=0 state=5 BSSID=00:00:00:00:00:00]
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=00:00:00:00:00:00
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=0 state=6 BSSID=00:00:00:00:00:00]
+V/WifiStateTracker(  235): Changing supplicant state: FOUR_WAY_HANDSHAKE ==> FOUR_WAY_HANDSHAKE
+V/WifiStateTracker(  235): Changing supplicant state: FOUR_WAY_HANDSHAKE ==> GROUP_HANDSHAKE
+I/wpa_supplicant(  691): WPA: Key negotiation completed with 4c:60:de:2a:b1:d6 [PTK=CCMP GTK=CCMP]
+I/wpa_supplicant(  691): CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00:00:00:00:00:00
+I/wpa_supplicant(  691): CTRL-EVENT-CONNECTED - Connection to 4c:60:de:2a:b1:d6 completed (auth) [id=0 id_str=]
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+V/WifiMonitor(  235): Event [WPA: Key negotiation completed with 4c:60:de:2a:b1:d6 [PTK=CCMP GTK=CCMP]]
+V/WifiMonitor(  235): Event [CTRL-EVENT-STATE-CHANGE id=0 state=7 BSSID=00:00:00:00:00:00]
+V/WifiMonitor(  235): Event [CTRL-EVENT-CONNECTED - Connection to 4c:60:de:2a:b1:d6 completed (auth) [id=0 id_str=]]
+V/WifiStateTracker(  235): Changing supplicant state: GROUP_HANDSHAKE ==> COMPLETED
+V/WifiStateTracker(  235): New network state is CONNECTED
+D/WifiStateTracker(  235): DHCP request started
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): The value returned from dun_getusbmodemstate_fromsys is 1 
+I/dun_service(  154): Post event 1
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): received event: DUN_EVENT_USB_UNPLUG 
+I/dun_service(  154): received event(DUN_EVENT_USB_UNPLUG) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_USB_UNPLUG in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/dalvikvm(  600): GC_CONCURRENT freed 446K, 51% free 2964K/6023K, external 9K/521K, paused 2ms+2ms
+D/dalvikvm(  600): GC_CONCURRENT freed 367K, 51% free 2982K/6023K, external 9K/521K, paused 4ms+2ms
+D/dalvikvm(  491): GC_CONCURRENT freed 458K, 48% free 3257K/6215K, external 588K/1058K, paused 2ms+3ms
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/dalvikvm(  600): GC_CONCURRENT freed 325K, 50% free 3044K/6023K, external 9K/521K, paused 2ms+3ms
+I/dun_service(  154): process rmnet event
+I/dun_service(  154): Post event 3
+I/dun_service(  154): received event: DUN_EVENT_RMNET_DOWN 
+I/dun_service(  154): received event(DUN_EVENT_RMNET_DOWN) in state(DUN_STATE_USB_UNPLUG)
+I/dun_service(  154): Ignoring the event DUN_EVENT_RMNET_DOWN in USB_UNPLUG_STATE
+I/dun_service(  154): Moved to state(DUN_STATE_USB_UNPLUG)
+D/dalvikvm(  600): GC_CONCURRENT freed 421K, 49% free 3075K/6023K, external 9K/521K, paused 3ms+52ms
+D/WifiStateTracker(  235): DHCP succeeded with lease: 86400
+D/WifiWatchdogService(  235): (android.server.ServerThread) SecretTalibanHideout (4c:60:de:2a:b1:d6) does not require the watchdog
+V/WifiStateTracker(  235): IP configuration: ipaddr 192.168.1.8 gateway 192.168.1.1 netmask 255.255.255.0 dns1 192.168.1.1 dns2 0.0.0.0 DHCP server 192.168.1.1 lease 86400 seconds
+D/Tethering(  235): MasterInitialState.processMessage what=3
+D/wifi    (  235): wifi doCommand: ret=-1
+D/CMStats (  637): CONNECTIVITY_ACTION: noConnectivity = false
+D/CMStats (  637): CONNECTIVITY_ACTION: starting service
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/wifi    (  235): wifi doCommand: ret=-1
+D/CMStats (  637): Prompting user for opt-in.
+D/dalvikvm(  235): GC_CONCURRENT freed 518K, 49% free 4647K/8967K, external 600K/1112K, paused 3ms+5ms
+D/SntpClient(  235): request time failed: java.net.UnknownHostException: north-america.pool.ntp.org
+D/dalvikvm(  600): GC_CONCURRENT freed 422K, 50% free 3059K/6023K, external 9K/521K, paused 2ms+4ms

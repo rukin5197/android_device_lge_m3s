@@ -33,7 +33,7 @@ PRODUCT_RELEASE_NAME		    := LG Optimus Elite
 PRODUCT_VERSION_DEVICE_SPECIFIC	    := VM696ZV5
 -include vendor/cyanogen/products/common_versions.mk
 
-TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us
+TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us,m3s
 
 
 # try to reproduce the stock prop file.  we can't override the `date` command, so leave the dates alone.
@@ -67,30 +67,40 @@ ADDITIONAL_BUILD_PROPERTIES +=					\
     ro.com.google.clientidbase.gmm=android-lge			\
     ro.com.google.clientidbase.ms=android-virgin-us
 
-# not present in our stock setup, but added to try and get cm7 to use cdma mode
-ADDITIONAL_BUILD_PROPERTIES +=					\
-    ro.telephony.default_network=4
-
 # HTC desire is an officially supported cm7 CMDA device.  Lets try using their haxx and see what happens
 # Default network type
 # 0 => WCDMA Preferred.
-PRODUCT_PROPERTY_OVERRIDES +=								    \
-    ro.telephony.default_network=4							    \
-    ro.com.google.locationfeatures=1							    \
-    ro.cdma.homesystem=128,64								    \
-    ro.cdma.data_retry_config=default_randomization=960000,960000,960000,960000,960000
+#PRODUCT_PROPERTY_OVERRIDES +=								    \
+#    ro.telephony.default_network=4							    \
+#    ro.com.google.locationfeatures=1							    \
+#    ro.cdma.homesystem=128,64								    \
+#    ro.cdma.data_retry_config=default_randomization=960000,960000,960000,960000,960000
+
+# ro.roaming indicator is used to determine if we are roaming or not
+# ro.cdma.data_retry_config is used for something in CdmaDataConnectionTracker.java
+
+
+
+# CDMA phone
+PRODUCT_PROPERTY_OVERRIDES += ro.telephony.default_network=4
+
+# Tell Phonefactory.java to use LGEQualcommRIL class
+ADDITIONAL_BUILD_PROPERTIES += ro.telephony.ril_class=lgeqcom
+
+# tell CDMAPhone.java to dial our own number to check voicemail
+ADDITIONAL_BUILD_PROPERTIES += ro.cdma.voicemail.number=mine
 
 # adb on by default so we can wipe /data and still get logcat and dmesg crap
-ADDITIONAL_BUILD_PROPERTIES +=					\
-    persist.service.adb.enable=1
+ADDITIONAL_BUILD_PROPERTIES += persist.service.adb.enable=1
 
 # Stock setup has dalvik-cache only on /data.  This keeps it that way, but do we really want to do that?
-PRODUCT_PROPERTY_OVERRIDES +=					\
-    dalvik.vm.dexopt-data-only=1
+PRODUCT_PROPERTY_OVERRIDES += dalvik.vm.dexopt-data-only=1
 
 # adb runs as root for easier debugging
-PRODUCT_PROPERTY_OVERRIDES +=					\
-    service.adb.root=1
+PRODUCT_PROPERTY_OVERRIDES += service.adb.root=1
+
+# Tell vold to mount something besides /mnt/sdcard
+PRODUCT_PROPERTY_OVERRIDES += ro.additionalmounts=/mnt/sdcard/_ExternalSD
 
 # Enable Torch
 #PRODUCT_PACKAGES += Torch
@@ -98,19 +108,13 @@ PRODUCT_PROPERTY_OVERRIDES +=					\
 # we need to somehow remove rom manager because it does nothing but brick this model of phone
 #PRODUCT_COPY_FILES := $(filter-out "vendor/cyanogen/proprietary/RomManager.apk:system/app/RomManager.apk",$(PRODUCT_COPY_FILES))
 
-# The internal FAT is not mounted by vold by default
-#PRODUCT_PROPERTY_OVERRIDES +=					\
-#    persist.sys.vold.switchexternal=1				\
-#    ro.additionalmounts=/mnt/sdcard/_ExternalSD			\
-#    ro.vold.switchablepair=/mnt/sdcard,/mnt/sdcard/_ExternalSD
 
-PRODUCT_PROPERTY_OVERRIDES +=					\
-    ro.additionalmounts=/mnt/sdcard/_ExternalSD
 
 # Kernel Modules
 $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/$(PRODUCT_DEVICE)/overlay
+
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/lge/$(PRODUCT_DEVICE)/kernel
@@ -175,7 +179,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cyanogen/prebuilt/mdpi/media/bootanimation.zip:system/media/bootanimation.zip
 
-# use high-density artwork where available
+# use med-density artwork where available
 PRODUCT_LOCALES += mdpi
 
 # SDCard
@@ -289,8 +293,6 @@ PRODUCT_COPY_FILES +=\
     $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_01.rle:root/chargerimages/battery_ani_01.rle \
     $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_ani_02.rle:root/chargerimages/battery_ani_02.rle \
     $(LOCAL_PATH)/prebuilt/root/chargerimages/battery_wait_ani_01.rle:root/chargerimages/battery_wait_ani_01.rle \
-    $(LOCAL_PATH)/prebuilt/root/init.qcom.rc:root/init.qcom.rc \
-    $(LOCAL_PATH)/prebuilt/root/init.target.rc:root/init.target.rc \
     $(LOCAL_PATH)/prebuilt/root/sbin/bootlogo:root/sbin/bootlogo \
     $(LOCAL_PATH)/prebuilt/root/sbin/e2fsck_static:root/sbin/e2fsck_static \
     $(LOCAL_PATH)/prebuilt/root/sbin/tune2fs_static:root/sbin/tune2fs_static \
@@ -299,29 +301,11 @@ PRODUCT_COPY_FILES +=\
     $(LOCAL_PATH)/prebuilt/root/sbin/resize2fs_static:root/sbin/resize2fs_static \
     $(LOCAL_PATH)/prebuilt/root/sbin/chargerlogo:root/sbin/chargerlogo \
     $(LOCAL_PATH)/prebuilt/root/bootimages/LG_opening_logo.rle:root/bootimages/LG_opening_logo.rle \
+    $(LOCAL_PATH)/prebuilt/root/init.qcom.rc:root/init.qcom.rc \
+    $(LOCAL_PATH)/prebuilt/root/init.target.rc:root/init.target.rc \
     $(LOCAL_PATH)/prebuilt/root/init.qcom.sh:root/init.qcom.sh \
     $(LOCAL_PATH)/prebuilt/root/ueventd.rc:root/ueventd.rc \
-    $(LOCAL_PATH)/prebuilt/root/init.rc:root/init.rc \
-    $(LOCAL_PATH)/prebuilt/root/sbin/charger.sh:root/sbin/charger.sh
-
-# libraries the build system doesnt know how to make
-#PRODUCT_COPY_FILES +=									    \
-#    $(LOCAL_PATH)/prebuilt/lib/hw/copybit.msm7k.so:system/lib/hw/copybit.msm7k.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/hw/lights.msm7k.so:system/lib/hw/lights.msm7k.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/hw/overlay.default.so:system/lib/hw/overlay.default.so    \
-#    $(LOCAL_PATH)/prebuilt/lib/hw/sensors.default.so:system/lib/hw/sensors.default.so    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxAacDec.so:system/lib/libOmxAacDec.so		    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxAdpcmDec.so:system/lib/libOmxAdpcmDec.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrDec.so:system/lib/libOmxAmrDec.so		    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrEnc.so:system/lib/libOmxAmrEnc.so		    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrRtpDec.so:system/lib/libOmxAmrRtpDec.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxAmrwbDec.so:system/lib/libOmxAmrwbDec.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxEvrcDec.so:system/lib/libOmxEvrcDec.so		    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxMp3Dec.so:system/lib/libOmxMp3Dec.so		    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelp13Dec.so:system/lib/libOmxQcelp13Dec.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelp13Enc.so:system/lib/libOmxQcelp13Enc.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxQcelpHwDec.so:system/lib/libOmxQcelpHwDec.so	    \
-#    $(LOCAL_PATH)/prebuilt/lib/libOmxWmaDec.so:system/lib/libOmxWmaDec.so
+    $(LOCAL_PATH)/prebuilt/root/init.rc:root/init.rc
 
 # libraries the build system doesnt know how to make
 PRODUCT_COPY_FILES +=									    \
@@ -382,11 +366,28 @@ PRODUCT_COPY_FILES +=									    \
     $(LOCAL_PATH)/prebuilt/bin/port-bridge:system/bin/port-bridge			    \
     $(LOCAL_PATH)/prebuilt/bin/rmt_storage:system/bin/rmt_storage
 
+# binaries for bluetooth; using the stock hciattach for now until we figure out what is wrong with the one
+# we get from the build system
+PRODUCT_COPY_FILES +=									    \
+    $(LOCAL_PATH)/prebuilt/bin/hci_qcomm_init:system/bin/hci_qcomm_init			    \
+    $(LOCAL_PATH)/prebuilt/bin/hciattach:system/bin/hciattach
+
+
 # hell, throw rild in there, too.  maybe itll get the radio stuff working
 # (not tossing libril.so in the /out for linking against because something doesnt happen right)
 PRODUCT_COPY_FILES +=									    \
     $(LOCAL_PATH)/prebuilt/bin/rild:system/bin/rild					    \
     $(LOCAL_PATH)/prebuilt/lib/libril.so:system/lib/libril.so
+
+#PRODUCT_COPY_FILES +=									    \
+#    $(LOCAL_PATH)/prebuilt/bin/rild:system/bin/rild					    \
+#    $(LOCAL_PATH)/prebuilt/lib/libril.so:system/lib/libril.so				    \
+#    $(LOCAL_PATH)/prebuilt/lib/libril.so:obj/lib/libril.so
+
+
+# stock rild dlopens this one
+PRODUCT_COPY_FILES +=									    \
+    $(LOCAL_PATH)/prebuilt/lib/libreference-ril.so:system/lib/libreference-ril.so
 
 # libraries needed for the ril crap.  copy to /obj for linking against if they need to be
 PRODUCT_COPY_FILES +=										    \
@@ -434,3 +435,14 @@ PRODUCT_COPY_FILES +=												\
     $(LOCAL_PATH)/prebuilt/lib/modules/librasdioif.ko:system/lib/modules/librasdioif.ko				\
     $(LOCAL_PATH)/prebuilt/lib/modules/volans/WCN1314_rf.ko:system/lib/modules/volans/WCN1314_rf.ko		\
     $(LOCAL_PATH)/prebuilt/lib/modules/volans/WCN1314_rf_ftm.ko:system/lib/modules/volans/WCN1314_rf_ftm.ko
+
+# rather than trying to RE our stock libcamera, lets try to use it and modify the cm7 to use it?
+#PRODUCT_COPY_FILES +=										    \
+#    $(LOCAL_PATH)/prebuilt/lib/liboemcamera.so:system/lib/liboemcamera.so			    \
+#    $(LOCAL_PATH)/prebuilt/lib/libcamera.so:system/lib/libcamera.so				    \
+#    $(LOCAL_PATH)/prebuilt/lib/libcamera.so:obj/lib/libcamera.so				    \
+#    $(LOCAL_PATH)/prebuilt/lib/libmmjpeg.so:system/lib/libmmjpeg.so				    \
+#    $(LOCAL_PATH)/prebuilt/lib/libmmipl.so:system/lib/libmmipl.so				    \
+#    $(LOCAL_PATH)/prebuilt/lib/libgemini.so:system/lib/libgemini.so				    \
+#    $(LOCAL_PATH)/prebuilt/lib/lib_LG_fastaf.so:system/lib/lib_LG_fastaf.so
+
