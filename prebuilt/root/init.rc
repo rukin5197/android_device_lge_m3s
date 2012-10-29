@@ -290,15 +290,31 @@ on post-fs
     chown root root /cache/lost+found
     chmod 0770 /cache/lost+found
 
-    # LGE_CHANGE_S hyungsoo.kim@lge.com
     chown system audio /dev/msm_audio_misc
     chmod 0660 /dev/msm_audio_misc
-    # LGE_CHANGE_E
 
+    mkdir /data/misc/wifi 0770 wifi wifi
+    mkdir /data/misc/wifi/sockets 0770 wifi wifi
+    mkdir /data/misc/wifi/wpa_supplicant 0770 wifi wifi
+    mkdir /data/misc/dhcp 0770 dhcp dhcp
+    chown dhcp dhcp /data/misc/dhcp
 
-    # 20120521, jinw.kim@lge.com make ringtone, alarm property directory, from MS695 [START]
+    mkdir /data/img 0770 shell shell
     mkdir /data/audioprop 0777 system system
-    # 20120521, jinw.kim@lge.com make ringtone, alarm property directory, from MS695 [END]
+    mkdir /data/misc/bluetooth 0770 bluetooth bluetooth
+
+    # Create directories for wiper services
+    mkdir /data/wpstiles 0755 system
+    mkdir /data/wiper 0755 location qcom_oncrpc
+
+    mkdir /data/logger 0771 system system
+    chown system system /data/logger
+    chmod 0775 /data/logger
+
+    exec /system/bin/sh /system/etc/last_kmsg_backup.sh
+
+
+
 
     # dirty, filthy hack to get the power-off charging to work
     exec /sbin/checkchargerMode
@@ -553,36 +569,36 @@ service servicemanager /system/bin/servicemanager
     onrestart restart zygote
     onrestart restart media
 
-service vold /system/bin/logwrapper /system/bin/vold
+service vold /system/bin/vold
     socket vold stream 0660 root mount
     ioprio be 2
 
-service netd /system/bin/logwrapper /system/bin/netd
+service netd /system/bin/netd
     socket netd stream 0660 root system
     socket dnsproxyd stream 0660 root inet
 
 service debuggerd /system/bin/debuggerd
 
-service ril-daemon /system/bin/logwrapper /system/bin/rild
+service ril-daemon /system/bin/rild
     socket rild stream 660 root radio
     socket rild-debug stream 660 radio system
     user root
     group radio cache inet misc audio sdcard_rw qcom_oncrpc diag
 #    disabled
 
-service zygote /system/bin/logwrapper /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
+service zygote /system/bin/app_process -Xzygote /system/bin --zygote --start-system-server
     socket zygote stream 660 root system
     onrestart write /sys/android_power/request_state wake
     onrestart write /sys/power/state on
     onrestart restart media
     onrestart restart netd
 
-service media /system/bin/logwrapper /system/bin/mediaserver
+service media /system/bin/mediaserver
     user media
     group system audio camera graphics inet net_bt net_bt_admin net_raw  qcom_oncrpc
     ioprio rt 4
 
-service bootanim /system/bin/logwrapper /system/bin/bootanimation
+service bootanim /system/bin/bootanimation
     user graphics
     group graphics
     disabled
@@ -593,7 +609,7 @@ service dbus /system/bin/dbus-daemon --system --nofork
     user bluetooth
     group bluetooth net_bt_admin
 
-service bluetoothd /system/bin/logwrapper /system/bin/bluetoothd -n
+service bluetoothd /system/bin/bluetoothd -n
     socket bluetooth stream 660 bluetooth bluetooth
     socket dbus_bluetooth stream 660 bluetooth bluetooth
     # init.rc does not yet support applying capabilities, so run as root and
@@ -635,7 +651,7 @@ service racoon /system/bin/racoon
     disabled
     oneshot
 
-service mtpd /system/bin/logwrapper /system/bin/mtpd
+service mtpd /system/bin/mtpd
     socket mtpd stream 600 system system
     user vpn
     group vpn net_admin net_raw
@@ -652,7 +668,7 @@ service dumpstate /system/bin/dumpstate -s
     disabled
     oneshot
 
-// volume up + down dumpstate in /data/dontpanic, imported from VS920
+# volume up + down dumpstate in /data/dontpanic, imported from VS920
 on property:ro.build.type=eng
    chmod 0777 /data/dontpanic
 

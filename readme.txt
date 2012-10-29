@@ -3,10 +3,11 @@ This is a work-in-progress for porting cm7 to run on the LG VM696 phone.
 
 * I'm booting it up with a stock(ish) kernel and ramdisk.  I haven't tried to boot the boot.img created by this build system.
 * It boots and runs pretty snappy
-* phone calls work (havent tested 911)
+* phone calls work (havent tested 911), the java portion thinks it is roaming, but I don't think it really is
 * sound
 * all the hardware buttons and touchscreen
 * sensor library
+* bluetooth turns on, i haven't tried to connect to anything
 
 Stuff that isnt working-
 * sdcard & microSD
@@ -14,6 +15,15 @@ Stuff that isnt working-
 * data (text messages and 3g)
 * the hardware buttons dont light up when you press them
 * gps
+
+
+
+
+
+
+
+
+
 
 
 

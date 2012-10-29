@@ -115,7 +115,6 @@ $(call inherit-product-if-exists, $(LOCAL_PATH)/prebuilt/modules/modules.mk)
 
 DEVICE_PACKAGE_OVERLAYS += device/lge/$(PRODUCT_DEVICE)/overlay
 
-
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 	LOCAL_KERNEL := device/lge/$(PRODUCT_DEVICE)/kernel
 else
