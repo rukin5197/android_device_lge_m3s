@@ -1,0 +1,59 @@
+on early-init
+    start ueventd
+
+    # wait for internal storage
+     wait /dev/block/mmcblk0
+
+on init
+    export PATH /sbin:/system/bin
+    export ANDROID_ROOT /system
+    export ANDROID_DATA /data
+    export EXTERNAL_STORAGE /sdcard
+
+    symlink /system/etc /etc
+
+    mkdir /boot
+    mkdir /sdcard
+    mkdir /emmc
+    mkdir /system
+    mkdir /data
+    mkdir /cache
+    mount /tmp /tmp tmpfs
+
+    # adb runs as root
+    setprop service.adb.root 1
+
+    # Set max freq to stock value.  The user can overclock if they want to
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor "performance"
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_max_freq "1024000"
+
+    # trying to fix the damn rtc
+    mkdir /persist
+    chmod 0775 /persist
+    mount ext4 /dev/block/mmcblk0p5 /persist nosuid nodev barrier=1
+
+on boot
+
+    ifup lo
+    hostname localhost
+    domainname localdomain
+
+    # mount /system automatically for debugging purposes
+    #wait /dev/block/mmcblk0p12
+    #mount ext4 /dev/block/mmcblk0p12 /system barrier=1 data=ordered
+
+    class_start default
+
+service ueventd /sbin/ueventd
+    critical
+
+service recovery /sbin/recovery
+
+service adbd /sbin/adbd recovery
+    disabled
+
+on property:persist.service.adb.enable=1
+    start adbd
+
+on property:persist.service.adb.enable=0
+    stop adbd
