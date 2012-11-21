@@ -28,7 +28,6 @@ USE_CAMERA_STUB := true
 
 # Arch
 TARGET_ARCH := arm
-TARGET_ARCH := arm
 ARCH_ARM_HAVE_TLS_REGISTER := true
 TARGET_ARCH_VARIANT := armv7-a-neon
 
