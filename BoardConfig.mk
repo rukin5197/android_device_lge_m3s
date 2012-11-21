@@ -126,11 +126,6 @@ BOARD_USE_QCOM_PMEM			:= true
 
 BOARD_USES_QCOM_LIBRPC			:= true
 
-
-
-
-
-
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER		:= WEXT
 WPA_SUPPLICANT_VERSION			:= VER_0_8_X
@@ -146,8 +141,6 @@ WIFI_EXT_MODULE_PATH			:= /system/lib/modules/librasdioif.ko
 WIFI_DRIVER_MODULE_NAME			:= "wlan"
 WIFI_EXT_MODULE_NAME			:= "librasdioif"
 
-
-
 # GPS HAL from e400.  maybe ours is the same as theirs
 BOARD_USES_QCOM_LIBRPC := true
 BOARD_USES_QCOM_GPS := true
@@ -157,8 +150,3 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 # modified version of the ota-zipper-upper
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/lge/m3s/tools/ota_from_target_files
-
-
-
-
-
