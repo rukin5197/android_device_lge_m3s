@@ -111,13 +111,10 @@ TARGET_HAVE_BYPASS := false
 # used in libcopybit makefile.  our stock one uses cd2
 TARGET_USES_C2D_COMPOSITION := true
 # kernel should create "/dev/genlock" to use this
-TARGET_USES_GENLOCK := false
+TARGET_USES_GENLOCK := true
 
 TARGET_QCOM_HDMI_OUT := false
 BOARD_EGL_CFG := device/lge/m3s/egl.cfg
-
-# it looks like cm7 only uses these two when building non-msm7x30 stuff?
-#TARGET_GRALLOC_USES_ASHMEM := true
 
 # Wifi related defines
 BOARD_WPA_SUPPLICANT_DRIVER := WEXT
@@ -139,8 +136,4 @@ BOARD_VENDOR_QCOM_GPS_LOC_API_AMSS_VERSION := 50000
 
 # modified version of the ota-zipper-upper
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/lge/m3s/tools/ota_from_target_files
-
-
-
-
 
